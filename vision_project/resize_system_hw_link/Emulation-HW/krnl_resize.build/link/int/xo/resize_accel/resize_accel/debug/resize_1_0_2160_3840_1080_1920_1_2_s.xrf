@@ -1,0 +1,16 @@
+Begin Function 'resize<1, 0, 2160, 3840, 1080, 1920, 1, 2>'
+
+RTL state condition: (1'b1 == ap_CS_fsm_state1)
+# ST_1
+local p_src_cols_read <> <integer> <FifoRead> 'read' <>
+reg: p_src_cols_read_reg_108[31:0] lv
+
+local p_src_rows_read <> <integer> <FifoRead> 'read' <>
+reg: p_src_rows_read_reg_113[31:0] lv
+
+
+RTL state condition: (1'b1 == ap_CS_fsm_state2)
+# ST_2
+
+End Function 'resize<1, 0, 2160, 3840, 1080, 1920, 1, 2>'
+

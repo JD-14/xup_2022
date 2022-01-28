@@ -1,0 +1,2 @@
+performing high-level synthesis for kernel: resize_accel
+Log file: /home/centos/Documents/project/resize_kernels/Emulation-SW/build/resize_accel/resize_accel/vitis_hls.log

@@ -1,0 +1,11 @@
+LaunchTargetManager/org.eclipse.launchbar.core.launchTargetType.local,Local/arch=x86_64
+LaunchTargetManager/org.eclipse.launchbar.core.launchTargetType.local,Local/name=Local
+LaunchTargetManager/org.eclipse.launchbar.core.launchTargetType.local,Local/os=linux
+configDescList=org.eclipse.launchbar.core.descriptorType.default\:color_system-hardware_build,org.eclipse.launchbar.core.descriptorType.default\:color_system-hw_emu,org.eclipse.launchbar.core.descriptorType.default\:color_system-sw_emu,org.eclipse.launchbar.core.descriptorType.default\:correct_system-hardware_build,org.eclipse.launchbar.core.descriptorType.default\:correct_system-hw_emu,org.eclipse.launchbar.core.descriptorType.default\:correct_system-sw_emu,org.eclipse.launchbar.core.descriptorType.default\:resize_system-hardware_build,org.eclipse.launchbar.core.descriptorType.default\:resize_system-hw_emu,org.eclipse.launchbar.core.descriptorType.default\:resize_system-sw_emu
+eclipse.preferences.version=1
+org.eclipse.launchbar.core.descriptorType.default\:color_system-hardware_build/activeLaunchMode=run
+org.eclipse.launchbar.core.descriptorType.default\:color_system-hardware_build/activeLaunchTarget=org.eclipse.launchbar.core.launchTargetType.local\:Local
+org.eclipse.launchbar.core.descriptorType.default\:color_system-sw_emu/activeLaunchMode=run
+org.eclipse.launchbar.core.descriptorType.default\:correct_system-sw_emu/activeLaunchMode=run
+org.eclipse.launchbar.core.descriptorType.default\:resize_system-sw_emu/activeLaunchMode=run
+org.eclipse.launchbar.core.descriptorType.default\:resize_system-sw_emu/activeLaunchTarget=org.eclipse.launchbar.core.launchTargetType.local\:Local

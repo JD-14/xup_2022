@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project name="link" dir="">
+  <FileSets>
+    <FileSet Name="kernel_tonemapping_accel" Type="DesignSrcs">
+      <File Path="/home/centos/Documents/vision_project/color_system_hw_link/Emulation-SW/krnl_tonemapping.build/link/int/xo/tonemapping_accel/tonemapping_accel/cpu_sources/xf_tonemapping_accel.cpp"/>
+      <Config/>
+    </FileSet>
+  </FileSets>
+  <Runs/>
+</project>

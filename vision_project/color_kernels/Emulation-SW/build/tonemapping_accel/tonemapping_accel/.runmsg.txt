@@ -1,0 +1,2 @@
+performing high-level synthesis for kernel: tonemapping_accel
+Log file: /home/centos/Documents/vision_project/color_kernels/Emulation-SW/build/tonemapping_accel/tonemapping_accel/vitis_hls.log

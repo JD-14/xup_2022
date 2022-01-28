@@ -1,0 +1,576 @@
+<ENTRY>
+{
+ "thisFile": "/home/centos/Documents/project/color_system_hw_link/Emulation-SW/krnl_cvt_color.xclbin.link_summary",
+ "connectId": "",
+ "serverToken": "",
+ "timestamp": "0"
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_CmdStep",
+ "dateTimestamp": "Thu Jan 27 14:59:15 2022",
+ "timestampMillis": "1643295555943",
+ "buildStep": {
+  "cmdId": "fc19e152-f81d-4ce8-a76b-6c77996bae83",
+  "name": "v++",
+  "logFile": "/home/centos/Documents/project/color_system_hw_link/Emulation-SW/krnl_cvt_color.build/link/link.steps.log",
+  "commandLine": "/opt/Xilinx/Vitis/2021.1/bin/unwrapped/lnx64.o/v++ --xp param:compiler.lockFlowCritSlackThreshold=0 --xp vivado_param:hd.routingContainmentAreaExpansion=true --xp vivado_param:hd.supportClockNetCrossDiffReconfigurablePartitions=1 --xp vivado_param:bitstream.enablePR=4123 --xp vivado_param:physynth.ultraRAMOptOutput=false --xp vivado_prop:run.__KERNEL__.{STEPS.SYNTH_DESIGN.ARGS.MAX_URAM_CASCADE_HEIGHT}={1} --xp vivado_param:synth.elaboration.rodinMoreOptions={rt::set_parameter disableOregPackingUram true}  --vivado.prop \"run.__KERNEL__.{STEPS.SYNTH_DESIGN.ARGS.MORE OPTIONS}={-directive sdx_optimization_effort_high}\" --advanced.misc \"report=type report_timing_summary name impl_report_timing_summary_route_design_summary steps {route_design} runs {impl_1} options {-max_paths 10}\" --advanced.misc \"report=type report_timing_summary name impl_report_timing_summary_post_route_phys_opt_design_summary steps {post_route_phys_opt_design} runs {impl_1} options {-max_paths 10}\" --target sw_emu --link --config krnl_cvt_color-link.cfg -okrnl_cvt_color.xclbin ../../color_kernels/Emulation-SW/build/cvtcolor_bgr2gray.xo ",
+  "args": [
+   "--xp",
+   "param:compiler.lockFlowCritSlackThreshold=0",
+   "--xp",
+   "vivado_param:hd.routingContainmentAreaExpansion=true",
+   "--xp",
+   "vivado_param:hd.supportClockNetCrossDiffReconfigurablePartitions=1",
+   "--xp",
+   "vivado_param:bitstream.enablePR=4123",
+   "--xp",
+   "vivado_param:physynth.ultraRAMOptOutput=false",
+   "--xp",
+   "vivado_prop:run.__KERNEL__.{STEPS.SYNTH_DESIGN.ARGS.MAX_URAM_CASCADE_HEIGHT}={1}",
+   "--xp",
+   "vivado_param:synth.elaboration.rodinMoreOptions={rt::set_parameter disableOregPackingUram true}",
+   "--target",
+   "sw_emu",
+   "--link",
+   "--config",
+   "krnl_cvt_color-link.cfg",
+   "-okrnl_cvt_color.xclbin",
+   "../../color_kernels/Emulation-SW/build/cvtcolor_bgr2gray.xo"
+  ],
+  "iniFiles": [
+   {
+    "path": "/home/centos/Documents/project/color_system_hw_link/Emulation-SW/krnl_cvt_color-link.cfg",
+    "content": "platform=/home/centos/aws-fpga/Vitis/aws_platform/xilinx_aws-vu9p-f1_shell-v04261818_201920_2/xilinx_aws-vu9p-f1_shell-v04261818_201920_2.xpfm\nsave-temps=1\ndebug=1\nmessageDb=krnl_cvt_color.mdb\ntemp_dir=krnl_cvt_color.build\nreport_dir=krnl_cvt_color.build/reports\nlog_dir=krnl_cvt_color.build/logs\nremote_ip_cache=/home/centos/Documents/project/ip_cache\n\n[advanced]\nmisc=solution_name=link\n\n[connectivity]\nnk=cvtcolor_bgr2gray:1:cvtcolor_bgr2gray_1"
+   }
+  ],
+  "cwd": "/home/centos/Documents/project/color_system_hw_link/Emulation-SW"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Thu Jan 27 14:59:15 2022",
+ "timestampMillis": "1643295555943",
+ "status": {
+  "cmdId": "fc19e152-f81d-4ce8-a76b-6c77996bae83",
+  "state": "CS_RUNNING"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_FlowMetaData",
+ "dateTimestamp": "Thu Jan 27 14:59:21 2022",
+ "timestampMillis": "1643295561829",
+ "buildSummary": {
+  "hardwarePlatform": "xilinx_aws-vu9p-f1_shell-v04261818_201920_2.xpfm",
+  "hardwareDsa": "xilinx_aws-vu9p-f1_shell-v04261818_201920_2.xsa",
+  "platformDirectory": "/home/centos/aws-fpga/Vitis/aws_platform/xilinx_aws-vu9p-f1_shell-v04261818_201920_2",
+  "runtime": "OpenCL",
+  "systemConfig": "Linux",
+  "flow": "BF_LINK",
+  "target": "TT_SW_EMU",
+  "binaryContainer": {
+   "base": {
+    "type": "BT_UKNOWN",
+    "name": "krnl_cvt_color",
+    "file": "/home/centos/Documents/project/color_system_hw_link/Emulation-SW/krnl_cvt_color.xclbin",
+    "reports": [],
+    "uuid": ""
+   },
+   "kernels": []
+  },
+  "kernels": [
+   {
+    "base": {
+     "type": "KERNEL",
+     "name": "cvtcolor_bgr2gray",
+     "file": "/home/centos/Documents/project/color_kernels/Emulation-SW/build/cvtcolor_bgr2gray.xo",
+     "reports": [],
+     "uuid": ""
+    },
+    "sources": [
+     "/home/centos/Documents/project/color_system_hw_link/Emulation-SW/krnl_cvt_color.build/link/int/xo/cvtcolor_bgr2gray/cvtcolor_bgr2gray/cpu_sources/xf_cvt_color_accel.cpp"
+    ],
+    "psSources": [],
+    "cuNames": [
+     "cvtcolor_bgr2gray_1"
+    ],
+    "type": "HLS",
+    "frequency": 0,
+    "freqUnits": ""
+   }
+  ],
+  "toolVersion": "Vitis V++ Compiler Release 2021.1. SW Build 3246112 on 2021-06-09-14:19:56"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_SubCmdStep",
+ "dateTimestamp": "Thu Jan 27 14:59:21 2022",
+ "timestampMillis": "1643295561834",
+ "buildStep": {
+  "cmdId": "dcaf7b97-b4d4-4ec8-94c0-28ffea2afff2",
+  "name": "regiongen",
+  "logFile": "/home/centos/Documents/project/color_system_hw_link/Emulation-SW/krnl_cvt_color.build/link/int/krnl_cvt_color_regiongen.log",
+  "commandLine": "/opt/Xilinx/Vitis/2021.1/bin/../runtime/bin/regiongen_new -v -m /home/centos/Documents/project/color_system_hw_link/Emulation-SW/krnl_cvt_color.build/link/int/krnl_cvt_color.xml -t alg -o xcl_top",
+  "args": [
+   "-v",
+   "-m",
+   "/home/centos/Documents/project/color_system_hw_link/Emulation-SW/krnl_cvt_color.build/link/int/krnl_cvt_color.xml",
+   "-t",
+   "alg",
+   "-o",
+   "xcl_top"
+  ],
+  "iniFiles": [],
+  "cwd": "/home/centos/Documents/project/color_system_hw_link/Emulation-SW"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Thu Jan 27 14:59:21 2022",
+ "timestampMillis": "1643295561834",
+ "status": {
+  "cmdId": "dcaf7b97-b4d4-4ec8-94c0-28ffea2afff2",
+  "state": "CS_RUNNING"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Thu Jan 27 14:59:23 2022",
+ "timestampMillis": "1643295563782",
+ "status": {
+  "cmdId": "dcaf7b97-b4d4-4ec8-94c0-28ffea2afff2",
+  "state": "CS_PASSED"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_SubCmdStep",
+ "dateTimestamp": "Thu Jan 27 14:59:23 2022",
+ "timestampMillis": "1643295563784",
+ "buildStep": {
+  "cmdId": "6f70231a-832a-4490-b273-3b85f89e09e5",
+  "name": "gcc",
+  "logFile": "/home/centos/Documents/project/color_system_hw_link/Emulation-SW/krnl_cvt_color.build/link/int/cvtcolor_bgr2gray/cvtcolor_bgr2gray_kernel_gcc.log",
+  "commandLine": "/opt/Xilinx/Vivado/2021.1/tps/lnx64/gcc-6.2.0/bin/gcc -I . -I /opt/Xilinx/Vitis_HLS/2021.1/bin/../include -I /opt/Xilinx/Vitis_HLS/2021.1/bin/../lnx64/tools/auto_cc/include -I /opt/Xilinx/Vitis_HLS/2021.1/bin/../common/technology/autopilot/opencl -I /opt/Xilinx/Vitis/2021.1/bin/../common/technology/autopilot/opencl -std=c++14 -g -I /home/centos/Documents/project/color_kernels/src -I /home/centos/Documents/project/color_kernels/libs/xf_opencv/L1/include -I /home/centos/Documents/project/color_kernels/src/build -g -fPIC -g -c -DHLS_STREAM_THREAD_SAFE -MD -MT obj/xf_cvt_color_accel.o -MP -MF obj/xf_cvt_color_accel.Cd /home/centos/Documents/project/color_system_hw_link/Emulation-SW/krnl_cvt_color.build/link/int/xo/cvtcolor_bgr2gray/cvtcolor_bgr2gray/cpu_sources/xf_cvt_color_accel.cpp -o obj/xf_cvt_color_accel.o",
+  "args": [
+   "-I",
+   ".",
+   "-I",
+   "/opt/Xilinx/Vitis_HLS/2021.1/bin/../include",
+   "-I",
+   "/opt/Xilinx/Vitis_HLS/2021.1/bin/../lnx64/tools/auto_cc/include",
+   "-I",
+   "/opt/Xilinx/Vitis_HLS/2021.1/bin/../common/technology/autopilot/opencl",
+   "-I",
+   "/opt/Xilinx/Vitis/2021.1/bin/../common/technology/autopilot/opencl",
+   "-std=c++14",
+   "-g",
+   "-I",
+   "/home/centos/Documents/project/color_kernels/src",
+   "-I",
+   "/home/centos/Documents/project/color_kernels/libs/xf_opencv/L1/include",
+   "-I",
+   "/home/centos/Documents/project/color_kernels/src/build",
+   "-g",
+   "-fPIC",
+   "-g",
+   "-c",
+   "-DHLS_STREAM_THREAD_SAFE",
+   "-MD",
+   "-MT",
+   "obj/xf_cvt_color_accel.o",
+   "-MP",
+   "-MF",
+   "obj/xf_cvt_color_accel.Cd",
+   "/home/centos/Documents/project/color_system_hw_link/Emulation-SW/krnl_cvt_color.build/link/int/xo/cvtcolor_bgr2gray/cvtcolor_bgr2gray/cpu_sources/xf_cvt_color_accel.cpp",
+   "-o",
+   "obj/xf_cvt_color_accel.o"
+  ],
+  "iniFiles": [],
+  "cwd": "/home/centos/Documents/project/color_system_hw_link/Emulation-SW"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Thu Jan 27 14:59:23 2022",
+ "timestampMillis": "1643295563785",
+ "status": {
+  "cmdId": "6f70231a-832a-4490-b273-3b85f89e09e5",
+  "state": "CS_RUNNING"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Thu Jan 27 14:59:27 2022",
+ "timestampMillis": "1643295567709",
+ "status": {
+  "cmdId": "6f70231a-832a-4490-b273-3b85f89e09e5",
+  "state": "CS_PASSED"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_SubCmdStep",
+ "dateTimestamp": "Thu Jan 27 14:59:27 2022",
+ "timestampMillis": "1643295567711",
+ "buildStep": {
+  "cmdId": "6f275104-00ce-434d-a261-33d4877a26cc",
+  "name": "ar",
+  "logFile": "/home/centos/Documents/project/color_system_hw_link/Emulation-SW/krnl_cvt_color.build/link/int/cvtcolor_bgr2gray/cvtcolor_bgr2gray_ar.log",
+  "commandLine": "/opt/Xilinx/Vivado/2021.1/tps/lnx64/binutils-2.26/bin/ar -cr /home/centos/Documents/project/color_system_hw_link/Emulation-SW/krnl_cvt_color.build/link/int/cvtcolor_bgr2gray/cvtcolor_bgr2gray.csim_cu.a /home/centos/Documents/project/color_system_hw_link/Emulation-SW/krnl_cvt_color.build/link/int/cvtcolor_bgr2gray/obj/xf_cvt_color_accel.o",
+  "args": [
+   "-cr",
+   "/home/centos/Documents/project/color_system_hw_link/Emulation-SW/krnl_cvt_color.build/link/int/cvtcolor_bgr2gray/cvtcolor_bgr2gray.csim_cu.a",
+   "/home/centos/Documents/project/color_system_hw_link/Emulation-SW/krnl_cvt_color.build/link/int/cvtcolor_bgr2gray/obj/xf_cvt_color_accel.o"
+  ],
+  "iniFiles": [],
+  "cwd": "/home/centos/Documents/project/color_system_hw_link/Emulation-SW"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Thu Jan 27 14:59:27 2022",
+ "timestampMillis": "1643295567711",
+ "status": {
+  "cmdId": "6f275104-00ce-434d-a261-33d4877a26cc",
+  "state": "CS_RUNNING"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Thu Jan 27 14:59:27 2022",
+ "timestampMillis": "1643295567729",
+ "status": {
+  "cmdId": "6f275104-00ce-434d-a261-33d4877a26cc",
+  "state": "CS_PASSED"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_SubCmdStep",
+ "dateTimestamp": "Thu Jan 27 14:59:27 2022",
+ "timestampMillis": "1643295567730",
+ "buildStep": {
+  "cmdId": "b66f445c-7704-4c94-aa92-6f9126cec03b",
+  "name": "g++",
+  "logFile": "/home/centos/Documents/project/color_system_hw_link/Emulation-SW/krnl_cvt_color.build/link/int/krnl_cvt_color_xcl_top_gpp.log",
+  "commandLine": "/opt/Xilinx/Vivado/2021.1/tps/lnx64/gcc-6.2.0/bin/g++ -I . -I /opt/Xilinx/Vitis_HLS/2021.1/bin/../include -I /opt/Xilinx/Vitis_HLS/2021.1/bin/../common/technology/autopilot/opencl -I /opt/Xilinx/Vitis/2021.1/bin/../common/technology/autopilot/opencl -I /opt/Xilinx/Vitis/2021.1/bin/../data/emulation/include -I /opt/Xilinx/Vitis_HLS/2021.1/bin/../lnx64/tools/auto_cc/include -fPIC -g -DHLS_STREAM_THREAD_SAFE -std=c++14 -fpermissive -c -MD -MT obj/xcl_top.o -MP -MF obj/xcl_top.CXXd xcl_top.cpp -o obj/xcl_top.o",
+  "args": [
+   "-I",
+   ".",
+   "-I",
+   "/opt/Xilinx/Vitis_HLS/2021.1/bin/../include",
+   "-I",
+   "/opt/Xilinx/Vitis_HLS/2021.1/bin/../common/technology/autopilot/opencl",
+   "-I",
+   "/opt/Xilinx/Vitis/2021.1/bin/../common/technology/autopilot/opencl",
+   "-I",
+   "/opt/Xilinx/Vitis/2021.1/bin/../data/emulation/include",
+   "-I",
+   "/opt/Xilinx/Vitis_HLS/2021.1/bin/../lnx64/tools/auto_cc/include",
+   "-fPIC",
+   "-g",
+   "-DHLS_STREAM_THREAD_SAFE",
+   "-std=c++14",
+   "-fpermissive",
+   "-c",
+   "-MD",
+   "-MT",
+   "obj/xcl_top.o",
+   "-MP",
+   "-MF",
+   "obj/xcl_top.CXXd",
+   "xcl_top.cpp",
+   "-o",
+   "obj/xcl_top.o"
+  ],
+  "iniFiles": [],
+  "cwd": "/home/centos/Documents/project/color_system_hw_link/Emulation-SW"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Thu Jan 27 14:59:27 2022",
+ "timestampMillis": "1643295567731",
+ "status": {
+  "cmdId": "b66f445c-7704-4c94-aa92-6f9126cec03b",
+  "state": "CS_RUNNING"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Thu Jan 27 14:59:29 2022",
+ "timestampMillis": "1643295569304",
+ "status": {
+  "cmdId": "b66f445c-7704-4c94-aa92-6f9126cec03b",
+  "state": "CS_PASSED"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_SubCmdStep",
+ "dateTimestamp": "Thu Jan 27 14:59:29 2022",
+ "timestampMillis": "1643295569305",
+ "buildStep": {
+  "cmdId": "8dc55fa4-63dc-4708-bd3d-08a1cb72f98f",
+  "name": "g++",
+  "logFile": "/home/centos/Documents/project/color_system_hw_link/Emulation-SW/krnl_cvt_color.build/link/int/krnl_cvt_color_top_gpp.log",
+  "commandLine": "/opt/Xilinx/Vivado/2021.1/tps/lnx64/gcc-6.2.0/bin/g++ -fPIC -DHLS_STREAM_THREAD_SAFE -std=c++14 -Wall -shared -Wl,--whole-archive,-soname,krnl_cvt_color.so -o krnl_cvt_color.so cvtcolor_bgr2gray/cvtcolor_bgr2gray.csim_cu.a obj/xcl_top.o -Wl,--no-whole-archive -Wl,--as-needed -L /opt/Xilinx/Vitis_HLS/2021.1/bin/../lib/lnx64.o -lhlsmathsim -L /opt/Xilinx/Vitis_HLS/2021.1/bin/../lnx64/tools/fpo_v7_0 -lgmp -lmpfr -lIp_floating_point_v7_0_bitacc_cmodel -Wl,-rpath,/opt/Xilinx/Vitis_HLS/2021.1/bin/../lnx64/tools/fpo_v7_0 -L /opt/Xilinx/Vitis_HLS/2021.1/bin/../lnx64/tools/fft_v9_1 -lIp_xfft_v9_1_bitacc_cmodel -L /opt/Xilinx/Vitis_HLS/2021.1/bin/../lnx64/tools/fir_v7_0 -lgmp -lIp_fir_compiler_v7_2_bitacc_cmodel -L /opt/Xilinx/Vitis_HLS/2021.1/bin/../lnx64/lib/csim -lhlsmc++-GCC46 -L /opt/Xilinx/Vivado/2021.1/tps/lnx64/gcc-6.2.0/bin/../lib/gcc/x86_64-pc-linux-gnu/6.2.0/ -lgcov",
+  "args": [
+   "-fPIC",
+   "-DHLS_STREAM_THREAD_SAFE",
+   "-std=c++14",
+   "-Wall",
+   "-shared",
+   "-Wl,--whole-archive,-soname,krnl_cvt_color.so",
+   "-o",
+   "krnl_cvt_color.so",
+   "cvtcolor_bgr2gray/cvtcolor_bgr2gray.csim_cu.a",
+   "obj/xcl_top.o",
+   "-Wl,--no-whole-archive",
+   "-Wl,--as-needed",
+   "-L",
+   "/opt/Xilinx/Vitis_HLS/2021.1/bin/../lib/lnx64.o",
+   "-lhlsmathsim",
+   "-L",
+   "/opt/Xilinx/Vitis_HLS/2021.1/bin/../lnx64/tools/fpo_v7_0",
+   "-lgmp",
+   "-lmpfr",
+   "-lIp_floating_point_v7_0_bitacc_cmodel",
+   "-Wl,-rpath,/opt/Xilinx/Vitis_HLS/2021.1/bin/../lnx64/tools/fpo_v7_0",
+   "-L",
+   "/opt/Xilinx/Vitis_HLS/2021.1/bin/../lnx64/tools/fft_v9_1",
+   "-lIp_xfft_v9_1_bitacc_cmodel",
+   "-L",
+   "/opt/Xilinx/Vitis_HLS/2021.1/bin/../lnx64/tools/fir_v7_0",
+   "-lgmp",
+   "-lIp_fir_compiler_v7_2_bitacc_cmodel",
+   "-L",
+   "/opt/Xilinx/Vitis_HLS/2021.1/bin/../lnx64/lib/csim",
+   "-lhlsmc++-GCC46",
+   "-L",
+   "/opt/Xilinx/Vivado/2021.1/tps/lnx64/gcc-6.2.0/bin/../lib/gcc/x86_64-pc-linux-gnu/6.2.0/",
+   "-lgcov"
+  ],
+  "iniFiles": [],
+  "cwd": "/home/centos/Documents/project/color_system_hw_link/Emulation-SW"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Thu Jan 27 14:59:29 2022",
+ "timestampMillis": "1643295569305",
+ "status": {
+  "cmdId": "8dc55fa4-63dc-4708-bd3d-08a1cb72f98f",
+  "state": "CS_RUNNING"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Thu Jan 27 14:59:29 2022",
+ "timestampMillis": "1643295569461",
+ "status": {
+  "cmdId": "8dc55fa4-63dc-4708-bd3d-08a1cb72f98f",
+  "state": "CS_PASSED"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Thu Jan 27 14:59:29 2022",
+ "timestampMillis": "1643295569650",
+ "report": {
+  "path": "/home/centos/Documents/project/color_system_hw_link/Emulation-SW/krnl_cvt_color.build/link/int/krnl_cvt_color_xml.rtd",
+  "name": "",
+  "fileType": "JSON",
+  "reportType": "XCLBIN_INFO",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_SubCmdStep",
+ "dateTimestamp": "Thu Jan 27 14:59:29 2022",
+ "timestampMillis": "1643295569652",
+ "buildStep": {
+  "cmdId": "a929818c-bcf3-45e4-b7b9-a86fb1eb3dce",
+  "name": "xclbinutil",
+  "logFile": "/home/centos/Documents/project/color_system_hw_link/Emulation-SW/krnl_cvt_color.build/link/int/krnl_cvt_color_xclbinutil.log",
+  "commandLine": "/opt/Xilinx/Vitis/2021.1/bin/xclbinutil --add-section BITSTREAM:RAW:/home/centos/Documents/project/color_system_hw_link/Emulation-SW/krnl_cvt_color.build/link/int/krnl_cvt_color.so --force --target sw_emu --add-section :JSON:/home/centos/Documents/project/color_system_hw_link/Emulation-SW/krnl_cvt_color.build/link/int/krnl_cvt_color.rtd --append-section :JSON:/home/centos/Documents/project/color_system_hw_link/Emulation-SW/krnl_cvt_color.build/link/int/appendSection.rtd --add-section CLOCK_FREQ_TOPOLOGY:JSON:/home/centos/Documents/project/color_system_hw_link/Emulation-SW/krnl_cvt_color.build/link/int/krnl_cvt_color_xml.rtd --add-section BUILD_METADATA:JSON:/home/centos/Documents/project/color_system_hw_link/Emulation-SW/krnl_cvt_color.build/link/int/krnl_cvt_color_build.rtd --add-section EMBEDDED_METADATA:RAW:/home/centos/Documents/project/color_system_hw_link/Emulation-SW/krnl_cvt_color.build/link/int/krnl_cvt_color.xml --add-section DEBUG_DATA:RAW:/dev/null --output /home/centos/Documents/project/color_system_hw_link/Emulation-SW/krnl_cvt_color.xclbin",
+  "args": [
+   "--add-section",
+   "BITSTREAM:RAW:/home/centos/Documents/project/color_system_hw_link/Emulation-SW/krnl_cvt_color.build/link/int/krnl_cvt_color.so",
+   "--force",
+   "--target",
+   "sw_emu",
+   "--add-section",
+   ":JSON:/home/centos/Documents/project/color_system_hw_link/Emulation-SW/krnl_cvt_color.build/link/int/krnl_cvt_color.rtd",
+   "--append-section",
+   ":JSON:/home/centos/Documents/project/color_system_hw_link/Emulation-SW/krnl_cvt_color.build/link/int/appendSection.rtd",
+   "--add-section",
+   "CLOCK_FREQ_TOPOLOGY:JSON:/home/centos/Documents/project/color_system_hw_link/Emulation-SW/krnl_cvt_color.build/link/int/krnl_cvt_color_xml.rtd",
+   "--add-section",
+   "BUILD_METADATA:JSON:/home/centos/Documents/project/color_system_hw_link/Emulation-SW/krnl_cvt_color.build/link/int/krnl_cvt_color_build.rtd",
+   "--add-section",
+   "EMBEDDED_METADATA:RAW:/home/centos/Documents/project/color_system_hw_link/Emulation-SW/krnl_cvt_color.build/link/int/krnl_cvt_color.xml",
+   "--add-section",
+   "DEBUG_DATA:RAW:/dev/null",
+   "--output",
+   "/home/centos/Documents/project/color_system_hw_link/Emulation-SW/krnl_cvt_color.xclbin"
+  ],
+  "iniFiles": [],
+  "cwd": "/home/centos/Documents/project/color_system_hw_link/Emulation-SW"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Thu Jan 27 14:59:29 2022",
+ "timestampMillis": "1643295569653",
+ "status": {
+  "cmdId": "a929818c-bcf3-45e4-b7b9-a86fb1eb3dce",
+  "state": "CS_RUNNING"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Thu Jan 27 14:59:29 2022",
+ "timestampMillis": "1643295569752",
+ "status": {
+  "cmdId": "a929818c-bcf3-45e4-b7b9-a86fb1eb3dce",
+  "state": "CS_PASSED"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_SubCmdStep",
+ "dateTimestamp": "Thu Jan 27 14:59:29 2022",
+ "timestampMillis": "1643295569753",
+ "buildStep": {
+  "cmdId": "1bd51749-7390-4775-89a2-db22e960067e",
+  "name": "xclbinutil",
+  "logFile": "/home/centos/Documents/project/color_system_hw_link/Emulation-SW/krnl_cvt_color.xclbin.info",
+  "commandLine": "/opt/Xilinx/Vitis/2021.1/bin/xclbinutil --quiet --info --input /home/centos/Documents/project/color_system_hw_link/Emulation-SW/krnl_cvt_color.xclbin",
+  "args": [
+   "--quiet",
+   "--info",
+   "--input",
+   "/home/centos/Documents/project/color_system_hw_link/Emulation-SW/krnl_cvt_color.xclbin"
+  ],
+  "iniFiles": [],
+  "cwd": "/home/centos/Documents/project/color_system_hw_link/Emulation-SW"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Thu Jan 27 14:59:29 2022",
+ "timestampMillis": "1643295569753",
+ "status": {
+  "cmdId": "1bd51749-7390-4775-89a2-db22e960067e",
+  "state": "CS_RUNNING"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Thu Jan 27 14:59:29 2022",
+ "timestampMillis": "1643295569860",
+ "status": {
+  "cmdId": "1bd51749-7390-4775-89a2-db22e960067e",
+  "state": "CS_PASSED"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Thu Jan 27 14:59:29 2022",
+ "timestampMillis": "1643295569865",
+ "report": {
+  "path": "/home/centos/Documents/project/color_system_hw_link/Emulation-SW/guidance.html",
+  "name": "",
+  "fileType": "HTML",
+  "reportType": "GLOBAL_RULECHECK_GUIDANCE",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Thu Jan 27 14:59:29 2022",
+ "timestampMillis": "1643295569865",
+ "report": {
+  "path": "/home/centos/Documents/project/color_system_hw_link/Emulation-SW/guidance.pb",
+  "name": "",
+  "fileType": "BINARY_PROTOBUF",
+  "reportType": "GLOBAL_RULECHECK_GUIDANCE",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Thu Jan 27 14:59:29 2022",
+ "timestampMillis": "1643295569866",
+ "report": {
+  "path": "/home/centos/Documents/project/color_system_hw_link/Emulation-SW/krnl_cvt_color.build/logs/optraceViewer.html",
+  "name": "",
+  "fileType": "HTML",
+  "reportType": "OPERATION_TRACE",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Thu Jan 27 14:59:29 2022",
+ "timestampMillis": "1643295569867",
+ "status": {
+  "cmdId": "fc19e152-f81d-4ce8-a76b-6c77996bae83",
+  "state": "CS_PASSED"
+ }
+}
+</ENTRY>

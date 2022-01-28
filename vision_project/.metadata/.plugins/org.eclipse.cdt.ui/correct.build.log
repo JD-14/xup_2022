@@ -1,0 +1,312 @@
+11:33:15 **** Incremental Build of configuration Emulation-SW for project correct ****
+make -j8 all 
+g++ -std=c++1y -DVITIS_PLATFORM=xilinx_aws-vu9p-f1_shell-v04261818_201920_2 -D__USE_XOPEN2K8 -I/home/centos/Documents/vision_project/correct/libs/xf_opencv/ext/xcl2 -I/home/centos/Documents/vision_project/correct/libs/xf_opencv/L1/include -I/usr/include/opencv -I/home/centos/Documents/vision_project/correct/src/build -I/opt/xilinx/xrt/include/ -I/opt/Xilinx/Vivado/2021.1/include/ -O0 -g -Wall -O3 -c -fmessage-length=0 -o "src/xf_convertbitdepth_tb.o" "../src/xf_convertbitdepth_tb.cpp"
+In file included from /home/centos/Documents/vision_project/correct/libs/xf_opencv/L1/include/common/xf_common.hpp:20:0,
+                 from /home/centos/Documents/vision_project/correct/libs/xf_opencv/L1/include/common/xf_sw_utils.hpp:20,
+                 from /home/centos/Documents/vision_project/correct/libs/xf_opencv/L1/include/common/xf_headers.hpp:28,
+                 from ../src/xf_convertbitdepth_tb.cpp:17:
+/home/centos/Documents/vision_project/correct/libs/xf_opencv/L1/include/common/xf_structs.hpp:234:0: warning: ignoring #pragma HLS INLINE [-Wunknown-pragmas]
+ #pragma HLS INLINE
+ ^
+/home/centos/Documents/vision_project/correct/libs/xf_opencv/L1/include/common/xf_structs.hpp:235:0: warning: ignoring #pragma HLS ARRAY_PARTITION [-Wunknown-pragmas]
+ #pragma HLS ARRAY_PARTITION variable=val dim=1 complete
+ ^
+/home/centos/Documents/vision_project/correct/libs/xf_opencv/L1/include/common/xf_structs.hpp:241:0: warning: ignoring #pragma HLS INLINE [-Wunknown-pragmas]
+ #pragma HLS INLINE
+ ^
+/home/centos/Documents/vision_project/correct/libs/xf_opencv/L1/include/common/xf_structs.hpp:242:0: warning: ignoring #pragma HLS ARRAY_PARTITION [-Wunknown-pragmas]
+ #pragma HLS ARRAY_PARTITION variable=val dim=1 complete
+ ^
+/home/centos/Documents/vision_project/correct/libs/xf_opencv/L1/include/common/xf_structs.hpp:249:0: warning: ignoring #pragma HLS ARRAY_PARTITION [-Wunknown-pragmas]
+ #pragma HLS ARRAY_PARTITION variable=val dim=1 complete
+ ^
+/home/centos/Documents/vision_project/correct/libs/xf_opencv/L1/include/common/xf_structs.hpp:250:0: warning: ignoring #pragma HLS INLINE [-Wunknown-pragmas]
+ #pragma HLS INLINE
+ ^
+/home/centos/Documents/vision_project/correct/libs/xf_opencv/L1/include/common/xf_structs.hpp:258:0: warning: ignoring #pragma HLS ARRAY_PARTITION [-Wunknown-pragmas]
+ #pragma HLS ARRAY_PARTITION variable=val dim=1 complete
+ ^
+/home/centos/Documents/vision_project/correct/libs/xf_opencv/L1/include/common/xf_structs.hpp:259:0: warning: ignoring #pragma HLS INLINE [-Wunknown-pragmas]
+ #pragma HLS INLINE
+ ^
+/home/centos/Documents/vision_project/correct/libs/xf_opencv/L1/include/common/xf_structs.hpp:268:0: warning: ignoring #pragma HLS ARRAY_PARTITION [-Wunknown-pragmas]
+ #pragma HLS ARRAY_PARTITION variable=val dim=1 complete
+ ^
+/home/centos/Documents/vision_project/correct/libs/xf_opencv/L1/include/common/xf_structs.hpp:269:0: warning: ignoring #pragma HLS INLINE [-Wunknown-pragmas]
+ #pragma HLS INLINE
+ ^
+/home/centos/Documents/vision_project/correct/libs/xf_opencv/L1/include/common/xf_structs.hpp:294:0: warning: ignoring #pragma HLS inline [-Wunknown-pragmas]
+ #pragma HLS inline
+ ^
+/home/centos/Documents/vision_project/correct/libs/xf_opencv/L1/include/common/xf_structs.hpp:298:0: warning: ignoring #pragma HLS unroll [-Wunknown-pragmas]
+ #pragma HLS unroll
+ ^
+/home/centos/Documents/vision_project/correct/libs/xf_opencv/L1/include/common/xf_structs.hpp:307:0: warning: ignoring #pragma HLS inline [-Wunknown-pragmas]
+ #pragma HLS inline
+ ^
+/home/centos/Documents/vision_project/correct/libs/xf_opencv/L1/include/common/xf_structs.hpp:312:0: warning: ignoring #pragma HLS unroll [-Wunknown-pragmas]
+ #pragma HLS unroll
+ ^
+/home/centos/Documents/vision_project/correct/libs/xf_opencv/L1/include/common/xf_structs.hpp:322:0: warning: ignoring #pragma HLS inline [-Wunknown-pragmas]
+ #pragma HLS inline
+ ^
+/home/centos/Documents/vision_project/correct/libs/xf_opencv/L1/include/common/xf_structs.hpp:327:0: warning: ignoring #pragma HLS unroll [-Wunknown-pragmas]
+ #pragma HLS unroll
+ ^
+/home/centos/Documents/vision_project/correct/libs/xf_opencv/L1/include/common/xf_structs.hpp:337:0: warning: ignoring #pragma HLS inline [-Wunknown-pragmas]
+ #pragma HLS inline
+ ^
+/home/centos/Documents/vision_project/correct/libs/xf_opencv/L1/include/common/xf_structs.hpp:342:0: warning: ignoring #pragma HLS unroll [-Wunknown-pragmas]
+ #pragma HLS unroll
+ ^
+/home/centos/Documents/vision_project/correct/libs/xf_opencv/L1/include/common/xf_structs.hpp:352:0: warning: ignoring #pragma HLS inline [-Wunknown-pragmas]
+ #pragma HLS inline
+ ^
+/home/centos/Documents/vision_project/correct/libs/xf_opencv/L1/include/common/xf_structs.hpp:357:0: warning: ignoring #pragma HLS unroll [-Wunknown-pragmas]
+ #pragma HLS unroll
+ ^
+/home/centos/Documents/vision_project/correct/libs/xf_opencv/L1/include/common/xf_structs.hpp:367:0: warning: ignoring #pragma HLS inline [-Wunknown-pragmas]
+ #pragma HLS inline
+ ^
+/home/centos/Documents/vision_project/correct/libs/xf_opencv/L1/include/common/xf_structs.hpp:372:0: warning: ignoring #pragma HLS unroll [-Wunknown-pragmas]
+ #pragma HLS unroll
+ ^
+/home/centos/Documents/vision_project/correct/libs/xf_opencv/L1/include/common/xf_structs.hpp:382:0: warning: ignoring #pragma HLS inline [-Wunknown-pragmas]
+ #pragma HLS inline
+ ^
+/home/centos/Documents/vision_project/correct/libs/xf_opencv/L1/include/common/xf_structs.hpp:387:0: warning: ignoring #pragma HLS unroll [-Wunknown-pragmas]
+ #pragma HLS unroll
+ ^
+/home/centos/Documents/vision_project/correct/libs/xf_opencv/L1/include/common/xf_structs.hpp:397:0: warning: ignoring #pragma HLS inline [-Wunknown-pragmas]
+ #pragma HLS inline
+ ^
+/home/centos/Documents/vision_project/correct/libs/xf_opencv/L1/include/common/xf_structs.hpp:402:0: warning: ignoring #pragma HLS unroll [-Wunknown-pragmas]
+ #pragma HLS unroll
+ ^
+/home/centos/Documents/vision_project/correct/libs/xf_opencv/L1/include/common/xf_structs.hpp:412:0: warning: ignoring #pragma HLS inline [-Wunknown-pragmas]
+ #pragma HLS inline
+ ^
+/home/centos/Documents/vision_project/correct/libs/xf_opencv/L1/include/common/xf_structs.hpp:417:0: warning: ignoring #pragma HLS unroll [-Wunknown-pragmas]
+ #pragma HLS unroll
+ ^
+/home/centos/Documents/vision_project/correct/libs/xf_opencv/L1/include/common/xf_structs.hpp:573:0: warning: ignoring #pragma HLS inline [-Wunknown-pragmas]
+ #pragma HLS inline
+ ^
+/home/centos/Documents/vision_project/correct/libs/xf_opencv/L1/include/common/xf_structs.hpp:581:0: warning: ignoring #pragma HLS inline [-Wunknown-pragmas]
+ #pragma HLS inline
+ ^
+/home/centos/Documents/vision_project/correct/libs/xf_opencv/L1/include/common/xf_structs.hpp:588:0: warning: ignoring #pragma HLS inline [-Wunknown-pragmas]
+ #pragma HLS inline
+ ^
+/home/centos/Documents/vision_project/correct/libs/xf_opencv/L1/include/common/xf_structs.hpp:596:0: warning: ignoring #pragma HLS inline [-Wunknown-pragmas]
+ #pragma HLS inline
+ ^
+/home/centos/Documents/vision_project/correct/libs/xf_opencv/L1/include/common/xf_structs.hpp:642:0: warning: ignoring #pragma HLS inline [-Wunknown-pragmas]
+ #pragma HLS inline
+ ^
+/home/centos/Documents/vision_project/correct/libs/xf_opencv/L1/include/common/xf_structs.hpp:651:0: warning: ignoring #pragma HLS inline [-Wunknown-pragmas]
+ #pragma HLS inline
+ ^
+/home/centos/Documents/vision_project/correct/libs/xf_opencv/L1/include/common/xf_structs.hpp:660:0: warning: ignoring #pragma HLS inline [-Wunknown-pragmas]
+ #pragma HLS inline
+ ^
+/home/centos/Documents/vision_project/correct/libs/xf_opencv/L1/include/common/xf_structs.hpp:669:0: warning: ignoring #pragma HLS inline [-Wunknown-pragmas]
+ #pragma HLS inline
+ ^
+/home/centos/Documents/vision_project/correct/libs/xf_opencv/L1/include/common/xf_structs.hpp:696:0: warning: ignoring #pragma HLS inline [-Wunknown-pragmas]
+ #pragma HLS inline
+ ^
+/home/centos/Documents/vision_project/correct/libs/xf_opencv/L1/include/common/xf_structs.hpp:730:0: warning: ignoring #pragma HLS inline [-Wunknown-pragmas]
+ #pragma HLS inline
+ ^
+/home/centos/Documents/vision_project/correct/libs/xf_opencv/L1/include/common/xf_structs.hpp:954:0: warning: ignoring #pragma HLS LOOP_TRIPCOUNT [-Wunknown-pragmas]
+ #pragma HLS LOOP_TRIPCOUNT min=1 max=ADDRBOUND
+ ^
+/home/centos/Documents/vision_project/correct/libs/xf_opencv/L1/include/common/xf_structs.hpp:955:0: warning: ignoring #pragma HLS PIPELINE [-Wunknown-pragmas]
+ #pragma HLS PIPELINE
+ ^
+/home/centos/Documents/vision_project/correct/libs/xf_opencv/L1/include/common/xf_structs.hpp:968:0: warning: ignoring #pragma HLS LOOP_TRIPCOUNT [-Wunknown-pragmas]
+ #pragma HLS LOOP_TRIPCOUNT min=1 max=ADDRBOUND
+ ^
+/home/centos/Documents/vision_project/correct/libs/xf_opencv/L1/include/common/xf_structs.hpp:969:0: warning: ignoring #pragma HLS PIPELINE [-Wunknown-pragmas]
+ #pragma HLS PIPELINE
+ ^
+/home/centos/Documents/vision_project/correct/libs/xf_opencv/L1/include/common/xf_structs.hpp:1003:0: warning: ignoring #pragma HLS LOOP_TRIPCOUNT [-Wunknown-pragmas]
+ #pragma HLS LOOP_TRIPCOUNT min=1 max=LOOPBOUND
+ ^
+/home/centos/Documents/vision_project/correct/libs/xf_opencv/L1/include/common/xf_structs.hpp:1004:0: warning: ignoring #pragma HLS PIPELINE [-Wunknown-pragmas]
+ #pragma HLS PIPELINE
+ ^
+/home/centos/Documents/vision_project/correct/libs/xf_opencv/L1/include/common/xf_structs.hpp:1047:0: warning: ignoring #pragma HLS LOOP_TRIPCOUNT [-Wunknown-pragmas]
+ #pragma HLS LOOP_TRIPCOUNT min=1 max=LOOPBOUND
+ ^
+/home/centos/Documents/vision_project/correct/libs/xf_opencv/L1/include/common/xf_structs.hpp:1048:0: warning: ignoring #pragma HLS PIPELINE [-Wunknown-pragmas]
+ #pragma HLS PIPELINE
+ ^
+/home/centos/Documents/vision_project/correct/libs/xf_opencv/L1/include/common/xf_structs.hpp:1060:0: warning: ignoring #pragma HLS DATAFLOW [-Wunknown-pragmas]
+ #pragma HLS DATAFLOW
+ ^
+/home/centos/Documents/vision_project/correct/libs/xf_opencv/L1/include/common/xf_structs.hpp:1073:0: warning: ignoring #pragma HLS DATAFLOW [-Wunknown-pragmas]
+ #pragma HLS DATAFLOW
+ ^
+/home/centos/Documents/vision_project/correct/libs/xf_opencv/L1/include/common/xf_structs.hpp:1088:0: warning: ignoring #pragma HLS DATAFLOW [-Wunknown-pragmas]
+ #pragma HLS DATAFLOW
+ ^
+/home/centos/Documents/vision_project/correct/libs/xf_opencv/L1/include/common/xf_structs.hpp:1108:0: warning: ignoring #pragma HLS DATAFLOW [-Wunknown-pragmas]
+ #pragma HLS DATAFLOW
+ ^
+/home/centos/Documents/vision_project/correct/libs/xf_opencv/L1/include/common/xf_structs.hpp:1120:0: warning: ignoring #pragma HLS DATAFLOW [-Wunknown-pragmas]
+ #pragma HLS DATAFLOW
+ ^
+/home/centos/Documents/vision_project/correct/libs/xf_opencv/L1/include/common/xf_structs.hpp:1140:0: warning: ignoring #pragma HLS DATAFLOW [-Wunknown-pragmas]
+ #pragma HLS DATAFLOW
+ ^
+/home/centos/Documents/vision_project/correct/libs/xf_opencv/L1/include/common/xf_structs.hpp:1214:0: warning: ignoring #pragma HLS LOOP_TRIPCOUNT [-Wunknown-pragmas]
+ #pragma HLS LOOP_TRIPCOUNT min=1 max=LOOPBOUND
+ ^
+/home/centos/Documents/vision_project/correct/libs/xf_opencv/L1/include/common/xf_structs.hpp:1215:0: warning: ignoring #pragma HLS PIPELINE [-Wunknown-pragmas]
+ #pragma HLS PIPELINE
+ ^
+/home/centos/Documents/vision_project/correct/libs/xf_opencv/L1/include/common/xf_structs.hpp:1244:0: warning: ignoring #pragma HLS LOOP_TRIPCOUNT [-Wunknown-pragmas]
+ #pragma HLS LOOP_TRIPCOUNT min=1 max=ROWS
+ ^
+/home/centos/Documents/vision_project/correct/libs/xf_opencv/L1/include/common/xf_structs.hpp:1249:0: warning: ignoring #pragma HLS LOOP_TRIPCOUNT [-Wunknown-pragmas]
+ #pragma HLS LOOP_TRIPCOUNT min=1 max=COLS_BOUND_PER_NPC
+ ^
+/home/centos/Documents/vision_project/correct/libs/xf_opencv/L1/include/common/xf_structs.hpp:1250:0: warning: ignoring #pragma HLS PIPELINE [-Wunknown-pragmas]
+ #pragma HLS PIPELINE
+ ^
+/home/centos/Documents/vision_project/correct/libs/xf_opencv/L1/include/common/xf_structs.hpp:1292:0: warning: ignoring #pragma HLS DATAFLOW [-Wunknown-pragmas]
+ #pragma HLS DATAFLOW
+ ^
+/home/centos/Documents/vision_project/correct/libs/xf_opencv/L1/include/common/xf_structs.hpp:1305:0: warning: ignoring #pragma HLS DATAFLOW [-Wunknown-pragmas]
+ #pragma HLS DATAFLOW
+ ^
+/home/centos/Documents/vision_project/correct/libs/xf_opencv/L1/include/common/xf_structs.hpp:1322:0: warning: ignoring #pragma HLS LOOP_TRIPCOUNT [-Wunknown-pragmas]
+ #pragma HLS LOOP_TRIPCOUNT min=1 max=ADDRBOUND
+ ^
+/home/centos/Documents/vision_project/correct/libs/xf_opencv/L1/include/common/xf_structs.hpp:1323:0: warning: ignoring #pragma HLS PIPELINE [-Wunknown-pragmas]
+ #pragma HLS PIPELINE
+ ^
+/home/centos/Documents/vision_project/correct/libs/xf_opencv/L1/include/common/xf_structs.hpp:1337:0: warning: ignoring #pragma HLS LOOP_TRIPCOUNT [-Wunknown-pragmas]
+ #pragma HLS LOOP_TRIPCOUNT min=1 max=ADDRBOUND
+ ^
+/home/centos/Documents/vision_project/correct/libs/xf_opencv/L1/include/common/xf_structs.hpp:1338:0: warning: ignoring #pragma HLS PIPELINE [-Wunknown-pragmas]
+ #pragma HLS PIPELINE
+ ^
+/home/centos/Documents/vision_project/correct/libs/xf_opencv/L1/include/common/xf_structs.hpp:1352:0: warning: ignoring #pragma HLS DATAFLOW [-Wunknown-pragmas]
+ #pragma HLS DATAFLOW
+ ^
+/home/centos/Documents/vision_project/correct/libs/xf_opencv/L1/include/common/xf_structs.hpp:1379:0: warning: ignoring #pragma HLS DATAFLOW [-Wunknown-pragmas]
+ #pragma HLS DATAFLOW
+ ^
+/home/centos/Documents/vision_project/correct/libs/xf_opencv/L1/include/common/xf_structs.hpp:1410:0: warning: ignoring #pragma HLS DATAFLOW [-Wunknown-pragmas]
+ #pragma HLS DATAFLOW
+ ^
+/home/centos/Documents/vision_project/correct/libs/xf_opencv/L1/include/common/xf_structs.hpp:1440:0: warning: ignoring #pragma HLS DATAFLOW [-Wunknown-pragmas]
+ #pragma HLS DATAFLOW
+ ^
+In file included from ../src/xf_convert_bitdepth_config.h:23:0,
+                 from ../src/xf_convertbitdepth_tb.cpp:19:
+/home/centos/Documents/vision_project/correct/libs/xf_opencv/L1/include/common/xf_utility.hpp:37:0: warning: ignoring #pragma HLS INLINE [-Wunknown-pragmas]
+     #pragma HLS INLINE
+ ^
+/home/centos/Documents/vision_project/correct/libs/xf_opencv/L1/include/common/xf_utility.hpp:43:0: warning: ignoring #pragma HLS unroll [-Wunknown-pragmas]
+         #pragma HLS unroll
+ ^
+/home/centos/Documents/vision_project/correct/libs/xf_opencv/L1/include/common/xf_utility.hpp:55:0: warning: ignoring #pragma HLS inline [-Wunknown-pragmas]
+     #pragma HLS inline off
+ ^
+/home/centos/Documents/vision_project/correct/libs/xf_opencv/L1/include/common/xf_utility.hpp:64:0: warning: ignoring #pragma HLS UNROLL [-Wunknown-pragmas]
+         #pragma HLS UNROLL
+ ^
+/home/centos/Documents/vision_project/correct/libs/xf_opencv/L1/include/common/xf_utility.hpp:87:0: warning: ignoring #pragma HLS INLINE [-Wunknown-pragmas]
+     #pragma HLS INLINE
+ ^
+/home/centos/Documents/vision_project/correct/libs/xf_opencv/L1/include/common/xf_utility.hpp:107:0: warning: ignoring #pragma HLS INLINE [-Wunknown-pragmas]
+     #pragma HLS INLINE
+ ^
+/home/centos/Documents/vision_project/correct/libs/xf_opencv/L1/include/common/xf_utility.hpp:115:0: warning: ignoring #pragma HLS LOOP_TRIPCOUNT [-Wunknown-pragmas]
+         #pragma HLS LOOP_TRIPCOUNT min=6 max=6
+ ^
+/home/centos/Documents/vision_project/correct/libs/xf_opencv/L1/include/common/xf_utility.hpp:116:0: warning: ignoring #pragma HLS unroll [-Wunknown-pragmas]
+         #pragma HLS unroll
+ ^
+/home/centos/Documents/vision_project/correct/libs/xf_opencv/L1/include/common/xf_utility.hpp:186:0: warning: ignoring #pragma HLS LOOP_TRIPCOUNT [-Wunknown-pragmas]
+         #pragma HLS LOOP_TRIPCOUNT min=IN_BH max=IN_BH
+ ^
+/home/centos/Documents/vision_project/correct/libs/xf_opencv/L1/include/common/xf_utility.hpp:187:0: warning: ignoring #pragma HLS LOOP_FLATTEN [-Wunknown-pragmas]
+         #pragma HLS LOOP_FLATTEN off
+ ^
+/home/centos/Documents/vision_project/correct/libs/xf_opencv/L1/include/common/xf_utility.hpp:191:0: warning: ignoring #pragma HLS pipeline [-Wunknown-pragmas]
+             #pragma HLS pipeline
+ ^
+/home/centos/Documents/vision_project/correct/libs/xf_opencv/L1/include/common/xf_utility.hpp:192:0: warning: ignoring #pragma HLS LOOP_TRIPCOUNT [-Wunknown-pragmas]
+             #pragma HLS LOOP_TRIPCOUNT min=IN_BW max=IN_BW
+ ^
+/home/centos/Documents/vision_project/correct/libs/xf_opencv/L1/include/common/xf_utility.hpp:217:0: warning: ignoring #pragma HLS LOOP_TRIPCOUNT [-Wunknown-pragmas]
+             #pragma HLS LOOP_TRIPCOUNT min=1 max=TRIPCOUNT
+ ^
+/home/centos/Documents/vision_project/correct/libs/xf_opencv/L1/include/common/xf_utility.hpp:218:0: warning: ignoring #pragma HLS PIPELINE [-Wunknown-pragmas]
+             #pragma HLS PIPELINE
+ ^
+/home/centos/Documents/vision_project/correct/libs/xf_opencv/L1/include/common/xf_utility.hpp:253:0: warning: ignoring #pragma HLS LOOP_TRIPCOUNT [-Wunknown-pragmas]
+             #pragma HLS LOOP_TRIPCOUNT min=1 max=TRIPCOUNT
+ ^
+/home/centos/Documents/vision_project/correct/libs/xf_opencv/L1/include/common/xf_utility.hpp:254:0: warning: ignoring #pragma HLS PIPELINE [-Wunknown-pragmas]
+             #pragma HLS PIPELINE
+ ^
+/home/centos/Documents/vision_project/correct/libs/xf_opencv/L1/include/common/xf_utility.hpp:332:0: warning: ignoring #pragma HLS LOOP_TRIPCOUNT [-Wunknown-pragmas]
+             #pragma HLS LOOP_TRIPCOUNT min=1 max=TRIPCOUNT
+ ^
+/home/centos/Documents/vision_project/correct/libs/xf_opencv/L1/include/common/xf_utility.hpp:333:0: warning: ignoring #pragma HLS PIPELINE [-Wunknown-pragmas]
+             #pragma HLS PIPELINE
+ ^
+/home/centos/Documents/vision_project/correct/libs/xf_opencv/L1/include/common/xf_utility.hpp:343:0: warning: ignoring #pragma HLS DATAFLOW [-Wunknown-pragmas]
+         #pragma HLS DATAFLOW
+ ^
+/home/centos/Documents/vision_project/correct/libs/xf_opencv/L1/include/common/xf_utility.hpp:392:0: warning: ignoring #pragma HLS LOOP_TRIPCOUNT [-Wunknown-pragmas]
+             #pragma HLS LOOP_TRIPCOUNT min=1 max=TRIPCOUNT
+ ^
+/home/centos/Documents/vision_project/correct/libs/xf_opencv/L1/include/common/xf_utility.hpp:393:0: warning: ignoring #pragma HLS PIPELINE [-Wunknown-pragmas]
+             #pragma HLS PIPELINE
+ ^
+/home/centos/Documents/vision_project/correct/libs/xf_opencv/L1/include/common/xf_utility.hpp:438:0: warning: ignoring #pragma HLS LOOP_TRIPCOUNT [-Wunknown-pragmas]
+             #pragma HLS LOOP_TRIPCOUNT min=1 max=TRIPCOUNT
+ ^
+/home/centos/Documents/vision_project/correct/libs/xf_opencv/L1/include/common/xf_utility.hpp:439:0: warning: ignoring #pragma HLS PIPELINE [-Wunknown-pragmas]
+             #pragma HLS PIPELINE
+ ^
+/home/centos/Documents/vision_project/correct/libs/xf_opencv/L1/include/common/xf_utility.hpp:481:0: warning: ignoring #pragma HLS LOOP_TRIPCOUNT [-Wunknown-pragmas]
+             #pragma HLS LOOP_TRIPCOUNT min=1 max=TRIPCOUNT
+ ^
+/home/centos/Documents/vision_project/correct/libs/xf_opencv/L1/include/common/xf_utility.hpp:482:0: warning: ignoring #pragma HLS PIPELINE [-Wunknown-pragmas]
+             #pragma HLS PIPELINE
+ ^
+/home/centos/Documents/vision_project/correct/libs/xf_opencv/L1/include/common/xf_utility.hpp:493:0: warning: ignoring #pragma HLS DATAFLOW [-Wunknown-pragmas]
+         #pragma HLS DATAFLOW
+ ^
+In file included from ../src/xf_convert_bitdepth_config.h:25:0,
+                 from ../src/xf_convertbitdepth_tb.cpp:19:
+/home/centos/Documents/vision_project/correct/libs/xf_opencv/L1/include/core/xf_convert_bitdepth.hpp:75:0: warning: ignoring #pragma HLS LOOP_TRIPCOUNT [-Wunknown-pragmas]
+         #pragma HLS LOOP_TRIPCOUNT min=ROWS max=ROWS
+ ^
+/home/centos/Documents/vision_project/correct/libs/xf_opencv/L1/include/core/xf_convert_bitdepth.hpp:81:0: warning: ignoring #pragma HLS LOOP_TRIPCOUNT [-Wunknown-pragmas]
+             #pragma HLS LOOP_TRIPCOUNT min=TRIP_CNT max=TRIP_CNT
+ ^
+/home/centos/Documents/vision_project/correct/libs/xf_opencv/L1/include/core/xf_convert_bitdepth.hpp:82:0: warning: ignoring #pragma HLS LOOP_FLATTEN [-Wunknown-pragmas]
+             #pragma HLS LOOP_FLATTEN off
+ ^
+/home/centos/Documents/vision_project/correct/libs/xf_opencv/L1/include/core/xf_convert_bitdepth.hpp:83:0: warning: ignoring #pragma HLS pipeline [-Wunknown-pragmas]
+             #pragma HLS pipeline
+ ^
+/home/centos/Documents/vision_project/correct/libs/xf_opencv/L1/include/core/xf_convert_bitdepth.hpp:92:0: warning: ignoring #pragma HLS UNROLL [-Wunknown-pragmas]
+                 #pragma HLS UNROLL
+ ^
+/home/centos/Documents/vision_project/correct/libs/xf_opencv/L1/include/core/xf_convert_bitdepth.hpp:135:0: warning: ignoring #pragma HLS INLINE [-Wunknown-pragmas]
+     #pragma HLS INLINE OFF
+ ^
+g++ -o "correct" libs/xf_opencv/ext/xcl2/xcl2.o src/xf_convertbitdepth_tb.o -lxml2 -lopencv_core -lopencv_imgproc -lopencv_features2d -lopencv_flann -lopencv_video -lopencv_calib3d -lopencv_highgui -lxilinxopencl -lpthread -lrt -lstdc++ -L/opt/xilinx/xrt/lib/ -Wl,-rpath-link,/opt/xilinx/xrt/lib
+
+11:33:19 Build Finished (took 3s.807ms)
+

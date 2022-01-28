@@ -1,0 +1,6 @@
+11:33:20 **** Incremental Build of configuration Emulation-SW for project correct_kernels ****
+make -j8 all 
+make: Nothing to be done for `all'.
+
+11:33:20 Build Finished (took 95ms)
+

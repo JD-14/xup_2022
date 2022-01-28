@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project name="cvtcolor_bgr2gray" dir="">
+  <FileSets>
+    <FileSet Name="kernel_cvtcolor_bgr2gray" Type="DesignSrcs">
+      <File Path="/home/centos/Documents/project/color_kernels/src/xf_cvt_color_accel.cpp"/>
+      <Config/>
+    </FileSet>
+  </FileSets>
+  <Runs/>
+</project>

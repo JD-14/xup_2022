@@ -1,0 +1,31 @@
+2022-01-27T09:57:08.57422900255-09:57:08 **** Build of configuration Emulation-SW for project color_kernels ****
+000-make -j8 all 
+000-/opt/Xilinx/Vitis/2021.1/bin/v++ --target sw_emu --compile -I"../src" --config tonemapping_accel-compile.cfg -I/home/centos/Documents/vision_project/color_kernels/libs/xf_opencv/L1/include -o"build/tonemapping_accel.xo" "../src/xf_tonemapping_accel.cpp"
+000-Option Map File Used: '/opt/Xilinx/Vitis/2021.1/data/vitis/vpp/optMap.xml'
+000-
+000-****** v++ v2021.1 (64-bit)
+000-  **** SW Build 3246112 on 2021-06-09-14:19:56
+000-    ** Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+000-
+000-INFO: [v++ 60-1306] Additional information associated with this v++ compile can be found at:
+000-	Reports: /home/centos/Documents/vision_project/color_kernels/Emulation-SW/build/reports/tonemapping_accel
+000-	Log files: /home/centos/Documents/vision_project/color_kernels/Emulation-SW/build/logs/tonemapping_accel
+000-Running Dispatch Server on port: 36238
+000-INFO: [v++ 60-1548] Creating build summary session with primary output /home/centos/Documents/vision_project/color_kernels/Emulation-SW/build/tonemapping_accel.xo.compile_summary, at Thu Jan 27 09:57:23 2022
+000-INFO: [v++ 60-1316] Initiating connection to rulecheck server, at Thu Jan 27 09:57:23 2022
+000-INFO: [v++ 60-895]   Target platform: /home/centos/aws-fpga/Vitis/aws_platform/xilinx_aws-vu9p-f1_shell-v04261818_201920_2/xilinx_aws-vu9p-f1_shell-v04261818_201920_2.xpfm
+000-INFO: [v++ 60-1578]   This platform contains Xilinx Shell Archive '/home/centos/aws-fpga/Vitis/aws_platform/xilinx_aws-vu9p-f1_shell-v04261818_201920_2/hw/xilinx_aws-vu9p-f1_shell-v04261818_201920_2.xsa'
+000-INFO: [v++ 74-78] Compiler Version string: 2021.1
+000-INFO: [v++ 60-1302] Platform 'xilinx_aws-vu9p-f1_shell-v04261818_201920_2.xpfm' has been explicitly enabled for this release.
+000-INFO: [v++ 60-585] Compiling for software emulation target
+000-INFO: [v++ 60-423]   Target device: xilinx_aws-vu9p-f1_shell-v04261818_201920_2
+000-INFO: [v++ 60-242] Creating kernel: 'tonemapping_accel'
+000-INFO: [v++ 60-594] Finished kernel compilation
+000-INFO: [v++ 60-586] Created build/tonemapping_accel.xo
+000-INFO: [v++ 60-2343] Use the vitis_analyzer tool to visualize and navigate the relevant reports. Run the following command. 
+000-    vitis_analyzer /home/centos/Documents/vision_project/color_kernels/Emulation-SW/build/tonemapping_accel.xo.compile_summary 
+000-INFO: [v++ 60-791] Total elapsed time: 0h 1m 4s
+000-INFO: [v++ 60-1653] Closing dispatch client.
+00255-
+09:58:16 Build Finished (took 1m:7s.576ms)
+

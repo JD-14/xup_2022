@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="ASCII"?>
+<hwlink:HwLinkProject xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:hwlink="http://www.xilinx.com/acceleration/hwlink" name="color_system_hw_link" platform="/home/centos/aws-fpga/Vitis/aws_platform/xilinx_aws-vu9p-f1_shell-v04261818_201920_2/xilinx_aws-vu9p-f1_shell-v04261818_201920_2.xpfm" systemProject="color_system" cpu="pl">
+  <configuration name="Emulation-SW" id="com.xilinx.ide.accel.config.hwlink.sw_emu.2011814151">
+    <configBuildOptions xsi:type="hwlink:LinkOptions">
+      <binaryContainers name="krnl_tonemapping">
+        <kernels name="tonemapping_accel" projectName="color_kernels">
+          <computeUnits name="tonemapping_accel_1" slr="">
+            <args name="in_ptr" master="true" memory=""/>
+            <args name="out_ptr" master="true" memory=""/>
+            <args name="height"/>
+            <args name="width"/>
+            <args name="blk_height"/>
+            <args name="blk_width"/>
+          </computeUnits>
+        </kernels>
+      </binaryContainers>
+    </configBuildOptions>
+    <lastBuildOptions xsi:type="hwlink:LinkOptions">
+      <binaryContainers name="krnl_tonemapping">
+        <kernels name="tonemapping_accel" projectName="color_kernels">
+          <computeUnits name="tonemapping_accel_1" slr="">
+            <args name="in_ptr" master="true" memory=""/>
+            <args name="out_ptr" master="true" memory=""/>
+            <args name="height"/>
+            <args name="width"/>
+            <args name="blk_height"/>
+            <args name="blk_width"/>
+          </computeUnits>
+        </kernels>
+      </binaryContainers>
+    </lastBuildOptions>
+  </configuration>
+  <configuration name="Emulation-HW" id="com.xilinx.ide.accel.config.hwlink.hw_emu.741293600">
+    <configBuildOptions xsi:type="hwlink:LinkOptions" target="hw_emu">
+      <binaryContainers name="krnl_tonemapping">
+        <kernels name="tonemapping_accel" projectName="color_kernels">
+          <computeUnits name="tonemapping_accel_1" slr="">
+            <args name="in_ptr" master="true" memory=""/>
+            <args name="out_ptr" master="true" memory=""/>
+            <args name="height"/>
+            <args name="width"/>
+            <args name="blk_height"/>
+            <args name="blk_width"/>
+          </computeUnits>
+        </kernels>
+      </binaryContainers>
+    </configBuildOptions>
+  </configuration>
+  <configuration name="Hardware" id="com.xilinx.ide.accel.config.hwlink.hw.882000291">
+    <configBuildOptions xsi:type="hwlink:LinkOptions" target="hw">
+      <binaryContainers name="krnl_tonemapping">
+        <kernels name="tonemapping_accel" projectName="color_kernels">
+          <computeUnits name="tonemapping_accel_1" slr="">
+            <args name="in_ptr" master="true" memory=""/>
+            <args name="out_ptr" master="true" memory=""/>
+            <args name="height"/>
+            <args name="width"/>
+            <args name="blk_height"/>
+            <args name="blk_width"/>
+          </computeUnits>
+        </kernels>
+      </binaryContainers>
+    </configBuildOptions>
+  </configuration>
+</hwlink:HwLinkProject>

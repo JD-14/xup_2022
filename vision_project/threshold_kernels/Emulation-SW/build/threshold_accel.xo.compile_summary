@@ -1,0 +1,170 @@
+<ENTRY>
+{
+ "thisFile": "/home/centos/Documents/vision_project/threshold_kernels/Emulation-SW/build/threshold_accel.xo.compile_summary",
+ "connectId": "",
+ "serverToken": "",
+ "timestamp": "0"
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_CmdStep",
+ "dateTimestamp": "Tue Jan 25 15:56:10 2022",
+ "timestampMillis": "1643126170297",
+ "buildStep": {
+  "cmdId": "61b714f7-2b3a-4aa1-af65-55b4ddc165a7",
+  "name": "v++",
+  "logFile": "/home/centos/Documents/vision_project/threshold_kernels/Emulation-SW/build/threshold_accel/threshold_accel.steps.log",
+  "commandLine": "/opt/Xilinx/Vitis/2021.1/bin/unwrapped/lnx64.o/v++  --vivado.prop \"run.__KERNEL__.{STEPS.SYNTH_DESIGN.ARGS.MORE OPTIONS}={-directive sdx_optimization_effort_high}\" --advanced.misc \"report=type report_timing_summary name impl_report_timing_summary_route_design_summary steps {route_design} runs {impl_1} options {-max_paths 10}\" --advanced.misc \"report=type report_timing_summary name impl_report_timing_summary_post_route_phys_opt_design_summary steps {post_route_phys_opt_design} runs {impl_1} options {-max_paths 10}\" --target sw_emu --compile -I../src --config threshold_accel-compile.cfg -I/home/centos/Documents/vision_project/threshold_kernels/libs/xf_opencv/L1/include -I/home/centos/Documents/vision_project/threshold_kernels/src/build -obuild/threshold_accel.xo ../src/xf_threshold_accel.cpp ",
+  "args": [
+   "--target",
+   "sw_emu",
+   "--compile",
+   "-I../src",
+   "--config",
+   "threshold_accel-compile.cfg",
+   "-I/home/centos/Documents/vision_project/threshold_kernels/libs/xf_opencv/L1/include",
+   "-I/home/centos/Documents/vision_project/threshold_kernels/src/build",
+   "-obuild/threshold_accel.xo",
+   "../src/xf_threshold_accel.cpp"
+  ],
+  "iniFiles": [
+   {
+    "path": "/home/centos/Documents/vision_project/threshold_kernels/Emulation-SW/threshold_accel-compile.cfg",
+    "content": "platform=/home/centos/aws-fpga/Vitis/aws_platform/xilinx_aws-vu9p-f1_shell-v04261818_201920_2/xilinx_aws-vu9p-f1_shell-v04261818_201920_2.xpfm\nsave-temps=1\nkernel=threshold_accel\ndebug=1\nmessageDb=build/threshold_accel.mdb\ntemp_dir=build\nreport_dir=build/reports\nlog_dir=build/logs\n\n[advanced]\nmisc=solution_name=threshold_accel"
+   }
+  ],
+  "cwd": "/home/centos/Documents/vision_project/threshold_kernels/Emulation-SW"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Tue Jan 25 15:56:10 2022",
+ "timestampMillis": "1643126170298",
+ "status": {
+  "cmdId": "61b714f7-2b3a-4aa1-af65-55b4ddc165a7",
+  "state": "CS_RUNNING"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_FlowMetaData",
+ "dateTimestamp": "Tue Jan 25 15:56:16 2022",
+ "timestampMillis": "1643126176414",
+ "buildSummary": {
+  "hardwarePlatform": "xilinx_aws-vu9p-f1_shell-v04261818_201920_2.xpfm",
+  "hardwareDsa": "xilinx_aws-vu9p-f1_shell-v04261818_201920_2.xsa",
+  "platformDirectory": "/home/centos/aws-fpga/Vitis/aws_platform/xilinx_aws-vu9p-f1_shell-v04261818_201920_2",
+  "runtime": "OpenCL",
+  "systemConfig": "Linux",
+  "flow": "BF_COMPILE",
+  "target": "TT_SW_EMU",
+  "kernels": [
+   {
+    "base": {
+     "type": "KERNEL",
+     "name": "threshold_accel",
+     "file": "/home/centos/Documents/vision_project/threshold_kernels/Emulation-SW/build/threshold_accel.xo",
+     "reports": [],
+     "uuid": ""
+    },
+    "sources": [
+     "/home/centos/Documents/vision_project/threshold_kernels/src/xf_threshold_accel.cpp"
+    ],
+    "psSources": [],
+    "cuNames": [],
+    "type": "HLS",
+    "frequency": 0,
+    "freqUnits": ""
+   }
+  ],
+  "toolVersion": "Vitis V++ Compiler Release 2021.1. SW Build 3246112 on 2021-06-09-14:19:56"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_SubCmdStep",
+ "dateTimestamp": "Tue Jan 25 15:56:16 2022",
+ "timestampMillis": "1643126176419",
+ "buildStep": {
+  "cmdId": "fc188546-b4f6-4589-b3f7-873376a7af83",
+  "name": "vitis_hls",
+  "logFile": "/home/centos/Documents/vision_project/threshold_kernels/Emulation-SW/build/threshold_accel/threshold_accel/vitis_hls.log",
+  "commandLine": "vitis_hls -f /home/centos/Documents/vision_project/threshold_kernels/Emulation-SW/build/threshold_accel/threshold_accel/threshold_accel.tcl -messageDb vitis_hls.pb",
+  "args": [
+   "vitis_hls",
+   "-f",
+   "/home/centos/Documents/vision_project/threshold_kernels/Emulation-SW/build/threshold_accel/threshold_accel/threshold_accel.tcl",
+   "-messageDb",
+   "vitis_hls.pb"
+  ],
+  "iniFiles": [],
+  "cwd": "/home/centos/Documents/vision_project/threshold_kernels/Emulation-SW"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Tue Jan 25 15:56:16 2022",
+ "timestampMillis": "1643126176420",
+ "status": {
+  "cmdId": "fc188546-b4f6-4589-b3f7-873376a7af83",
+  "state": "CS_RUNNING"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Tue Jan 25 15:56:31 2022",
+ "timestampMillis": "1643126191960",
+ "status": {
+  "cmdId": "fc188546-b4f6-4589-b3f7-873376a7af83",
+  "state": "CS_PASSED"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Tue Jan 25 15:56:31 2022",
+ "timestampMillis": "1643126191972",
+ "report": {
+  "path": "/home/centos/Documents/vision_project/threshold_kernels/Emulation-SW/guidance.html",
+  "name": "",
+  "fileType": "HTML",
+  "reportType": "GLOBAL_RULECHECK_GUIDANCE",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Tue Jan 25 15:56:31 2022",
+ "timestampMillis": "1643126191972",
+ "report": {
+  "path": "/home/centos/Documents/vision_project/threshold_kernels/Emulation-SW/guidance.pb",
+  "name": "",
+  "fileType": "BINARY_PROTOBUF",
+  "reportType": "GLOBAL_RULECHECK_GUIDANCE",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Tue Jan 25 15:56:31 2022",
+ "timestampMillis": "1643126191973",
+ "status": {
+  "cmdId": "61b714f7-2b3a-4aa1-af65-55b4ddc165a7",
+  "state": "CS_PASSED"
+ }
+}
+</ENTRY>

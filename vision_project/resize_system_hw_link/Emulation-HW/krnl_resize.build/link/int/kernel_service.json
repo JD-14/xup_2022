@@ -1,0 +1,17 @@
+{
+ "kernels": [],
+ "computeUnits": [
+  {
+   "id": "",
+   "kernelName": "resize_accel",
+   "cuName": "resize_accel_1",
+   "baseAddress": "",
+   "instancePath": "/emu_wrapper/emu_i/dynamic_region/resize_accel_1",
+   "slr": [],
+   "simInstanceName": "inst",
+   "locNames": [],
+   "tileNames": []
+  }
+ ]
+}
+

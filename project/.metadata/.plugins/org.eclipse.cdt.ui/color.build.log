@@ -1,0 +1,6 @@
+15:08:51 **** Incremental Build of configuration Emulation-SW for project color ****
+make -j8 all 
+make: Nothing to be done for `all'.
+
+15:08:51 Build Finished (took 77ms)
+

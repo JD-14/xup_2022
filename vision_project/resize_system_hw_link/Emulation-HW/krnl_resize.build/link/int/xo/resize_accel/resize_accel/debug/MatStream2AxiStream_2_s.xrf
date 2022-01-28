@@ -1,0 +1,28 @@
+Begin Function 'MatStream2AxiStream<2>'
+
+RTL state condition: (1'b1 == ap_CS_fsm_state1)
+# ST_1
+local empty <> <integer> <> 'trunc' <>
+reg: empty_reg_140[15:0] lv
+
+
+RTL state condition: (1'b1 == ap_CS_fsm_state3)
+# ST_3
+local last_blk_width_read <> <integer> <> 'read' <>
+reg: last_blk_width_read_reg_155[3:0] lv
+
+
+RTL state condition: (1'b1 == ap_CS_fsm_state4)
+# ST_4
+local op2_assign <> <integer> <Arithmetic> 'add' <>
+reg: op2_assign_reg_160[31:0] lv
+
+local bound <> <integer> <Arithmetic><MultiCycle> 'mul' <>
+reg: bound_reg_165[31:0] lv
+
+
+RTL state condition: (1'b1 == ap_CS_fsm_state5)
+# ST_5
+
+End Function 'MatStream2AxiStream<2>'
+

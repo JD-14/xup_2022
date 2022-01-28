@@ -1,0 +1,5 @@
+<?xml version="1.0"?>
+<Runs Version="1" Minor="0">
+	<Run Id="tonemapping_accel" LaunchDir="/home/centos/Documents/vision_project/color_kernels/Emulation-SW/build/tonemapping_accel/tonemapping_accel" FlowId="Build_IP" FromStepId="vitis_hls" ToStepId="vitis_hls"/>
+</Runs>
+

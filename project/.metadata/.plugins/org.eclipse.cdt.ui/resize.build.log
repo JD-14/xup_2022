@@ -1,0 +1,1230 @@
+10:56:25 **** Incremental Build of configuration Emulation-SW for project resize ****
+make -j8 all 
+g++ -std=c++1y -DVITIS_PLATFORM=xilinx_aws-vu9p-f1_shell-v04261818_201920_2 -D__USE_XOPEN2K8 -I/home/centos/Documents/project/resize/libs/xf_opencv/ext/xcl2 -I/home/centos/Documents/project/resize/libs/xf_opencv/L1/include -I/usr/include/opencv -I/home/centos/Documents/project/resize/src/build -I/opt/xilinx/xrt/include/ -I/opt/Xilinx/Vivado/2021.1/include/ -O0 -g -Wall -O3 -c -fmessage-length=0 -o "src/xf_resize_tb.o" "../src/xf_resize_tb.cpp"
+g++ -std=c++1y -DVITIS_PLATFORM=xilinx_aws-vu9p-f1_shell-v04261818_201920_2 -D__USE_XOPEN2K8 -I/home/centos/Documents/project/resize/libs/xf_opencv/ext/xcl2 -I/home/centos/Documents/project/resize/libs/xf_opencv/L1/include -I/usr/include/opencv -I/home/centos/Documents/project/resize/src/build -I/opt/xilinx/xrt/include/ -I/opt/Xilinx/Vivado/2021.1/include/ -O0 -g -Wall -O3 -c -fmessage-length=0 -o "src/xf_threshold_tb.o" "../src/xf_threshold_tb.cpp"
+In file included from /home/centos/Documents/project/resize/libs/xf_opencv/L1/include/common/xf_common.hpp:20:0,
+                 from /home/centos/Documents/project/resize/libs/xf_opencv/L1/include/common/xf_sw_utils.hpp:20,
+                 from /home/centos/Documents/project/resize/libs/xf_opencv/L1/include/common/xf_headers.hpp:28,
+                 from ../src/xf_resize_tb.cpp:17:
+/home/centos/Documents/project/resize/libs/xf_opencv/L1/include/common/xf_structs.hpp:234:0: warning: ignoring #pragma HLS INLINE [-Wunknown-pragmas]
+ #pragma HLS INLINE
+ ^
+/home/centos/Documents/project/resize/libs/xf_opencv/L1/include/common/xf_structs.hpp:235:0: warning: ignoring #pragma HLS ARRAY_PARTITION [-Wunknown-pragmas]
+ #pragma HLS ARRAY_PARTITION variable=val dim=1 complete
+ ^
+/home/centos/Documents/project/resize/libs/xf_opencv/L1/include/common/xf_structs.hpp:241:0: warning: ignoring #pragma HLS INLINE [-Wunknown-pragmas]
+ #pragma HLS INLINE
+ ^
+/home/centos/Documents/project/resize/libs/xf_opencv/L1/include/common/xf_structs.hpp:242:0: warning: ignoring #pragma HLS ARRAY_PARTITION [-Wunknown-pragmas]
+ #pragma HLS ARRAY_PARTITION variable=val dim=1 complete
+ ^
+/home/centos/Documents/project/resize/libs/xf_opencv/L1/include/common/xf_structs.hpp:249:0: warning: ignoring #pragma HLS ARRAY_PARTITION [-Wunknown-pragmas]
+ #pragma HLS ARRAY_PARTITION variable=val dim=1 complete
+ ^
+/home/centos/Documents/project/resize/libs/xf_opencv/L1/include/common/xf_structs.hpp:250:0: warning: ignoring #pragma HLS INLINE [-Wunknown-pragmas]
+ #pragma HLS INLINE
+ ^
+/home/centos/Documents/project/resize/libs/xf_opencv/L1/include/common/xf_structs.hpp:258:0: warning: ignoring #pragma HLS ARRAY_PARTITION [-Wunknown-pragmas]
+ #pragma HLS ARRAY_PARTITION variable=val dim=1 complete
+ ^
+/home/centos/Documents/project/resize/libs/xf_opencv/L1/include/common/xf_structs.hpp:259:0: warning: ignoring #pragma HLS INLINE [-Wunknown-pragmas]
+ #pragma HLS INLINE
+ ^
+/home/centos/Documents/project/resize/libs/xf_opencv/L1/include/common/xf_structs.hpp:268:0: warning: ignoring #pragma HLS ARRAY_PARTITION [-Wunknown-pragmas]
+ #pragma HLS ARRAY_PARTITION variable=val dim=1 complete
+ ^
+/home/centos/Documents/project/resize/libs/xf_opencv/L1/include/common/xf_structs.hpp:269:0: warning: ignoring #pragma HLS INLINE [-Wunknown-pragmas]
+ #pragma HLS INLINE
+ ^
+/home/centos/Documents/project/resize/libs/xf_opencv/L1/include/common/xf_structs.hpp:294:0: warning: ignoring #pragma HLS inline [-Wunknown-pragmas]
+ #pragma HLS inline
+ ^
+/home/centos/Documents/project/resize/libs/xf_opencv/L1/include/common/xf_structs.hpp:298:0: warning: ignoring #pragma HLS unroll [-Wunknown-pragmas]
+ #pragma HLS unroll
+ ^
+/home/centos/Documents/project/resize/libs/xf_opencv/L1/include/common/xf_structs.hpp:307:0: warning: ignoring #pragma HLS inline [-Wunknown-pragmas]
+ #pragma HLS inline
+ ^
+/home/centos/Documents/project/resize/libs/xf_opencv/L1/include/common/xf_structs.hpp:312:0: warning: ignoring #pragma HLS unroll [-Wunknown-pragmas]
+ #pragma HLS unroll
+ ^
+/home/centos/Documents/project/resize/libs/xf_opencv/L1/include/common/xf_structs.hpp:322:0: warning: ignoring #pragma HLS inline [-Wunknown-pragmas]
+ #pragma HLS inline
+ ^
+/home/centos/Documents/project/resize/libs/xf_opencv/L1/include/common/xf_structs.hpp:327:0: warning: ignoring #pragma HLS unroll [-Wunknown-pragmas]
+ #pragma HLS unroll
+ ^
+/home/centos/Documents/project/resize/libs/xf_opencv/L1/include/common/xf_structs.hpp:337:0: warning: ignoring #pragma HLS inline [-Wunknown-pragmas]
+ #pragma HLS inline
+ ^
+/home/centos/Documents/project/resize/libs/xf_opencv/L1/include/common/xf_structs.hpp:342:0: warning: ignoring #pragma HLS unroll [-Wunknown-pragmas]
+ #pragma HLS unroll
+ ^
+/home/centos/Documents/project/resize/libs/xf_opencv/L1/include/common/xf_structs.hpp:352:0: warning: ignoring #pragma HLS inline [-Wunknown-pragmas]
+ #pragma HLS inline
+ ^
+/home/centos/Documents/project/resize/libs/xf_opencv/L1/include/common/xf_structs.hpp:357:0: warning: ignoring #pragma HLS unroll [-Wunknown-pragmas]
+ #pragma HLS unroll
+ ^
+/home/centos/Documents/project/resize/libs/xf_opencv/L1/include/common/xf_structs.hpp:367:0: warning: ignoring #pragma HLS inline [-Wunknown-pragmas]
+ #pragma HLS inline
+ ^
+/home/centos/Documents/project/resize/libs/xf_opencv/L1/include/common/xf_structs.hpp:372:0: warning: ignoring #pragma HLS unroll [-Wunknown-pragmas]
+ #pragma HLS unroll
+ ^
+/home/centos/Documents/project/resize/libs/xf_opencv/L1/include/common/xf_structs.hpp:382:0: warning: ignoring #pragma HLS inline [-Wunknown-pragmas]
+ #pragma HLS inline
+ ^
+/home/centos/Documents/project/resize/libs/xf_opencv/L1/include/common/xf_structs.hpp:387:0: warning: ignoring #pragma HLS unroll [-Wunknown-pragmas]
+ #pragma HLS unroll
+ ^
+/home/centos/Documents/project/resize/libs/xf_opencv/L1/include/common/xf_structs.hpp:397:0: warning: ignoring #pragma HLS inline [-Wunknown-pragmas]
+ #pragma HLS inline
+ ^
+/home/centos/Documents/project/resize/libs/xf_opencv/L1/include/common/xf_structs.hpp:402:0: warning: ignoring #pragma HLS unroll [-Wunknown-pragmas]
+ #pragma HLS unroll
+ ^
+/home/centos/Documents/project/resize/libs/xf_opencv/L1/include/common/xf_structs.hpp:412:0: warning: ignoring #pragma HLS inline [-Wunknown-pragmas]
+ #pragma HLS inline
+ ^
+/home/centos/Documents/project/resize/libs/xf_opencv/L1/include/common/xf_structs.hpp:417:0: warning: ignoring #pragma HLS unroll [-Wunknown-pragmas]
+ #pragma HLS unroll
+ ^
+/home/centos/Documents/project/resize/libs/xf_opencv/L1/include/common/xf_structs.hpp:573:0: warning: ignoring #pragma HLS inline [-Wunknown-pragmas]
+ #pragma HLS inline
+ ^
+/home/centos/Documents/project/resize/libs/xf_opencv/L1/include/common/xf_structs.hpp:581:0: warning: ignoring #pragma HLS inline [-Wunknown-pragmas]
+ #pragma HLS inline
+ ^
+/home/centos/Documents/project/resize/libs/xf_opencv/L1/include/common/xf_structs.hpp:588:0: warning: ignoring #pragma HLS inline [-Wunknown-pragmas]
+ #pragma HLS inline
+ ^
+/home/centos/Documents/project/resize/libs/xf_opencv/L1/include/common/xf_structs.hpp:596:0: warning: ignoring #pragma HLS inline [-Wunknown-pragmas]
+ #pragma HLS inline
+ ^
+/home/centos/Documents/project/resize/libs/xf_opencv/L1/include/common/xf_structs.hpp:642:0: warning: ignoring #pragma HLS inline [-Wunknown-pragmas]
+ #pragma HLS inline
+ ^
+/home/centos/Documents/project/resize/libs/xf_opencv/L1/include/common/xf_structs.hpp:651:0: warning: ignoring #pragma HLS inline [-Wunknown-pragmas]
+ #pragma HLS inline
+ ^
+/home/centos/Documents/project/resize/libs/xf_opencv/L1/include/common/xf_structs.hpp:660:0: warning: ignoring #pragma HLS inline [-Wunknown-pragmas]
+ #pragma HLS inline
+ ^
+/home/centos/Documents/project/resize/libs/xf_opencv/L1/include/common/xf_structs.hpp:669:0: warning: ignoring #pragma HLS inline [-Wunknown-pragmas]
+ #pragma HLS inline
+ ^
+/home/centos/Documents/project/resize/libs/xf_opencv/L1/include/common/xf_structs.hpp:696:0: warning: ignoring #pragma HLS inline [-Wunknown-pragmas]
+ #pragma HLS inline
+ ^
+/home/centos/Documents/project/resize/libs/xf_opencv/L1/include/common/xf_structs.hpp:730:0: warning: ignoring #pragma HLS inline [-Wunknown-pragmas]
+ #pragma HLS inline
+ ^
+/home/centos/Documents/project/resize/libs/xf_opencv/L1/include/common/xf_structs.hpp:954:0: warning: ignoring #pragma HLS LOOP_TRIPCOUNT [-Wunknown-pragmas]
+ #pragma HLS LOOP_TRIPCOUNT min=1 max=ADDRBOUND
+ ^
+/home/centos/Documents/project/resize/libs/xf_opencv/L1/include/common/xf_structs.hpp:955:0: warning: ignoring #pragma HLS PIPELINE [-Wunknown-pragmas]
+ #pragma HLS PIPELINE
+ ^
+/home/centos/Documents/project/resize/libs/xf_opencv/L1/include/common/xf_structs.hpp:968:0: warning: ignoring #pragma HLS LOOP_TRIPCOUNT [-Wunknown-pragmas]
+ #pragma HLS LOOP_TRIPCOUNT min=1 max=ADDRBOUND
+ ^
+/home/centos/Documents/project/resize/libs/xf_opencv/L1/include/common/xf_structs.hpp:969:0: warning: ignoring #pragma HLS PIPELINE [-Wunknown-pragmas]
+ #pragma HLS PIPELINE
+ ^
+/home/centos/Documents/project/resize/libs/xf_opencv/L1/include/common/xf_structs.hpp:1003:0: warning: ignoring #pragma HLS LOOP_TRIPCOUNT [-Wunknown-pragmas]
+ #pragma HLS LOOP_TRIPCOUNT min=1 max=LOOPBOUND
+ ^
+/home/centos/Documents/project/resize/libs/xf_opencv/L1/include/common/xf_structs.hpp:1004:0: warning: ignoring #pragma HLS PIPELINE [-Wunknown-pragmas]
+ #pragma HLS PIPELINE
+ ^
+/home/centos/Documents/project/resize/libs/xf_opencv/L1/include/common/xf_structs.hpp:1047:0: warning: ignoring #pragma HLS LOOP_TRIPCOUNT [-Wunknown-pragmas]
+ #pragma HLS LOOP_TRIPCOUNT min=1 max=LOOPBOUND
+ ^
+/home/centos/Documents/project/resize/libs/xf_opencv/L1/include/common/xf_structs.hpp:1048:0: warning: ignoring #pragma HLS PIPELINE [-Wunknown-pragmas]
+ #pragma HLS PIPELINE
+ ^
+/home/centos/Documents/project/resize/libs/xf_opencv/L1/include/common/xf_structs.hpp:1060:0: warning: ignoring #pragma HLS DATAFLOW [-Wunknown-pragmas]
+ #pragma HLS DATAFLOW
+ ^
+/home/centos/Documents/project/resize/libs/xf_opencv/L1/include/common/xf_structs.hpp:1073:0: warning: ignoring #pragma HLS DATAFLOW [-Wunknown-pragmas]
+ #pragma HLS DATAFLOW
+ ^
+/home/centos/Documents/project/resize/libs/xf_opencv/L1/include/common/xf_structs.hpp:1088:0: warning: ignoring #pragma HLS DATAFLOW [-Wunknown-pragmas]
+ #pragma HLS DATAFLOW
+ ^
+/home/centos/Documents/project/resize/libs/xf_opencv/L1/include/common/xf_structs.hpp:1108:0: warning: ignoring #pragma HLS DATAFLOW [-Wunknown-pragmas]
+ #pragma HLS DATAFLOW
+ ^
+/home/centos/Documents/project/resize/libs/xf_opencv/L1/include/common/xf_structs.hpp:1120:0: warning: ignoring #pragma HLS DATAFLOW [-Wunknown-pragmas]
+ #pragma HLS DATAFLOW
+ ^
+/home/centos/Documents/project/resize/libs/xf_opencv/L1/include/common/xf_structs.hpp:1140:0: warning: ignoring #pragma HLS DATAFLOW [-Wunknown-pragmas]
+ #pragma HLS DATAFLOW
+ ^
+/home/centos/Documents/project/resize/libs/xf_opencv/L1/include/common/xf_structs.hpp:1214:0: warning: ignoring #pragma HLS LOOP_TRIPCOUNT [-Wunknown-pragmas]
+ #pragma HLS LOOP_TRIPCOUNT min=1 max=LOOPBOUND
+ ^
+/home/centos/Documents/project/resize/libs/xf_opencv/L1/include/common/xf_structs.hpp:1215:0: warning: ignoring #pragma HLS PIPELINE [-Wunknown-pragmas]
+ #pragma HLS PIPELINE
+ ^
+/home/centos/Documents/project/resize/libs/xf_opencv/L1/include/common/xf_structs.hpp:1244:0: warning: ignoring #pragma HLS LOOP_TRIPCOUNT [-Wunknown-pragmas]
+ #pragma HLS LOOP_TRIPCOUNT min=1 max=ROWS
+ ^
+/home/centos/Documents/project/resize/libs/xf_opencv/L1/include/common/xf_structs.hpp:1249:0: warning: ignoring #pragma HLS LOOP_TRIPCOUNT [-Wunknown-pragmas]
+ #pragma HLS LOOP_TRIPCOUNT min=1 max=COLS_BOUND_PER_NPC
+ ^
+/home/centos/Documents/project/resize/libs/xf_opencv/L1/include/common/xf_structs.hpp:1250:0: warning: ignoring #pragma HLS PIPELINE [-Wunknown-pragmas]
+ #pragma HLS PIPELINE
+ ^
+/home/centos/Documents/project/resize/libs/xf_opencv/L1/include/common/xf_structs.hpp:1292:0: warning: ignoring #pragma HLS DATAFLOW [-Wunknown-pragmas]
+ #pragma HLS DATAFLOW
+ ^
+/home/centos/Documents/project/resize/libs/xf_opencv/L1/include/common/xf_structs.hpp:1305:0: warning: ignoring #pragma HLS DATAFLOW [-Wunknown-pragmas]
+ #pragma HLS DATAFLOW
+ ^
+/home/centos/Documents/project/resize/libs/xf_opencv/L1/include/common/xf_structs.hpp:1322:0: warning: ignoring #pragma HLS LOOP_TRIPCOUNT [-Wunknown-pragmas]
+ #pragma HLS LOOP_TRIPCOUNT min=1 max=ADDRBOUND
+ ^
+/home/centos/Documents/project/resize/libs/xf_opencv/L1/include/common/xf_structs.hpp:1323:0: warning: ignoring #pragma HLS PIPELINE [-Wunknown-pragmas]
+ #pragma HLS PIPELINE
+ ^
+/home/centos/Documents/project/resize/libs/xf_opencv/L1/include/common/xf_structs.hpp:1337:0: warning: ignoring #pragma HLS LOOP_TRIPCOUNT [-Wunknown-pragmas]
+ #pragma HLS LOOP_TRIPCOUNT min=1 max=ADDRBOUND
+ ^
+/home/centos/Documents/project/resize/libs/xf_opencv/L1/include/common/xf_structs.hpp:1338:0: warning: ignoring #pragma HLS PIPELINE [-Wunknown-pragmas]
+ #pragma HLS PIPELINE
+ ^
+/home/centos/Documents/project/resize/libs/xf_opencv/L1/include/common/xf_structs.hpp:1352:0: warning: ignoring #pragma HLS DATAFLOW [-Wunknown-pragmas]
+ #pragma HLS DATAFLOW
+ ^
+/home/centos/Documents/project/resize/libs/xf_opencv/L1/include/common/xf_structs.hpp:1379:0: warning: ignoring #pragma HLS DATAFLOW [-Wunknown-pragmas]
+ #pragma HLS DATAFLOW
+ ^
+/home/centos/Documents/project/resize/libs/xf_opencv/L1/include/common/xf_structs.hpp:1410:0: warning: ignoring #pragma HLS DATAFLOW [-Wunknown-pragmas]
+ #pragma HLS DATAFLOW
+ ^
+/home/centos/Documents/project/resize/libs/xf_opencv/L1/include/common/xf_structs.hpp:1440:0: warning: ignoring #pragma HLS DATAFLOW [-Wunknown-pragmas]
+ #pragma HLS DATAFLOW
+ ^
+In file included from /home/centos/Documents/project/resize/libs/xf_opencv/L1/include/common/xf_common.hpp:20:0,
+                 from /home/centos/Documents/project/resize/libs/xf_opencv/L1/include/common/xf_sw_utils.hpp:20,
+                 from /home/centos/Documents/project/resize/libs/xf_opencv/L1/include/common/xf_headers.hpp:28,
+                 from ../src/xf_threshold_tb.cpp:17:
+/home/centos/Documents/project/resize/libs/xf_opencv/L1/include/common/xf_structs.hpp:234:0: warning: ignoring #pragma HLS INLINE [-Wunknown-pragmas]
+ #pragma HLS INLINE
+ ^
+/home/centos/Documents/project/resize/libs/xf_opencv/L1/include/common/xf_structs.hpp:235:0: warning: ignoring #pragma HLS ARRAY_PARTITION [-Wunknown-pragmas]
+ #pragma HLS ARRAY_PARTITION variable=val dim=1 complete
+ ^
+/home/centos/Documents/project/resize/libs/xf_opencv/L1/include/common/xf_structs.hpp:241:0: warning: ignoring #pragma HLS INLINE [-Wunknown-pragmas]
+ #pragma HLS INLINE
+ ^
+/home/centos/Documents/project/resize/libs/xf_opencv/L1/include/common/xf_structs.hpp:242:0: warning: ignoring #pragma HLS ARRAY_PARTITION [-Wunknown-pragmas]
+ #pragma HLS ARRAY_PARTITION variable=val dim=1 complete
+ ^
+/home/centos/Documents/project/resize/libs/xf_opencv/L1/include/common/xf_structs.hpp:249:0: warning: ignoring #pragma HLS ARRAY_PARTITION [-Wunknown-pragmas]
+ #pragma HLS ARRAY_PARTITION variable=val dim=1 complete
+ ^
+/home/centos/Documents/project/resize/libs/xf_opencv/L1/include/common/xf_structs.hpp:250:0: warning: ignoring #pragma HLS INLINE [-Wunknown-pragmas]
+ #pragma HLS INLINE
+ ^
+/home/centos/Documents/project/resize/libs/xf_opencv/L1/include/common/xf_structs.hpp:258:0: warning: ignoring #pragma HLS ARRAY_PARTITION [-Wunknown-pragmas]
+ #pragma HLS ARRAY_PARTITION variable=val dim=1 complete
+ ^
+/home/centos/Documents/project/resize/libs/xf_opencv/L1/include/common/xf_structs.hpp:259:0: warning: ignoring #pragma HLS INLINE [-Wunknown-pragmas]
+ #pragma HLS INLINE
+ ^
+/home/centos/Documents/project/resize/libs/xf_opencv/L1/include/common/xf_structs.hpp:268:0: warning: ignoring #pragma HLS ARRAY_PARTITION [-Wunknown-pragmas]
+ #pragma HLS ARRAY_PARTITION variable=val dim=1 complete
+ ^
+/home/centos/Documents/project/resize/libs/xf_opencv/L1/include/common/xf_structs.hpp:269:0: warning: ignoring #pragma HLS INLINE [-Wunknown-pragmas]
+ #pragma HLS INLINE
+ ^
+/home/centos/Documents/project/resize/libs/xf_opencv/L1/include/common/xf_structs.hpp:294:0: warning: ignoring #pragma HLS inline [-Wunknown-pragmas]
+ #pragma HLS inline
+ ^
+/home/centos/Documents/project/resize/libs/xf_opencv/L1/include/common/xf_structs.hpp:298:0: warning: ignoring #pragma HLS unroll [-Wunknown-pragmas]
+ #pragma HLS unroll
+ ^
+/home/centos/Documents/project/resize/libs/xf_opencv/L1/include/common/xf_structs.hpp:307:0: warning: ignoring #pragma HLS inline [-Wunknown-pragmas]
+ #pragma HLS inline
+ ^
+/home/centos/Documents/project/resize/libs/xf_opencv/L1/include/common/xf_structs.hpp:312:0: warning: ignoring #pragma HLS unroll [-Wunknown-pragmas]
+ #pragma HLS unroll
+ ^
+/home/centos/Documents/project/resize/libs/xf_opencv/L1/include/common/xf_structs.hpp:322:0: warning: ignoring #pragma HLS inline [-Wunknown-pragmas]
+ #pragma HLS inline
+ ^
+/home/centos/Documents/project/resize/libs/xf_opencv/L1/include/common/xf_structs.hpp:327:0: warning: ignoring #pragma HLS unroll [-Wunknown-pragmas]
+ #pragma HLS unroll
+ ^
+/home/centos/Documents/project/resize/libs/xf_opencv/L1/include/common/xf_structs.hpp:337:0: warning: ignoring #pragma HLS inline [-Wunknown-pragmas]
+ #pragma HLS inline
+ ^
+/home/centos/Documents/project/resize/libs/xf_opencv/L1/include/common/xf_structs.hpp:342:0: warning: ignoring #pragma HLS unroll [-Wunknown-pragmas]
+ #pragma HLS unroll
+ ^
+/home/centos/Documents/project/resize/libs/xf_opencv/L1/include/common/xf_structs.hpp:352:0: warning: ignoring #pragma HLS inline [-Wunknown-pragmas]
+ #pragma HLS inline
+ ^
+In file included from ../src/xf_resize_config.h:23:0,
+                 from ../src/xf_resize_tb.cpp:18:
+/home/centos/Documents/project/resize/src/build/xf_config_params.h:48:0: warning: "INPUT_PTR_WIDTH" redefined [enabled by default]
+ #define INPUT_PTR_WIDTH 256
+ ^
+/home/centos/Documents/project/resize/src/build/xf_config_params.h:21:0: note: this is the location of the previous definition
+ #define INPUT_PTR_WIDTH 128
+ ^
+/home/centos/Documents/project/resize/libs/xf_opencv/L1/include/common/xf_structs.hpp:357:0: warning: ignoring #pragma HLS unroll [-Wunknown-pragmas]
+ #pragma HLS unroll
+ ^
+/home/centos/Documents/project/resize/src/build/xf_config_params.h:49:0: warning: "OUTPUT_PTR_WIDTH" redefined [enabled by default]
+ #define OUTPUT_PTR_WIDTH 256
+ ^
+/home/centos/Documents/project/resize/src/build/xf_config_params.h:22:0: note: this is the location of the previous definition
+ #define OUTPUT_PTR_WIDTH 128
+ ^
+/home/centos/Documents/project/resize/libs/xf_opencv/L1/include/common/xf_structs.hpp:367:0: warning: ignoring #pragma HLS inline [-Wunknown-pragmas]
+ #pragma HLS inline
+ ^
+/home/centos/Documents/project/resize/libs/xf_opencv/L1/include/common/xf_structs.hpp:372:0: warning: ignoring #pragma HLS unroll [-Wunknown-pragmas]
+ #pragma HLS unroll
+ ^
+/home/centos/Documents/project/resize/libs/xf_opencv/L1/include/common/xf_structs.hpp:382:0: warning: ignoring #pragma HLS inline [-Wunknown-pragmas]
+ #pragma HLS inline
+ ^
+/home/centos/Documents/project/resize/libs/xf_opencv/L1/include/common/xf_structs.hpp:387:0: warning: ignoring #pragma HLS unroll [-Wunknown-pragmas]
+ #pragma HLS unroll
+ ^
+/home/centos/Documents/project/resize/libs/xf_opencv/L1/include/common/xf_structs.hpp:397:0: warning: ignoring #pragma HLS inline [-Wunknown-pragmas]
+ #pragma HLS inline
+ ^
+In file included from /home/centos/Documents/project/resize/libs/xf_opencv/L1/include/imgproc/xf_resize_headers.h:22:0,
+                 from /home/centos/Documents/project/resize/libs/xf_opencv/L1/include/imgproc/xf_resize.hpp:20,
+                 from ../src/xf_resize_config.h:24,
+                 from ../src/xf_resize_tb.cpp:18:
+/home/centos/Documents/project/resize/libs/xf_opencv/L1/include/common/xf_utility.hpp:37:0: warning: ignoring #pragma HLS INLINE [-Wunknown-pragmas]
+     #pragma HLS INLINE
+ ^
+/home/centos/Documents/project/resize/libs/xf_opencv/L1/include/common/xf_structs.hpp:402:0: warning: ignoring #pragma HLS unroll [-Wunknown-pragmas]
+ #pragma HLS unroll
+ ^
+/home/centos/Documents/project/resize/libs/xf_opencv/L1/include/common/xf_utility.hpp:43:0: warning: ignoring #pragma HLS unroll [-Wunknown-pragmas]
+         #pragma HLS unroll
+ ^
+/home/centos/Documents/project/resize/libs/xf_opencv/L1/include/common/xf_structs.hpp:412:0: warning: ignoring #pragma HLS inline [-Wunknown-pragmas]
+ #pragma HLS inline
+ ^
+/home/centos/Documents/project/resize/libs/xf_opencv/L1/include/common/xf_utility.hpp:55:0: warning: ignoring #pragma HLS inline [-Wunknown-pragmas]
+     #pragma HLS inline off
+ ^
+/home/centos/Documents/project/resize/libs/xf_opencv/L1/include/common/xf_structs.hpp:417:0: warning: ignoring #pragma HLS unroll [-Wunknown-pragmas]
+ #pragma HLS unroll
+ ^
+/home/centos/Documents/project/resize/libs/xf_opencv/L1/include/common/xf_utility.hpp:64:0: warning: ignoring #pragma HLS UNROLL [-Wunknown-pragmas]
+         #pragma HLS UNROLL
+ ^
+/home/centos/Documents/project/resize/libs/xf_opencv/L1/include/common/xf_utility.hpp:87:0: warning: ignoring #pragma HLS INLINE [-Wunknown-pragmas]
+     #pragma HLS INLINE
+ ^
+/home/centos/Documents/project/resize/libs/xf_opencv/L1/include/common/xf_utility.hpp:107:0: warning: ignoring #pragma HLS INLINE [-Wunknown-pragmas]
+     #pragma HLS INLINE
+ ^
+/home/centos/Documents/project/resize/libs/xf_opencv/L1/include/common/xf_utility.hpp:115:0: warning: ignoring #pragma HLS LOOP_TRIPCOUNT [-Wunknown-pragmas]
+         #pragma HLS LOOP_TRIPCOUNT min=6 max=6
+ ^
+/home/centos/Documents/project/resize/libs/xf_opencv/L1/include/common/xf_structs.hpp:573:0: warning: ignoring #pragma HLS inline [-Wunknown-pragmas]
+ #pragma HLS inline
+ ^
+/home/centos/Documents/project/resize/libs/xf_opencv/L1/include/common/xf_utility.hpp:116:0: warning: ignoring #pragma HLS unroll [-Wunknown-pragmas]
+         #pragma HLS unroll
+ ^
+/home/centos/Documents/project/resize/libs/xf_opencv/L1/include/common/xf_structs.hpp:581:0: warning: ignoring #pragma HLS inline [-Wunknown-pragmas]
+ #pragma HLS inline
+ ^
+/home/centos/Documents/project/resize/libs/xf_opencv/L1/include/common/xf_utility.hpp:186:0: warning: ignoring #pragma HLS LOOP_TRIPCOUNT [-Wunknown-pragmas]
+         #pragma HLS LOOP_TRIPCOUNT min=IN_BH max=IN_BH
+ ^
+/home/centos/Documents/project/resize/libs/xf_opencv/L1/include/common/xf_structs.hpp:588:0: warning: ignoring #pragma HLS inline [-Wunknown-pragmas]
+ #pragma HLS inline
+ ^
+/home/centos/Documents/project/resize/libs/xf_opencv/L1/include/common/xf_utility.hpp:187:0: warning: ignoring #pragma HLS LOOP_FLATTEN [-Wunknown-pragmas]
+         #pragma HLS LOOP_FLATTEN off
+ ^
+/home/centos/Documents/project/resize/libs/xf_opencv/L1/include/common/xf_utility.hpp:191:0: warning: ignoring #pragma HLS pipeline [-Wunknown-pragmas]
+             #pragma HLS pipeline
+ ^
+/home/centos/Documents/project/resize/libs/xf_opencv/L1/include/common/xf_utility.hpp:192:0: warning: ignoring #pragma HLS LOOP_TRIPCOUNT [-Wunknown-pragmas]
+             #pragma HLS LOOP_TRIPCOUNT min=IN_BW max=IN_BW
+ ^
+/home/centos/Documents/project/resize/libs/xf_opencv/L1/include/common/xf_structs.hpp:596:0: warning: ignoring #pragma HLS inline [-Wunknown-pragmas]
+ #pragma HLS inline
+ ^
+/home/centos/Documents/project/resize/libs/xf_opencv/L1/include/common/xf_utility.hpp:217:0: warning: ignoring #pragma HLS LOOP_TRIPCOUNT [-Wunknown-pragmas]
+             #pragma HLS LOOP_TRIPCOUNT min=1 max=TRIPCOUNT
+ ^
+/home/centos/Documents/project/resize/libs/xf_opencv/L1/include/common/xf_utility.hpp:218:0: warning: ignoring #pragma HLS PIPELINE [-Wunknown-pragmas]
+             #pragma HLS PIPELINE
+ ^
+/home/centos/Documents/project/resize/libs/xf_opencv/L1/include/common/xf_structs.hpp:642:0: warning: ignoring #pragma HLS inline [-Wunknown-pragmas]
+ #pragma HLS inline
+ ^
+/home/centos/Documents/project/resize/libs/xf_opencv/L1/include/common/xf_utility.hpp:253:0: warning: ignoring #pragma HLS LOOP_TRIPCOUNT [-Wunknown-pragmas]
+             #pragma HLS LOOP_TRIPCOUNT min=1 max=TRIPCOUNT
+ ^
+/home/centos/Documents/project/resize/libs/xf_opencv/L1/include/common/xf_structs.hpp:651:0: warning: ignoring #pragma HLS inline [-Wunknown-pragmas]
+ #pragma HLS inline
+ ^
+/home/centos/Documents/project/resize/libs/xf_opencv/L1/include/common/xf_utility.hpp:254:0: warning: ignoring #pragma HLS PIPELINE [-Wunknown-pragmas]
+             #pragma HLS PIPELINE
+ ^
+/home/centos/Documents/project/resize/libs/xf_opencv/L1/include/common/xf_structs.hpp:660:0: warning: ignoring #pragma HLS inline [-Wunknown-pragmas]
+ #pragma HLS inline
+ ^
+/home/centos/Documents/project/resize/libs/xf_opencv/L1/include/common/xf_utility.hpp:332:0: warning: ignoring #pragma HLS LOOP_TRIPCOUNT [-Wunknown-pragmas]
+             #pragma HLS LOOP_TRIPCOUNT min=1 max=TRIPCOUNT
+ ^
+/home/centos/Documents/project/resize/libs/xf_opencv/L1/include/common/xf_structs.hpp:669:0: warning: ignoring #pragma HLS inline [-Wunknown-pragmas]
+ #pragma HLS inline
+ ^
+/home/centos/Documents/project/resize/libs/xf_opencv/L1/include/common/xf_utility.hpp:333:0: warning: ignoring #pragma HLS PIPELINE [-Wunknown-pragmas]
+             #pragma HLS PIPELINE
+ ^
+/home/centos/Documents/project/resize/libs/xf_opencv/L1/include/common/xf_structs.hpp:696:0: warning: ignoring #pragma HLS inline [-Wunknown-pragmas]
+ #pragma HLS inline
+ ^
+/home/centos/Documents/project/resize/libs/xf_opencv/L1/include/common/xf_utility.hpp:343:0: warning: ignoring #pragma HLS DATAFLOW [-Wunknown-pragmas]
+         #pragma HLS DATAFLOW
+ ^
+/home/centos/Documents/project/resize/libs/xf_opencv/L1/include/common/xf_structs.hpp:730:0: warning: ignoring #pragma HLS inline [-Wunknown-pragmas]
+ #pragma HLS inline
+ ^
+/home/centos/Documents/project/resize/libs/xf_opencv/L1/include/common/xf_utility.hpp:392:0: warning: ignoring #pragma HLS LOOP_TRIPCOUNT [-Wunknown-pragmas]
+             #pragma HLS LOOP_TRIPCOUNT min=1 max=TRIPCOUNT
+ ^
+/home/centos/Documents/project/resize/libs/xf_opencv/L1/include/common/xf_utility.hpp:393:0: warning: ignoring #pragma HLS PIPELINE [-Wunknown-pragmas]
+             #pragma HLS PIPELINE
+ ^
+/home/centos/Documents/project/resize/libs/xf_opencv/L1/include/common/xf_utility.hpp:438:0: warning: ignoring #pragma HLS LOOP_TRIPCOUNT [-Wunknown-pragmas]
+             #pragma HLS LOOP_TRIPCOUNT min=1 max=TRIPCOUNT
+ ^
+/home/centos/Documents/project/resize/libs/xf_opencv/L1/include/common/xf_utility.hpp:439:0: warning: ignoring #pragma HLS PIPELINE [-Wunknown-pragmas]
+             #pragma HLS PIPELINE
+ ^
+/home/centos/Documents/project/resize/libs/xf_opencv/L1/include/common/xf_utility.hpp:481:0: warning: ignoring #pragma HLS LOOP_TRIPCOUNT [-Wunknown-pragmas]
+             #pragma HLS LOOP_TRIPCOUNT min=1 max=TRIPCOUNT
+ ^
+/home/centos/Documents/project/resize/libs/xf_opencv/L1/include/common/xf_structs.hpp:954:0: warning: ignoring #pragma HLS LOOP_TRIPCOUNT [-Wunknown-pragmas]
+ #pragma HLS LOOP_TRIPCOUNT min=1 max=ADDRBOUND
+ ^
+/home/centos/Documents/project/resize/libs/xf_opencv/L1/include/common/xf_utility.hpp:482:0: warning: ignoring #pragma HLS PIPELINE [-Wunknown-pragmas]
+             #pragma HLS PIPELINE
+ ^
+/home/centos/Documents/project/resize/libs/xf_opencv/L1/include/common/xf_structs.hpp:955:0: warning: ignoring #pragma HLS PIPELINE [-Wunknown-pragmas]
+ #pragma HLS PIPELINE
+ ^
+/home/centos/Documents/project/resize/libs/xf_opencv/L1/include/common/xf_utility.hpp:493:0: warning: ignoring #pragma HLS DATAFLOW [-Wunknown-pragmas]
+         #pragma HLS DATAFLOW
+ ^
+/home/centos/Documents/project/resize/libs/xf_opencv/L1/include/common/xf_structs.hpp:968:0: warning: ignoring #pragma HLS LOOP_TRIPCOUNT [-Wunknown-pragmas]
+ #pragma HLS LOOP_TRIPCOUNT min=1 max=ADDRBOUND
+ ^
+/home/centos/Documents/project/resize/libs/xf_opencv/L1/include/common/xf_structs.hpp:969:0: warning: ignoring #pragma HLS PIPELINE [-Wunknown-pragmas]
+ #pragma HLS PIPELINE
+ ^
+In file included from /home/centos/Documents/project/resize/libs/xf_opencv/L1/include/imgproc/xf_resize_headers.h:27:0,
+                 from /home/centos/Documents/project/resize/libs/xf_opencv/L1/include/imgproc/xf_resize.hpp:20,
+                 from ../src/xf_resize_config.h:24,
+                 from ../src/xf_resize_tb.cpp:18:
+/home/centos/Documents/project/resize/libs/xf_opencv/L1/include/imgproc/xf_resize_nn_bilinear.hpp:37:0: warning: ignoring #pragma HLS inline [-Wunknown-pragmas]
+     #pragma HLS inline
+ ^
+/home/centos/Documents/project/resize/libs/xf_opencv/L1/include/imgproc/xf_resize_nn_bilinear.hpp:76:0: warning: ignoring #pragma HLS inline [-Wunknown-pragmas]
+     #pragma HLS inline
+ ^
+/home/centos/Documents/project/resize/libs/xf_opencv/L1/include/imgproc/xf_resize_nn_bilinear.hpp:89:0: warning: ignoring #pragma HLS ARRAY_PARTITION [-Wunknown-pragmas]
+     #pragma HLS ARRAY_PARTITION variable=unpackX1 complete dim=1
+ ^
+/home/centos/Documents/project/resize/libs/xf_opencv/L1/include/imgproc/xf_resize_nn_bilinear.hpp:93:0: warning: ignoring #pragma HLS ARRAY_PARTITION [-Wunknown-pragmas]
+     #pragma HLS ARRAY_PARTITION variable=unpackX2 complete dim=1
+ ^
+/home/centos/Documents/project/resize/libs/xf_opencv/L1/include/imgproc/xf_resize_nn_bilinear.hpp:97:0: warning: ignoring #pragma HLS ARRAY_PARTITION [-Wunknown-pragmas]
+     #pragma HLS ARRAY_PARTITION variable=outputPixel complete dim=1
+ ^
+/home/centos/Documents/project/resize/libs/xf_opencv/L1/include/imgproc/xf_resize_nn_bilinear.hpp:101:0: warning: ignoring #pragma HLS UNROLL [-Wunknown-pragmas]
+         #pragma HLS UNROLL
+ ^
+/home/centos/Documents/project/resize/libs/xf_opencv/L1/include/imgproc/xf_resize_nn_bilinear.hpp:105:0: warning: ignoring #pragma HLS UNROLL [-Wunknown-pragmas]
+             #pragma HLS UNROLL
+ ^
+/home/centos/Documents/project/resize/libs/xf_opencv/L1/include/imgproc/xf_resize_nn_bilinear.hpp:117:0: warning: ignoring #pragma HLS UNROLL [-Wunknown-pragmas]
+         #pragma HLS UNROLL
+ ^
+/home/centos/Documents/project/resize/libs/xf_opencv/L1/include/imgproc/xf_resize_nn_bilinear.hpp:122:0: warning: ignoring #pragma HLS UNROLL [-Wunknown-pragmas]
+             #pragma HLS UNROLL
+ ^
+/home/centos/Documents/project/resize/libs/xf_opencv/L1/include/imgproc/xf_resize_nn_bilinear.hpp:126:0: warning: ignoring #pragma HLS ARRAY_PARTITION [-Wunknown-pragmas]
+             #pragma HLS ARRAY_PARTITION variable=unpackX1temp complete dim=1
+ ^
+/home/centos/Documents/project/resize/libs/xf_opencv/L1/include/imgproc/xf_resize_nn_bilinear.hpp:130:0: warning: ignoring #pragma HLS ARRAY_PARTITION [-Wunknown-pragmas]
+             #pragma HLS ARRAY_PARTITION variable=unpackX2temp complete dim=1
+ ^
+/home/centos/Documents/project/resize/libs/xf_opencv/L1/include/imgproc/xf_resize_nn_bilinear.hpp:134:0: warning: ignoring #pragma HLS UNROLL [-Wunknown-pragmas]
+                 #pragma HLS UNROLL
+ ^
+/home/centos/Documents/project/resize/libs/xf_opencv/L1/include/imgproc/xf_resize_nn_bilinear.hpp:150:0: warning: ignoring #pragma HLS UNROLL [-Wunknown-pragmas]
+         #pragma HLS UNROLL
+ ^
+/home/centos/Documents/project/resize/libs/xf_opencv/L1/include/imgproc/xf_resize_nn_bilinear.hpp:158:0: warning: ignoring #pragma HLS INLINE [-Wunknown-pragmas]
+     #pragma HLS INLINE OFF
+ ^
+/home/centos/Documents/project/resize/libs/xf_opencv/L1/include/imgproc/xf_resize_nn_bilinear.hpp:168:0: warning: ignoring #pragma HLS INLINE [-Wunknown-pragmas]
+     #pragma HLS INLINE
+ ^
+/home/centos/Documents/project/resize/libs/xf_opencv/L1/include/imgproc/xf_resize_nn_bilinear.hpp:172:0: warning: ignoring #pragma HLS PIPELINE [-Wunknown-pragmas]
+         #pragma HLS PIPELINE
+ ^
+/home/centos/Documents/project/resize/libs/xf_opencv/L1/include/imgproc/xf_resize_nn_bilinear.hpp:305:0: warning: ignoring #pragma HLS ALLOCATION [-Wunknown-pragmas]
+     #pragma HLS ALLOCATION function instances=scaleCompute<INDEX_INT, COMP_INDEX_WIDTH, COMP_INDEX_INT, SCALE_WIDTH, SCALE_INT, INTERPOLATION_TYPE> limit=1
+ ^
+In file included from /home/centos/Documents/project/resize/libs/xf_opencv/L1/include/imgproc/xf_resize_headers.h:27:0,
+                 from /home/centos/Documents/project/resize/libs/xf_opencv/L1/include/imgproc/xf_resize.hpp:20,
+                 from ../src/xf_resize_config.h:24,
+                 from ../src/xf_resize_tb.cpp:18:
+/home/centos/Documents/project/resize/libs/xf_opencv/L1/include/imgproc/xf_resize_nn_bilinear.hpp:306:0: warning: ignoring #pragma HLS ALLOCATION [-Wunknown-pragmas]
+     #pragma HLS ALLOCATION function instances=xfUDivResize limit=1
+ ^
+/home/centos/Documents/project/resize/libs/xf_opencv/L1/include/imgproc/xf_resize_nn_bilinear.hpp:320:0: warning: ignoring #pragma HLS ARRAY_PARTITION [-Wunknown-pragmas]
+     #pragma HLS ARRAY_PARTITION variable=scaleXParallel complete dim=1
+ ^
+/home/centos/Documents/project/resize/libs/xf_opencv/L1/include/imgproc/xf_resize_nn_bilinear.hpp:326:0: warning: ignoring #pragma HLS ARRAY_PARTITION [-Wunknown-pragmas]
+     #pragma HLS ARRAY_PARTITION variable=line_buffer complete dim=1
+ ^
+/home/centos/Documents/project/resize/libs/xf_opencv/L1/include/imgproc/xf_resize_nn_bilinear.hpp:327:0: warning: ignoring #pragma HLS ARRAY_PARTITION [-Wunknown-pragmas]
+     #pragma HLS ARRAY_PARTITION variable=line_buffer complete dim=2
+ ^
+/home/centos/Documents/project/resize/libs/xf_opencv/L1/include/imgproc/xf_resize_nn_bilinear.hpp:335:0: warning: ignoring #pragma HLS LOOP_TRIPCOUNT [-Wunknown-pragmas]
+         #pragma HLS LOOP_TRIPCOUNT min=1 max=2
+ ^
+/home/centos/Documents/project/resize/libs/xf_opencv/L1/include/imgproc/xf_resize_nn_bilinear.hpp:339:0: warning: ignoring #pragma HLS PIPELINE [-Wunknown-pragmas]
+             #pragma HLS PIPELINE
+ ^
+/home/centos/Documents/project/resize/libs/xf_opencv/L1/include/imgproc/xf_resize_nn_bilinear.hpp:340:0: warning: ignoring #pragma HLS LOOP_TRIPCOUNT [-Wunknown-pragmas]
+             #pragma HLS LOOP_TRIPCOUNT min=1 max=INWIDTH/NPPC
+ ^
+/home/centos/Documents/project/resize/libs/xf_opencv/L1/include/imgproc/xf_resize_nn_bilinear.hpp:361:0: warning: ignoring #pragma HLS ARRAY_PARTITION [-Wunknown-pragmas]
+     #pragma HLS ARRAY_PARTITION variable=indexx complete dim=1
+ ^
+/home/centos/Documents/project/resize/libs/xf_opencv/L1/include/imgproc/xf_resize_nn_bilinear.hpp:367:0: warning: ignoring #pragma HLS ARRAY_PARTITION [-Wunknown-pragmas]
+     #pragma HLS ARRAY_PARTITION variable=WeightX complete dim=1
+ ^
+/home/centos/Documents/project/resize/libs/xf_opencv/L1/include/imgproc/xf_resize_nn_bilinear.hpp:372:0: warning: ignoring #pragma HLS ARRAY_PARTITION [-Wunknown-pragmas]
+     #pragma HLS ARRAY_PARTITION variable=P0Buf complete dim=1
+ ^
+/home/centos/Documents/project/resize/libs/xf_opencv/L1/include/imgproc/xf_resize_nn_bilinear.hpp:376:0: warning: ignoring #pragma HLS ARRAY_PARTITION [-Wunknown-pragmas]
+     #pragma HLS ARRAY_PARTITION variable=P1Buf complete dim=1
+ ^
+/home/centos/Documents/project/resize/libs/xf_opencv/L1/include/imgproc/xf_resize_nn_bilinear.hpp:384:0: warning: ignoring #pragma HLS LOOP_TRIPCOUNT [-Wunknown-pragmas]
+         #pragma HLS LOOP_TRIPCOUNT min=1 max=LOOPCOUNTROW
+ ^
+/home/centos/Documents/project/resize/libs/xf_opencv/L1/include/imgproc/xf_resize_nn_bilinear.hpp:391:0: warning: ignoring #pragma HLS PIPELINE [-Wunknown-pragmas]
+             #pragma HLS PIPELINE
+ ^
+/home/centos/Documents/project/resize/libs/xf_opencv/L1/include/imgproc/xf_resize_nn_bilinear.hpp:392:0: warning: ignoring #pragma HLS LOOP_TRIPCOUNT [-Wunknown-pragmas]
+             #pragma HLS LOOP_TRIPCOUNT min=1 max=LOOPCOUNTCOL/NPPC
+ ^
+/home/centos/Documents/project/resize/libs/xf_opencv/L1/include/imgproc/xf_resize_nn_bilinear.hpp:425:0: warning: ignoring #pragma HLS UNROLL [-Wunknown-pragmas]
+                     #pragma HLS UNROLL
+ ^
+/home/centos/Documents/project/resize/libs/xf_opencv/L1/include/imgproc/xf_resize_nn_bilinear.hpp:438:0: warning: ignoring #pragma HLS UNROLL [-Wunknown-pragmas]
+                         #pragma HLS UNROLL
+ ^
+/home/centos/Documents/project/resize/libs/xf_opencv/L1/include/imgproc/xf_resize_nn_bilinear.hpp:446:0: warning: ignoring #pragma HLS UNROLL [-Wunknown-pragmas]
+                     #pragma HLS UNROLL
+ ^
+/home/centos/Documents/project/resize/libs/xf_opencv/L1/include/imgproc/xf_resize_nn_bilinear.hpp:459:0: warning: ignoring #pragma HLS UNROLL [-Wunknown-pragmas]
+                         #pragma HLS UNROLL
+ ^
+/home/centos/Documents/project/resize/libs/xf_opencv/L1/include/imgproc/xf_resize_nn_bilinear.hpp:467:0: warning: ignoring #pragma HLS UNROLL [-Wunknown-pragmas]
+                     #pragma HLS UNROLL
+ ^
+/home/centos/Documents/project/resize/libs/xf_opencv/L1/include/imgproc/xf_resize_nn_bilinear.hpp:480:0: warning: ignoring #pragma HLS UNROLL [-Wunknown-pragmas]
+                         #pragma HLS UNROLL
+ ^
+/home/centos/Documents/project/resize/libs/xf_opencv/L1/include/imgproc/xf_resize_nn_bilinear.hpp:493:0: warning: ignoring #pragma HLS UNROLL [-Wunknown-pragmas]
+                             #pragma HLS UNROLL
+ ^
+/home/centos/Documents/project/resize/libs/xf_opencv/L1/include/common/xf_structs.hpp:1003:0: warning: ignoring #pragma HLS LOOP_TRIPCOUNT [-Wunknown-pragmas]
+ #pragma HLS LOOP_TRIPCOUNT min=1 max=LOOPBOUND
+ ^
+/home/centos/Documents/project/resize/libs/xf_opencv/L1/include/common/xf_structs.hpp:1004:0: warning: ignoring #pragma HLS PIPELINE [-Wunknown-pragmas]
+ #pragma HLS PIPELINE
+ ^
+/home/centos/Documents/project/resize/libs/xf_opencv/L1/include/common/xf_structs.hpp:1047:0: warning: ignoring #pragma HLS LOOP_TRIPCOUNT [-Wunknown-pragmas]
+ #pragma HLS LOOP_TRIPCOUNT min=1 max=LOOPBOUND
+ ^
+/home/centos/Documents/project/resize/libs/xf_opencv/L1/include/common/xf_structs.hpp:1048:0: warning: ignoring #pragma HLS PIPELINE [-Wunknown-pragmas]
+ #pragma HLS PIPELINE
+ ^
+/home/centos/Documents/project/resize/libs/xf_opencv/L1/include/common/xf_structs.hpp:1060:0: warning: ignoring #pragma HLS DATAFLOW [-Wunknown-pragmas]
+ #pragma HLS DATAFLOW
+ ^
+/home/centos/Documents/project/resize/libs/xf_opencv/L1/include/common/xf_structs.hpp:1073:0: warning: ignoring #pragma HLS DATAFLOW [-Wunknown-pragmas]
+ #pragma HLS DATAFLOW
+ ^
+/home/centos/Documents/project/resize/libs/xf_opencv/L1/include/common/xf_structs.hpp:1088:0: warning: ignoring #pragma HLS DATAFLOW [-Wunknown-pragmas]
+ #pragma HLS DATAFLOW
+ ^
+/home/centos/Documents/project/resize/libs/xf_opencv/L1/include/common/xf_structs.hpp:1108:0: warning: ignoring #pragma HLS DATAFLOW [-Wunknown-pragmas]
+ #pragma HLS DATAFLOW
+ ^
+/home/centos/Documents/project/resize/libs/xf_opencv/L1/include/common/xf_structs.hpp:1120:0: warning: ignoring #pragma HLS DATAFLOW [-Wunknown-pragmas]
+ #pragma HLS DATAFLOW
+ ^
+/home/centos/Documents/project/resize/libs/xf_opencv/L1/include/common/xf_structs.hpp:1140:0: warning: ignoring #pragma HLS DATAFLOW [-Wunknown-pragmas]
+ #pragma HLS DATAFLOW
+ ^
+/home/centos/Documents/project/resize/libs/xf_opencv/L1/include/common/xf_structs.hpp:1214:0: warning: ignoring #pragma HLS LOOP_TRIPCOUNT [-Wunknown-pragmas]
+ #pragma HLS LOOP_TRIPCOUNT min=1 max=LOOPBOUND
+ ^
+/home/centos/Documents/project/resize/libs/xf_opencv/L1/include/common/xf_structs.hpp:1215:0: warning: ignoring #pragma HLS PIPELINE [-Wunknown-pragmas]
+ #pragma HLS PIPELINE
+ ^
+/home/centos/Documents/project/resize/libs/xf_opencv/L1/include/common/xf_structs.hpp:1244:0: warning: ignoring #pragma HLS LOOP_TRIPCOUNT [-Wunknown-pragmas]
+ #pragma HLS LOOP_TRIPCOUNT min=1 max=ROWS
+ ^
+/home/centos/Documents/project/resize/libs/xf_opencv/L1/include/common/xf_structs.hpp:1249:0: warning: ignoring #pragma HLS LOOP_TRIPCOUNT [-Wunknown-pragmas]
+ #pragma HLS LOOP_TRIPCOUNT min=1 max=COLS_BOUND_PER_NPC
+ ^
+/home/centos/Documents/project/resize/libs/xf_opencv/L1/include/common/xf_structs.hpp:1250:0: warning: ignoring #pragma HLS PIPELINE [-Wunknown-pragmas]
+ #pragma HLS PIPELINE
+ ^
+/home/centos/Documents/project/resize/libs/xf_opencv/L1/include/common/xf_structs.hpp:1292:0: warning: ignoring #pragma HLS DATAFLOW [-Wunknown-pragmas]
+ #pragma HLS DATAFLOW
+ ^
+/home/centos/Documents/project/resize/libs/xf_opencv/L1/include/common/xf_structs.hpp:1305:0: warning: ignoring #pragma HLS DATAFLOW [-Wunknown-pragmas]
+ #pragma HLS DATAFLOW
+ ^
+/home/centos/Documents/project/resize/libs/xf_opencv/L1/include/common/xf_structs.hpp:1322:0: warning: ignoring #pragma HLS LOOP_TRIPCOUNT [-Wunknown-pragmas]
+ #pragma HLS LOOP_TRIPCOUNT min=1 max=ADDRBOUND
+ ^
+/home/centos/Documents/project/resize/libs/xf_opencv/L1/include/common/xf_structs.hpp:1323:0: warning: ignoring #pragma HLS PIPELINE [-Wunknown-pragmas]
+ #pragma HLS PIPELINE
+ ^
+/home/centos/Documents/project/resize/libs/xf_opencv/L1/include/common/xf_structs.hpp:1337:0: warning: ignoring #pragma HLS LOOP_TRIPCOUNT [-Wunknown-pragmas]
+ #pragma HLS LOOP_TRIPCOUNT min=1 max=ADDRBOUND
+ ^
+/home/centos/Documents/project/resize/libs/xf_opencv/L1/include/common/xf_structs.hpp:1338:0: warning: ignoring #pragma HLS PIPELINE [-Wunknown-pragmas]
+ #pragma HLS PIPELINE
+ ^
+/home/centos/Documents/project/resize/libs/xf_opencv/L1/include/common/xf_structs.hpp:1352:0: warning: ignoring #pragma HLS DATAFLOW [-Wunknown-pragmas]
+ #pragma HLS DATAFLOW
+ ^
+/home/centos/Documents/project/resize/libs/xf_opencv/L1/include/common/xf_structs.hpp:1379:0: warning: ignoring #pragma HLS DATAFLOW [-Wunknown-pragmas]
+ #pragma HLS DATAFLOW
+ ^
+/home/centos/Documents/project/resize/libs/xf_opencv/L1/include/common/xf_structs.hpp:1410:0: warning: ignoring #pragma HLS DATAFLOW [-Wunknown-pragmas]
+ #pragma HLS DATAFLOW
+ ^
+/home/centos/Documents/project/resize/libs/xf_opencv/L1/include/common/xf_structs.hpp:1440:0: warning: ignoring #pragma HLS DATAFLOW [-Wunknown-pragmas]
+ #pragma HLS DATAFLOW
+ ^
+In file included from ../src/xf_threshold_config.h:24:0,
+                 from ../src/xf_threshold_tb.cpp:18:
+/home/centos/Documents/project/resize/libs/xf_opencv/L1/include/common/xf_utility.hpp:37:0: warning: ignoring #pragma HLS INLINE [-Wunknown-pragmas]
+     #pragma HLS INLINE
+ ^
+/home/centos/Documents/project/resize/libs/xf_opencv/L1/include/common/xf_utility.hpp:43:0: warning: ignoring #pragma HLS unroll [-Wunknown-pragmas]
+         #pragma HLS unroll
+ ^
+/home/centos/Documents/project/resize/libs/xf_opencv/L1/include/common/xf_utility.hpp:55:0: warning: ignoring #pragma HLS inline [-Wunknown-pragmas]
+     #pragma HLS inline off
+ ^
+/home/centos/Documents/project/resize/libs/xf_opencv/L1/include/common/xf_utility.hpp:64:0: warning: ignoring #pragma HLS UNROLL [-Wunknown-pragmas]
+         #pragma HLS UNROLL
+ ^
+/home/centos/Documents/project/resize/libs/xf_opencv/L1/include/common/xf_utility.hpp:87:0: warning: ignoring #pragma HLS INLINE [-Wunknown-pragmas]
+     #pragma HLS INLINE
+ ^
+/home/centos/Documents/project/resize/libs/xf_opencv/L1/include/common/xf_utility.hpp:107:0: warning: ignoring #pragma HLS INLINE [-Wunknown-pragmas]
+     #pragma HLS INLINE
+ ^
+/home/centos/Documents/project/resize/libs/xf_opencv/L1/include/common/xf_utility.hpp:115:0: warning: ignoring #pragma HLS LOOP_TRIPCOUNT [-Wunknown-pragmas]
+         #pragma HLS LOOP_TRIPCOUNT min=6 max=6
+ ^
+/home/centos/Documents/project/resize/libs/xf_opencv/L1/include/common/xf_utility.hpp:116:0: warning: ignoring #pragma HLS unroll [-Wunknown-pragmas]
+         #pragma HLS unroll
+ ^
+/home/centos/Documents/project/resize/libs/xf_opencv/L1/include/common/xf_utility.hpp:186:0: warning: ignoring #pragma HLS LOOP_TRIPCOUNT [-Wunknown-pragmas]
+         #pragma HLS LOOP_TRIPCOUNT min=IN_BH max=IN_BH
+ ^
+/home/centos/Documents/project/resize/libs/xf_opencv/L1/include/common/xf_utility.hpp:187:0: warning: ignoring #pragma HLS LOOP_FLATTEN [-Wunknown-pragmas]
+         #pragma HLS LOOP_FLATTEN off
+ ^
+/home/centos/Documents/project/resize/libs/xf_opencv/L1/include/common/xf_utility.hpp:191:0: warning: ignoring #pragma HLS pipeline [-Wunknown-pragmas]
+             #pragma HLS pipeline
+ ^
+/home/centos/Documents/project/resize/libs/xf_opencv/L1/include/common/xf_utility.hpp:192:0: warning: ignoring #pragma HLS LOOP_TRIPCOUNT [-Wunknown-pragmas]
+             #pragma HLS LOOP_TRIPCOUNT min=IN_BW max=IN_BW
+ ^
+/home/centos/Documents/project/resize/libs/xf_opencv/L1/include/common/xf_utility.hpp:217:0: warning: ignoring #pragma HLS LOOP_TRIPCOUNT [-Wunknown-pragmas]
+             #pragma HLS LOOP_TRIPCOUNT min=1 max=TRIPCOUNT
+ ^
+/home/centos/Documents/project/resize/libs/xf_opencv/L1/include/common/xf_utility.hpp:218:0: warning: ignoring #pragma HLS PIPELINE [-Wunknown-pragmas]
+             #pragma HLS PIPELINE
+ ^
+/home/centos/Documents/project/resize/libs/xf_opencv/L1/include/common/xf_utility.hpp:253:0: warning: ignoring #pragma HLS LOOP_TRIPCOUNT [-Wunknown-pragmas]
+             #pragma HLS LOOP_TRIPCOUNT min=1 max=TRIPCOUNT
+ ^
+/home/centos/Documents/project/resize/libs/xf_opencv/L1/include/common/xf_utility.hpp:254:0: warning: ignoring #pragma HLS PIPELINE [-Wunknown-pragmas]
+             #pragma HLS PIPELINE
+ ^
+/home/centos/Documents/project/resize/libs/xf_opencv/L1/include/common/xf_utility.hpp:332:0: warning: ignoring #pragma HLS LOOP_TRIPCOUNT [-Wunknown-pragmas]
+             #pragma HLS LOOP_TRIPCOUNT min=1 max=TRIPCOUNT
+ ^
+/home/centos/Documents/project/resize/libs/xf_opencv/L1/include/common/xf_utility.hpp:333:0: warning: ignoring #pragma HLS PIPELINE [-Wunknown-pragmas]
+             #pragma HLS PIPELINE
+ ^
+/home/centos/Documents/project/resize/libs/xf_opencv/L1/include/common/xf_utility.hpp:343:0: warning: ignoring #pragma HLS DATAFLOW [-Wunknown-pragmas]
+         #pragma HLS DATAFLOW
+ ^
+/home/centos/Documents/project/resize/libs/xf_opencv/L1/include/common/xf_utility.hpp:392:0: warning: ignoring #pragma HLS LOOP_TRIPCOUNT [-Wunknown-pragmas]
+             #pragma HLS LOOP_TRIPCOUNT min=1 max=TRIPCOUNT
+ ^
+/home/centos/Documents/project/resize/libs/xf_opencv/L1/include/common/xf_utility.hpp:393:0: warning: ignoring #pragma HLS PIPELINE [-Wunknown-pragmas]
+             #pragma HLS PIPELINE
+ ^
+/home/centos/Documents/project/resize/libs/xf_opencv/L1/include/common/xf_utility.hpp:438:0: warning: ignoring #pragma HLS LOOP_TRIPCOUNT [-Wunknown-pragmas]
+             #pragma HLS LOOP_TRIPCOUNT min=1 max=TRIPCOUNT
+ ^
+/home/centos/Documents/project/resize/libs/xf_opencv/L1/include/common/xf_utility.hpp:439:0: warning: ignoring #pragma HLS PIPELINE [-Wunknown-pragmas]
+             #pragma HLS PIPELINE
+ ^
+/home/centos/Documents/project/resize/libs/xf_opencv/L1/include/common/xf_utility.hpp:481:0: warning: ignoring #pragma HLS LOOP_TRIPCOUNT [-Wunknown-pragmas]
+             #pragma HLS LOOP_TRIPCOUNT min=1 max=TRIPCOUNT
+ ^
+/home/centos/Documents/project/resize/libs/xf_opencv/L1/include/common/xf_utility.hpp:482:0: warning: ignoring #pragma HLS PIPELINE [-Wunknown-pragmas]
+             #pragma HLS PIPELINE
+ ^
+/home/centos/Documents/project/resize/libs/xf_opencv/L1/include/common/xf_utility.hpp:493:0: warning: ignoring #pragma HLS DATAFLOW [-Wunknown-pragmas]
+         #pragma HLS DATAFLOW
+ ^
+In file included from ../src/xf_threshold_config.h:26:0,
+                 from ../src/xf_threshold_tb.cpp:18:
+/home/centos/Documents/project/resize/libs/xf_opencv/L1/include/imgproc/xf_threshold.hpp:57:0: warning: ignoring #pragma HLS LOOP_TRIPCOUNT [-Wunknown-pragmas]
+         #pragma HLS LOOP_TRIPCOUNT min=ROWS max=ROWS
+ ^
+/home/centos/Documents/project/resize/libs/xf_opencv/L1/include/imgproc/xf_threshold.hpp:58:0: warning: ignoring #pragma HLS LOOP_FLATTEN [-Wunknown-pragmas]
+         #pragma HLS LOOP_FLATTEN off
+ ^
+/home/centos/Documents/project/resize/libs/xf_opencv/L1/include/imgproc/xf_threshold.hpp:64:0: warning: ignoring #pragma HLS LOOP_TRIPCOUNT [-Wunknown-pragmas]
+             #pragma HLS LOOP_TRIPCOUNT min=COLS_TRIP max=COLS_TRIP
+ ^
+/home/centos/Documents/project/resize/libs/xf_opencv/L1/include/imgproc/xf_threshold.hpp:65:0: warning: ignoring #pragma HLS pipeline [-Wunknown-pragmas]
+             #pragma HLS pipeline
+ ^
+/home/centos/Documents/project/resize/libs/xf_opencv/L1/include/imgproc/xf_threshold.hpp:73:0: warning: ignoring #pragma HLS unroll [-Wunknown-pragmas]
+                 #pragma HLS unroll
+ ^
+/home/centos/Documents/project/resize/libs/xf_opencv/L1/include/imgproc/xf_threshold.hpp:127:0: warning: ignoring #pragma HLS INLINE [-Wunknown-pragmas]
+     #pragma HLS INLINE OFF
+ ^
+In file included from ../src/xf_threshold_config.h:27:0,
+                 from ../src/xf_threshold_tb.cpp:18:
+/home/centos/Documents/project/resize/src/build/xf_config_params.h:48:0: warning: "INPUT_PTR_WIDTH" redefined [enabled by default]
+ #define INPUT_PTR_WIDTH 256
+ ^
+/home/centos/Documents/project/resize/src/build/xf_config_params.h:21:0: note: this is the location of the previous definition
+ #define INPUT_PTR_WIDTH 128
+ ^
+/home/centos/Documents/project/resize/src/build/xf_config_params.h:49:0: warning: "OUTPUT_PTR_WIDTH" redefined [enabled by default]
+ #define OUTPUT_PTR_WIDTH 256
+ ^
+/home/centos/Documents/project/resize/src/build/xf_config_params.h:22:0: note: this is the location of the previous definition
+ #define OUTPUT_PTR_WIDTH 128
+ ^
+In file included from /home/centos/Documents/project/resize/libs/xf_opencv/L1/include/imgproc/xf_resize_down_area.hpp:23:0,
+                 from /home/centos/Documents/project/resize/libs/xf_opencv/L1/include/imgproc/xf_resize_headers.h:28,
+                 from /home/centos/Documents/project/resize/libs/xf_opencv/L1/include/imgproc/xf_resize.hpp:20,
+                 from ../src/xf_resize_config.h:24,
+                 from ../src/xf_resize_tb.cpp:18:
+/home/centos/Documents/project/resize/libs/xf_opencv/L1/include/core/xf_math.h:2949:0: warning: ignoring #pragma HLS LOOP_TRIPCOUNT [-Wunknown-pragmas]
+                 #pragma HLS LOOP_TRIPCOUNT min=4 max=4 avg=4
+ ^
+/home/centos/Documents/project/resize/libs/xf_opencv/L1/include/core/xf_math.h:2950:0: warning: ignoring #pragma HLS pipeline [-Wunknown-pragmas]
+                 #pragma HLS pipeline
+ ^
+/home/centos/Documents/project/resize/libs/xf_opencv/L1/include/core/xf_math.h:2963:0: warning: ignoring #pragma HLS LOOP_TRIPCOUNT [-Wunknown-pragmas]
+                 #pragma HLS LOOP_TRIPCOUNT min=4 max=4 avg=4
+ ^
+/home/centos/Documents/project/resize/libs/xf_opencv/L1/include/core/xf_math.h:2964:0: warning: ignoring #pragma HLS pipeline [-Wunknown-pragmas]
+                 #pragma HLS pipeline
+ ^
+/home/centos/Documents/project/resize/libs/xf_opencv/L1/include/core/xf_math.h:2977:0: warning: ignoring #pragma HLS LOOP_TRIPCOUNT [-Wunknown-pragmas]
+                 #pragma HLS LOOP_TRIPCOUNT min=4 max=4 avg=4
+ ^
+/home/centos/Documents/project/resize/libs/xf_opencv/L1/include/core/xf_math.h:2978:0: warning: ignoring #pragma HLS pipeline [-Wunknown-pragmas]
+                 #pragma HLS pipeline
+ ^
+/home/centos/Documents/project/resize/libs/xf_opencv/L1/include/core/xf_math.h:2991:0: warning: ignoring #pragma HLS LOOP_TRIPCOUNT [-Wunknown-pragmas]
+                 #pragma HLS LOOP_TRIPCOUNT min=4 max=4 avg=4
+ ^
+/home/centos/Documents/project/resize/libs/xf_opencv/L1/include/core/xf_math.h:2992:0: warning: ignoring #pragma HLS pipeline [-Wunknown-pragmas]
+                 #pragma HLS pipeline
+ ^
+/home/centos/Documents/project/resize/libs/xf_opencv/L1/include/core/xf_math.h:3041:0: warning: ignoring #pragma HLS LOOP_TRIPCOUNT [-Wunknown-pragmas]
+                 #pragma HLS LOOP_TRIPCOUNT min=4 max=4 avg=4
+ ^
+/home/centos/Documents/project/resize/libs/xf_opencv/L1/include/core/xf_math.h:3042:0: warning: ignoring #pragma HLS pipeline [-Wunknown-pragmas]
+                 #pragma HLS pipeline
+ ^
+/home/centos/Documents/project/resize/libs/xf_opencv/L1/include/core/xf_math.h:3055:0: warning: ignoring #pragma HLS LOOP_TRIPCOUNT [-Wunknown-pragmas]
+                 #pragma HLS LOOP_TRIPCOUNT min=4 max=4 avg=4
+ ^
+/home/centos/Documents/project/resize/libs/xf_opencv/L1/include/core/xf_math.h:3056:0: warning: ignoring #pragma HLS pipeline [-Wunknown-pragmas]
+                 #pragma HLS pipeline
+ ^
+/home/centos/Documents/project/resize/libs/xf_opencv/L1/include/core/xf_math.h:3069:0: warning: ignoring #pragma HLS LOOP_TRIPCOUNT [-Wunknown-pragmas]
+                 #pragma HLS LOOP_TRIPCOUNT min=4 max=4 avg=4
+ ^
+/home/centos/Documents/project/resize/libs/xf_opencv/L1/include/core/xf_math.h:3070:0: warning: ignoring #pragma HLS pipeline [-Wunknown-pragmas]
+                 #pragma HLS pipeline
+ ^
+/home/centos/Documents/project/resize/libs/xf_opencv/L1/include/core/xf_math.h:3083:0: warning: ignoring #pragma HLS LOOP_TRIPCOUNT [-Wunknown-pragmas]
+                 #pragma HLS LOOP_TRIPCOUNT min=4 max=4 avg=4
+ ^
+/home/centos/Documents/project/resize/libs/xf_opencv/L1/include/core/xf_math.h:3084:0: warning: ignoring #pragma HLS pipeline [-Wunknown-pragmas]
+                 #pragma HLS pipeline
+ ^
+/home/centos/Documents/project/resize/libs/xf_opencv/L1/include/core/xf_math.h:3116:0: warning: ignoring #pragma HLS LOOP_TRIPCOUNT [-Wunknown-pragmas]
+         #pragma HLS LOOP_TRIPCOUNT min=24 max=24
+ ^
+/home/centos/Documents/project/resize/libs/xf_opencv/L1/include/core/xf_math.h:3117:0: warning: ignoring #pragma HLS PIPELINE [-Wunknown-pragmas]
+         #pragma HLS PIPELINE
+ ^
+/home/centos/Documents/project/resize/libs/xf_opencv/L1/include/core/xf_math.h:3448:0: warning: ignoring #pragma HLS pipeline [-Wunknown-pragmas]
+         #pragma HLS pipeline
+ ^
+In file included from /home/centos/Documents/project/resize/libs/xf_opencv/L1/include/imgproc/xf_resize_headers.h:28:0,
+                 from /home/centos/Documents/project/resize/libs/xf_opencv/L1/include/imgproc/xf_resize.hpp:20,
+                 from ../src/xf_resize_config.h:24,
+                 from ../src/xf_resize_tb.cpp:18:
+/home/centos/Documents/project/resize/libs/xf_opencv/L1/include/imgproc/xf_resize_down_area.hpp:58:0: warning: ignoring #pragma HLS inline [-Wunknown-pragmas]
+     #pragma HLS inline
+ ^
+/home/centos/Documents/project/resize/libs/xf_opencv/L1/include/imgproc/xf_resize_down_area.hpp:110:0: warning: ignoring #pragma HLS unroll [-Wunknown-pragmas]
+         #pragma HLS unroll
+ ^
+/home/centos/Documents/project/resize/libs/xf_opencv/L1/include/imgproc/xf_resize_down_area.hpp:114:0: warning: ignoring #pragma HLS unroll [-Wunknown-pragmas]
+             #pragma HLS unroll
+ ^
+/home/centos/Documents/project/resize/libs/xf_opencv/L1/include/imgproc/xf_resize_down_area.hpp:227:0: warning: ignoring #pragma HLS unroll [-Wunknown-pragmas]
+         #pragma HLS unroll
+ ^
+/home/centos/Documents/project/resize/libs/xf_opencv/L1/include/imgproc/xf_resize_down_area.hpp:231:0: warning: ignoring #pragma HLS unroll [-Wunknown-pragmas]
+             #pragma HLS unroll
+ ^
+/home/centos/Documents/project/resize/libs/xf_opencv/L1/include/imgproc/xf_resize_down_area.hpp:252:0: warning: ignoring #pragma HLS ARRAY_PARTITION [-Wunknown-pragmas]
+     #pragma HLS ARRAY_PARTITION variable=in1 complete dim=1
+ ^
+/home/centos/Documents/project/resize/libs/xf_opencv/L1/include/imgproc/xf_resize_down_area.hpp:253:0: warning: ignoring #pragma HLS inline [-Wunknown-pragmas]
+     #pragma HLS inline
+ ^
+/home/centos/Documents/project/resize/libs/xf_opencv/L1/include/imgproc/xf_resize_down_area.hpp:264:0: warning: ignoring #pragma HLS unroll [-Wunknown-pragmas]
+             #pragma HLS unroll
+ ^
+/home/centos/Documents/project/resize/libs/xf_opencv/L1/include/imgproc/xf_resize_down_area.hpp:273:0: warning: ignoring #pragma HLS unroll [-Wunknown-pragmas]
+             #pragma HLS unroll
+ ^
+/home/centos/Documents/project/resize/libs/xf_opencv/L1/include/imgproc/xf_resize_down_area.hpp:282:0: warning: ignoring #pragma HLS unroll [-Wunknown-pragmas]
+             #pragma HLS unroll
+ ^
+/home/centos/Documents/project/resize/libs/xf_opencv/L1/include/imgproc/xf_resize_down_area.hpp:291:0: warning: ignoring #pragma HLS unroll [-Wunknown-pragmas]
+             #pragma HLS unroll
+ ^
+/home/centos/Documents/project/resize/libs/xf_opencv/L1/include/imgproc/xf_resize_down_area.hpp:321:0: warning: ignoring #pragma HLS unroll [-Wunknown-pragmas]
+         #pragma HLS unroll
+ ^
+/home/centos/Documents/project/resize/libs/xf_opencv/L1/include/imgproc/xf_resize_down_area.hpp:364:0: warning: ignoring #pragma HLS unroll [-Wunknown-pragmas]
+         #pragma HLS unroll
+ ^
+/home/centos/Documents/project/resize/libs/xf_opencv/L1/include/imgproc/xf_resize_down_area.hpp:368:0: warning: ignoring #pragma HLS unroll [-Wunknown-pragmas]
+             #pragma HLS unroll
+ ^
+/home/centos/Documents/project/resize/libs/xf_opencv/L1/include/imgproc/xf_resize_down_area.hpp:380:0: warning: ignoring #pragma HLS unroll [-Wunknown-pragmas]
+         #pragma HLS unroll
+ ^
+/home/centos/Documents/project/resize/libs/xf_opencv/L1/include/imgproc/xf_resize_down_area.hpp:384:0: warning: ignoring #pragma HLS unroll [-Wunknown-pragmas]
+             #pragma HLS unroll
+ ^
+/home/centos/Documents/project/resize/libs/xf_opencv/L1/include/imgproc/xf_resize_down_area.hpp:430:0: warning: ignoring #pragma HLS inline [-Wunknown-pragmas]
+     #pragma HLS inline
+ ^
+/home/centos/Documents/project/resize/libs/xf_opencv/L1/include/imgproc/xf_resize_down_area.hpp:442:0: warning: ignoring #pragma HLS unroll [-Wunknown-pragmas]
+         #pragma HLS unroll
+ ^
+/home/centos/Documents/project/resize/libs/xf_opencv/L1/include/imgproc/xf_resize_down_area.hpp:447:0: warning: ignoring #pragma HLS unroll [-Wunknown-pragmas]
+             #pragma HLS unroll
+ ^
+/home/centos/Documents/project/resize/libs/xf_opencv/L1/include/imgproc/xf_resize_down_area.hpp:455:0: warning: ignoring #pragma HLS unroll [-Wunknown-pragmas]
+                 #pragma HLS unroll
+ ^
+/home/centos/Documents/project/resize/libs/xf_opencv/L1/include/imgproc/xf_resize_down_area.hpp:509:0: warning: ignoring #pragma HLS unroll [-Wunknown-pragmas]
+         #pragma HLS unroll
+ ^
+/home/centos/Documents/project/resize/libs/xf_opencv/L1/include/imgproc/xf_resize_down_area.hpp:513:0: warning: ignoring #pragma HLS unroll [-Wunknown-pragmas]
+             #pragma HLS unroll
+ ^
+/home/centos/Documents/project/resize/libs/xf_opencv/L1/include/imgproc/xf_resize_down_area.hpp:583:0: warning: ignoring #pragma HLS ARRAY_PARTITION [-Wunknown-pragmas]
+     #pragma HLS ARRAY_PARTITION variable=Xindex_output complete dim=0
+ ^
+/home/centos/Documents/project/resize/libs/xf_opencv/L1/include/imgproc/xf_resize_down_area.hpp:587:0: warning: ignoring #pragma HLS ARRAY_PARTITION [-Wunknown-pragmas]
+     #pragma HLS ARRAY_PARTITION variable=Xindex_output_initial complete dim=0
+ ^
+/home/centos/Documents/project/resize/libs/xf_opencv/L1/include/imgproc/xf_resize_down_area.hpp:595:0: warning: ignoring #pragma HLS ARRAY_PARTITION [-Wunknown-pragmas]
+     #pragma HLS ARRAY_PARTITION variable=inflag_TA_prev complete dim=0
+ ^
+/home/centos/Documents/project/resize/libs/xf_opencv/L1/include/imgproc/xf_resize_down_area.hpp:599:0: warning: ignoring #pragma HLS pipeline [-Wunknown-pragmas]
+         #pragma HLS pipeline
+ ^
+/home/centos/Documents/project/resize/libs/xf_opencv/L1/include/imgproc/xf_resize_down_area.hpp:632:0: warning: ignoring #pragma HLS ARRAY_PARTITION [-Wunknown-pragmas]
+     #pragma HLS ARRAY_PARTITION variable=ouput_buffer complete dim=1
+ ^
+/home/centos/Documents/project/resize/libs/xf_opencv/L1/include/imgproc/xf_resize_down_area.hpp:633:0: warning: ignoring #pragma HLS ARRAY_PARTITION [-Wunknown-pragmas]
+     #pragma HLS ARRAY_PARTITION variable=ouput_buffer complete dim=2
+ ^
+/home/centos/Documents/project/resize/libs/xf_opencv/L1/include/imgproc/xf_resize_down_area.hpp:638:0: warning: ignoring #pragma HLS ARRAY_PARTITION [-Wunknown-pragmas]
+     #pragma HLS ARRAY_PARTITION variable=accum_reg complete dim=0
+ ^
+/home/centos/Documents/project/resize/libs/xf_opencv/L1/include/imgproc/xf_resize_down_area.hpp:642:0: warning: ignoring #pragma HLS ARRAY_PARTITION [-Wunknown-pragmas]
+     #pragma HLS ARRAY_PARTITION variable=accum_reg_overlap complete dim=0
+ ^
+/home/centos/Documents/project/resize/libs/xf_opencv/L1/include/imgproc/xf_resize_down_area.hpp:646:0: warning: ignoring #pragma HLS unroll [-Wunknown-pragmas]
+         #pragma HLS unroll
+ ^
+/home/centos/Documents/project/resize/libs/xf_opencv/L1/include/imgproc/xf_resize_down_area.hpp:647:0: warning: ignoring #pragma HLS unroll [-Wunknown-pragmas]
+         #pragma HLS unroll
+ ^
+/home/centos/Documents/project/resize/libs/xf_opencv/L1/include/imgproc/xf_resize_down_area.hpp:651:0: warning: ignoring #pragma HLS unroll [-Wunknown-pragmas]
+             #pragma HLS unroll
+ ^
+/home/centos/Documents/project/resize/libs/xf_opencv/L1/include/imgproc/xf_resize_down_area.hpp:660:0: warning: ignoring #pragma HLS pipeline [-Wunknown-pragmas]
+         #pragma HLS pipeline
+ ^
+/home/centos/Documents/project/resize/libs/xf_opencv/L1/include/imgproc/xf_resize_down_area.hpp:664:0: warning: ignoring #pragma HLS unroll [-Wunknown-pragmas]
+             #pragma HLS unroll
+ ^
+/home/centos/Documents/project/resize/libs/xf_opencv/L1/include/imgproc/xf_resize_down_area.hpp:668:0: warning: ignoring #pragma HLS unroll [-Wunknown-pragmas]
+                 #pragma HLS unroll
+ ^
+/home/centos/Documents/project/resize/libs/xf_opencv/L1/include/imgproc/xf_resize_down_area.hpp:688:0: warning: ignoring #pragma HLS LOOP_TRIPCOUNT [-Wunknown-pragmas]
+         #pragma HLS LOOP_TRIPCOUNT min=1 max=SRC_ROWS
+ ^
+/home/centos/Documents/project/resize/libs/xf_opencv/L1/include/imgproc/xf_resize_down_area.hpp:694:0: warning: ignoring #pragma HLS LOOP_TRIPCOUNT [-Wunknown-pragmas]
+             #pragma HLS LOOP_TRIPCOUNT min=1 max=SRC_TC
+ ^
+/home/centos/Documents/project/resize/libs/xf_opencv/L1/include/imgproc/xf_resize_down_area.hpp:695:0: warning: ignoring #pragma HLS pipeline [-Wunknown-pragmas]
+             #pragma HLS pipeline
+ ^
+/home/centos/Documents/project/resize/libs/xf_opencv/L1/include/imgproc/xf_resize_down_area.hpp:696:0: warning: ignoring #pragma HLS DEPENDENCE [-Wunknown-pragmas]
+             #pragma HLS DEPENDENCE variable=ouput_buffer inter false
+ ^
+/home/centos/Documents/project/resize/libs/xf_opencv/L1/include/imgproc/xf_resize_down_area.hpp:701:0: warning: ignoring #pragma HLS unroll [-Wunknown-pragmas]
+                 #pragma HLS unroll
+ ^
+/home/centos/Documents/project/resize/libs/xf_opencv/L1/include/imgproc/xf_resize_down_area.hpp:726:0: warning: ignoring #pragma HLS ARRAY_PARTITION [-Wunknown-pragmas]
+             #pragma HLS ARRAY_PARTITION variable=output_buffer_index complete dim=0
+ ^
+/home/centos/Documents/project/resize/libs/xf_opencv/L1/include/imgproc/xf_resize_down_area.hpp:731:0: warning: ignoring #pragma HLS ARRAY_PARTITION [-Wunknown-pragmas]
+             #pragma HLS ARRAY_PARTITION variable=inflag_TA complete dim=0
+ ^
+/home/centos/Documents/project/resize/libs/xf_opencv/L1/include/imgproc/xf_resize_down_area.hpp:737:0: warning: ignoring #pragma HLS ARRAY_PARTITION [-Wunknown-pragmas]
+             #pragma HLS ARRAY_PARTITION variable=Wx complete dim=0
+ ^
+/home/centos/Documents/project/resize/libs/xf_opencv/L1/include/imgproc/xf_resize_down_area.hpp:769:0: warning: ignoring #pragma HLS ARRAY_PARTITION [-Wunknown-pragmas]
+             #pragma HLS ARRAY_PARTITION variable=PB_out complete dim=0
+ ^
+/home/centos/Documents/project/resize/libs/xf_opencv/L1/include/imgproc/xf_resize_down_area.hpp:773:0: warning: ignoring #pragma HLS ARRAY_PARTITION [-Wunknown-pragmas]
+             #pragma HLS ARRAY_PARTITION variable=PB_out_overlap complete dim=0
+ ^
+/home/centos/Documents/project/resize/libs/xf_opencv/L1/include/imgproc/xf_resize_down_area.hpp:787:0: warning: ignoring #pragma HLS ARRAY_PARTITION [-Wunknown-pragmas]
+             #pragma HLS ARRAY_PARTITION variable=DDR_write_data complete dim=0
+ ^
+/home/centos/Documents/project/resize/libs/xf_opencv/L1/include/imgproc/xf_resize_down_area.hpp:799:0: warning: ignoring #pragma HLS unroll [-Wunknown-pragmas]
+                     #pragma HLS unroll
+ ^
+/home/centos/Documents/project/resize/libs/xf_opencv/L1/include/imgproc/xf_resize_down_area.hpp:803:0: warning: ignoring #pragma HLS unroll [-Wunknown-pragmas]
+                         #pragma HLS unroll
+ ^
+In file included from /home/centos/Documents/project/resize/libs/xf_opencv/L1/include/imgproc/xf_resize_headers.h:29:0,
+                 from /home/centos/Documents/project/resize/libs/xf_opencv/L1/include/imgproc/xf_resize.hpp:20,
+                 from ../src/xf_resize_config.h:24,
+                 from ../src/xf_resize_tb.cpp:18:
+/home/centos/Documents/project/resize/libs/xf_opencv/L1/include/imgproc/xf_resize_up_area.hpp:36:0: warning: ignoring #pragma HLS PIPELINE [-Wunknown-pragmas]
+     #pragma HLS PIPELINE
+ ^
+/home/centos/Documents/project/resize/libs/xf_opencv/L1/include/imgproc/xf_resize_up_area.hpp:68:0: warning: ignoring #pragma HLS ARRAY_PARTITION [-Wunknown-pragmas]
+     #pragma HLS ARRAY_PARTITION variable=D0 dim=1
+ ^
+/home/centos/Documents/project/resize/libs/xf_opencv/L1/include/imgproc/xf_resize_up_area.hpp:69:0: warning: ignoring #pragma HLS ARRAY_PARTITION [-Wunknown-pragmas]
+     #pragma HLS ARRAY_PARTITION variable=D1 dim=1
+ ^
+/home/centos/Documents/project/resize/libs/xf_opencv/L1/include/imgproc/xf_resize_up_area.hpp:70:0: warning: ignoring #pragma HLS INLINE [-Wunknown-pragmas]
+     #pragma HLS INLINE
+ ^
+/home/centos/Documents/project/resize/libs/xf_opencv/L1/include/imgproc/xf_resize_up_area.hpp:75:0: warning: ignoring #pragma HLS ARRAY_PARTITION [-Wunknown-pragmas]
+     #pragma HLS ARRAY_PARTITION variable=line0 complete dim=1
+ ^
+/home/centos/Documents/project/resize/libs/xf_opencv/L1/include/imgproc/xf_resize_up_area.hpp:76:0: warning: ignoring #pragma HLS ARRAY_PARTITION [-Wunknown-pragmas]
+     #pragma HLS ARRAY_PARTITION variable=line1 complete dim=1
+ ^
+/home/centos/Documents/project/resize/libs/xf_opencv/L1/include/imgproc/xf_resize_up_area.hpp:90:0: warning: ignoring #pragma HLS ARRAY_PARTITION [-Wunknown-pragmas]
+     #pragma HLS ARRAY_PARTITION variable=line0_0 complete dim=1
+ ^
+/home/centos/Documents/project/resize/libs/xf_opencv/L1/include/imgproc/xf_resize_up_area.hpp:91:0: warning: ignoring #pragma HLS ARRAY_PARTITION [-Wunknown-pragmas]
+     #pragma HLS ARRAY_PARTITION variable=line0_1 complete dim=1
+ ^
+/home/centos/Documents/project/resize/libs/xf_opencv/L1/include/imgproc/xf_resize_up_area.hpp:96:0: warning: ignoring #pragma HLS ARRAY_PARTITION [-Wunknown-pragmas]
+     #pragma HLS ARRAY_PARTITION variable=line1_0 complete dim=1
+ ^
+/home/centos/Documents/project/resize/libs/xf_opencv/L1/include/imgproc/xf_resize_up_area.hpp:97:0: warning: ignoring #pragma HLS ARRAY_PARTITION [-Wunknown-pragmas]
+     #pragma HLS ARRAY_PARTITION variable=line1_1 complete dim=1
+ ^
+/home/centos/Documents/project/resize/libs/xf_opencv/L1/include/imgproc/xf_resize_up_area.hpp:107:0: warning: ignoring #pragma HLS UNROLL [-Wunknown-pragmas]
+         #pragma HLS UNROLL
+ ^
+/home/centos/Documents/project/resize/libs/xf_opencv/L1/include/imgproc/xf_resize_up_area.hpp:123:0: warning: ignoring #pragma HLS UNROLL [-Wunknown-pragmas]
+         #pragma HLS UNROLL
+ ^
+/home/centos/Documents/project/resize/libs/xf_opencv/L1/include/imgproc/xf_resize_up_area.hpp:152:0: warning: ignoring #pragma HLS INLINE [-Wunknown-pragmas]
+     #pragma HLS INLINE OFF
+ ^
+/home/centos/Documents/project/resize/libs/xf_opencv/L1/include/imgproc/xf_resize_up_area.hpp:182:0: warning: ignoring #pragma HLS ARRAY_PARTITION [-Wunknown-pragmas]
+         #pragma HLS ARRAY_PARTITION variable=Hoffset cyclic factor=8 dim=1
+ ^
+/home/centos/Documents/project/resize/libs/xf_opencv/L1/include/imgproc/xf_resize_up_area.hpp:183:0: warning: ignoring #pragma HLS ARRAY_PARTITION [-Wunknown-pragmas]
+         #pragma HLS ARRAY_PARTITION variable=Hweight cyclic factor=8 dim=1
+ ^
+/home/centos/Documents/project/resize/libs/xf_opencv/L1/include/imgproc/xf_resize_up_area.hpp:187:0: warning: ignoring #pragma HLS ARRAY_PARTITION [-Wunknown-pragmas]
+         #pragma HLS ARRAY_PARTITION variable=Hoffset cyclic factor=4 dim=1
+ ^
+/home/centos/Documents/project/resize/libs/xf_opencv/L1/include/imgproc/xf_resize_up_area.hpp:188:0: warning: ignoring #pragma HLS ARRAY_PARTITION [-Wunknown-pragmas]
+         #pragma HLS ARRAY_PARTITION variable=Hweight cyclic factor=4 dim=1
+ ^
+/home/centos/Documents/project/resize/libs/xf_opencv/L1/include/imgproc/xf_resize_up_area.hpp:192:0: warning: ignoring #pragma HLS ARRAY_PARTITION [-Wunknown-pragmas]
+         #pragma HLS ARRAY_PARTITION variable=Hoffset cyclic factor=2 dim=1
+ ^
+/home/centos/Documents/project/resize/libs/xf_opencv/L1/include/imgproc/xf_resize_up_area.hpp:193:0: warning: ignoring #pragma HLS ARRAY_PARTITION [-Wunknown-pragmas]
+         #pragma HLS ARRAY_PARTITION variable=Hweight cyclic factor=2 dim=1
+ ^
+/home/centos/Documents/project/resize/libs/xf_opencv/L1/include/imgproc/xf_resize_up_area.hpp:217:0: warning: ignoring #pragma HLS ARRAY_PARTITION [-Wunknown-pragmas]
+                                        #pragma HLS ARRAY_PARTITION variable=D0 dim=1
+ ^
+/home/centos/Documents/project/resize/libs/xf_opencv/L1/include/imgproc/xf_resize_up_area.hpp:218:0: warning: ignoring #pragma HLS ARRAY_PARTITION [-Wunknown-pragmas]
+                                        #pragma HLS ARRAY_PARTITION variable=D1 dim=1
+ ^
+/home/centos/Documents/project/resize/libs/xf_opencv/L1/include/imgproc/xf_resize_up_area.hpp:227:0: warning: ignoring #pragma HLS ALLOCATION [-Wunknown-pragmas]
+     #pragma HLS ALLOCATION function instances=xFUDivAreaUp limit=1
+ ^
+/home/centos/Documents/project/resize/libs/xf_opencv/L1/include/imgproc/xf_resize_up_area.hpp:242:0: warning: ignoring #pragma HLS pipeline [-Wunknown-pragmas]
+         #pragma HLS pipeline
+ ^
+/home/centos/Documents/project/resize/libs/xf_opencv/L1/include/imgproc/xf_resize_up_area.hpp:243:0: warning: ignoring #pragma HLS LOOP_TRIPCOUNT [-Wunknown-pragmas]
+         #pragma HLS LOOP_TRIPCOUNT min=1 max=DST_COLS
+ ^
+/home/centos/Documents/project/resize/libs/xf_opencv/L1/include/imgproc/xf_resize_up_area.hpp:267:0: warning: ignoring #pragma HLS pipeline [-Wunknown-pragmas]
+         #pragma HLS pipeline
+ ^
+/home/centos/Documents/project/resize/libs/xf_opencv/L1/include/imgproc/xf_resize_up_area.hpp:268:0: warning: ignoring #pragma HLS LOOP_TRIPCOUNT [-Wunknown-pragmas]
+         #pragma HLS LOOP_TRIPCOUNT min=1 max=DST_ROWS
+ ^
+/home/centos/Documents/project/resize/libs/xf_opencv/L1/include/imgproc/xf_resize_up_area.hpp:294:0: warning: ignoring #pragma HLS pipeline [-Wunknown-pragmas]
+         #pragma HLS pipeline
+ ^
+/home/centos/Documents/project/resize/libs/xf_opencv/L1/include/imgproc/xf_resize_up_area.hpp:295:0: warning: ignoring #pragma HLS LOOP_TRIPCOUNT [-Wunknown-pragmas]
+         #pragma HLS LOOP_TRIPCOUNT min=1 max = SRC_TC
+ ^
+/home/centos/Documents/project/resize/libs/xf_opencv/L1/include/imgproc/xf_resize_up_area.hpp:304:0: warning: ignoring #pragma HLS pipeline [-Wunknown-pragmas]
+         #pragma HLS pipeline
+ ^
+/home/centos/Documents/project/resize/libs/xf_opencv/L1/include/imgproc/xf_resize_up_area.hpp:305:0: warning: ignoring #pragma HLS LOOP_TRIPCOUNT [-Wunknown-pragmas]
+         #pragma HLS LOOP_TRIPCOUNT min=1 max = SRC_TC
+ ^
+/home/centos/Documents/project/resize/libs/xf_opencv/L1/include/imgproc/xf_resize_up_area.hpp:316:0: warning: ignoring #pragma HLS LOOP_TRIPCOUNT [-Wunknown-pragmas]
+         #pragma HLS LOOP_TRIPCOUNT min=1 max = DST_ROWS
+ ^
+/home/centos/Documents/project/resize/libs/xf_opencv/L1/include/imgproc/xf_resize_up_area.hpp:360:0: warning: ignoring #pragma HLS PIPELINE [-Wunknown-pragmas]
+             #pragma HLS PIPELINE
+ ^
+/home/centos/Documents/project/resize/libs/xf_opencv/L1/include/imgproc/xf_resize_up_area.hpp:361:0: warning: ignoring #pragma HLS LOOP_FLATTEN [-Wunknown-pragmas]
+             #pragma HLS LOOP_FLATTEN OFF
+ ^
+/home/centos/Documents/project/resize/libs/xf_opencv/L1/include/imgproc/xf_resize_up_area.hpp:362:0: warning: ignoring #pragma HLS LOOP_TRIPCOUNT [-Wunknown-pragmas]
+             #pragma HLS LOOP_TRIPCOUNT min=1 max=DST_TC avg=DST_TC
+ ^
+/home/centos/Documents/project/resize/libs/xf_opencv/L1/include/imgproc/xf_resize_up_area.hpp:376:0: warning: ignoring #pragma HLS UNROLL [-Wunknown-pragmas]
+                         #pragma HLS UNROLL
+ ^
+/home/centos/Documents/project/resize/libs/xf_opencv/L1/include/imgproc/xf_resize_up_area.hpp:390:0: warning: ignoring #pragma HLS UNROLL [-Wunknown-pragmas]
+                         #pragma HLS UNROLL
+ ^
+/home/centos/Documents/project/resize/libs/xf_opencv/L1/include/imgproc/xf_resize_up_area.hpp:404:0: warning: ignoring #pragma HLS UNROLL [-Wunknown-pragmas]
+                         #pragma HLS UNROLL
+ ^
+/home/centos/Documents/project/resize/libs/xf_opencv/L1/include/imgproc/xf_resize_up_area.hpp:418:0: warning: ignoring #pragma HLS UNROLL [-Wunknown-pragmas]
+                     #pragma HLS UNROLL
+ ^
+In file included from ../src/xf_resize_config.h:24:0,
+                 from ../src/xf_resize_tb.cpp:18:
+/home/centos/Documents/project/resize/libs/xf_opencv/L1/include/imgproc/xf_resize.hpp:38:0: warning: ignoring #pragma HLS INLINE [-Wunknown-pragmas]
+     #pragma HLS INLINE OFF
+ ^
+In file included from ../src/xf_threshold_config.h:26:0,
+                 from ../src/xf_resize_tb.cpp:19:
+/home/centos/Documents/project/resize/libs/xf_opencv/L1/include/imgproc/xf_threshold.hpp:57:0: warning: ignoring #pragma HLS LOOP_TRIPCOUNT [-Wunknown-pragmas]
+         #pragma HLS LOOP_TRIPCOUNT min=ROWS max=ROWS
+ ^
+/home/centos/Documents/project/resize/libs/xf_opencv/L1/include/imgproc/xf_threshold.hpp:58:0: warning: ignoring #pragma HLS LOOP_FLATTEN [-Wunknown-pragmas]
+         #pragma HLS LOOP_FLATTEN off
+ ^
+/home/centos/Documents/project/resize/libs/xf_opencv/L1/include/imgproc/xf_threshold.hpp:64:0: warning: ignoring #pragma HLS LOOP_TRIPCOUNT [-Wunknown-pragmas]
+             #pragma HLS LOOP_TRIPCOUNT min=COLS_TRIP max=COLS_TRIP
+ ^
+/home/centos/Documents/project/resize/libs/xf_opencv/L1/include/imgproc/xf_threshold.hpp:65:0: warning: ignoring #pragma HLS pipeline [-Wunknown-pragmas]
+             #pragma HLS pipeline
+ ^
+/home/centos/Documents/project/resize/libs/xf_opencv/L1/include/imgproc/xf_threshold.hpp:73:0: warning: ignoring #pragma HLS unroll [-Wunknown-pragmas]
+                 #pragma HLS unroll
+ ^
+/home/centos/Documents/project/resize/libs/xf_opencv/L1/include/imgproc/xf_threshold.hpp:127:0: warning: ignoring #pragma HLS INLINE [-Wunknown-pragmas]
+     #pragma HLS INLINE OFF
+ ^
+In file included from ../src/xf_threshold_config.h:27:0,
+                 from ../src/xf_resize_tb.cpp:19:
+/home/centos/Documents/project/resize/src/build/xf_config_params.h:21:0: warning: "INPUT_PTR_WIDTH" redefined [enabled by default]
+ #define INPUT_PTR_WIDTH 128
+ ^
+In file included from ../src/xf_resize_config.h:23:0,
+                 from ../src/xf_resize_tb.cpp:18:
+/home/centos/Documents/project/resize/src/build/xf_config_params.h:48:0: note: this is the location of the previous definition
+ #define INPUT_PTR_WIDTH 256
+ ^
+In file included from ../src/xf_threshold_config.h:27:0,
+                 from ../src/xf_resize_tb.cpp:19:
+/home/centos/Documents/project/resize/src/build/xf_config_params.h:22:0: warning: "OUTPUT_PTR_WIDTH" redefined [enabled by default]
+ #define OUTPUT_PTR_WIDTH 128
+ ^
+In file included from ../src/xf_resize_config.h:23:0,
+                 from ../src/xf_resize_tb.cpp:18:
+/home/centos/Documents/project/resize/src/build/xf_config_params.h:49:0: note: this is the location of the previous definition
+ #define OUTPUT_PTR_WIDTH 256
+ ^
+In file included from ../src/xf_threshold_config.h:27:0,
+                 from ../src/xf_resize_tb.cpp:19:
+/home/centos/Documents/project/resize/src/build/xf_config_params.h:48:0: warning: "INPUT_PTR_WIDTH" redefined [enabled by default]
+ #define INPUT_PTR_WIDTH 256
+ ^
+/home/centos/Documents/project/resize/src/build/xf_config_params.h:21:0: note: this is the location of the previous definition
+ #define INPUT_PTR_WIDTH 128
+ ^
+/home/centos/Documents/project/resize/src/build/xf_config_params.h:49:0: warning: "OUTPUT_PTR_WIDTH" redefined [enabled by default]
+ #define OUTPUT_PTR_WIDTH 256
+ ^
+/home/centos/Documents/project/resize/src/build/xf_config_params.h:22:0: note: this is the location of the previous definition
+ #define OUTPUT_PTR_WIDTH 128
+ ^
+In file included from /home/centos/Documents/project/resize/libs/xf_opencv/L1/include/imgproc/xf_resize_down_area.hpp:23:0,
+                 from /home/centos/Documents/project/resize/libs/xf_opencv/L1/include/imgproc/xf_resize_headers.h:28,
+                 from /home/centos/Documents/project/resize/libs/xf_opencv/L1/include/imgproc/xf_resize.hpp:20,
+                 from ../src/xf_resize_config.h:24,
+                 from ../src/xf_resize_tb.cpp:18:
+/home/centos/Documents/project/resize/libs/xf_opencv/L1/include/core/xf_math.h: In function ‘char xf::cv::IdentifySignBits(ap_int<24>)’:
+/home/centos/Documents/project/resize/libs/xf_opencv/L1/include/core/xf_math.h:3113:1: warning: label ‘signBitsLoop’ defined but not used [-Wunused-label]
+ signBitsLoop:
+ ^
+/home/centos/Documents/project/resize/libs/xf_opencv/L1/include/core/xf_math.h: In function ‘short unsigned int xf::cv::Inverse8(unsigned char, int, char*)’:
+/home/centos/Documents/project/resize/libs/xf_opencv/L1/include/core/xf_math.h:3135:18: warning: unused variable ‘index’ [-Wunused-variable]
+     unsigned int index;
+                  ^
+/home/centos/Documents/project/resize/libs/xf_opencv/L1/include/core/xf_math.h: In function ‘void xf::cv::findInverse24(ap_int<24>&, int&, int&, unsigned int&, int*, int*)’:
+/home/centos/Documents/project/resize/libs/xf_opencv/L1/include/core/xf_math.h:3174:13: warning: unused variable ‘N1’ [-Wunused-variable]
+     int M1, N1, leftover_bits = 0;
+             ^
+/home/centos/Documents/project/resize/libs/xf_opencv/L1/include/core/xf_math.h: In function ‘long unsigned int xf::cv::DivideYByX24(ap_int24_t, ap_int24_t, int, int, int*, int*)’:
+/home/centos/Documents/project/resize/libs/xf_opencv/L1/include/core/xf_math.h:3213:17: warning: unused variable ‘N2’ [-Wunused-variable]
+     int N1 = 0, N2 = 0;
+                 ^
+In file included from ../src/xf_threshold_tb.cpp:20:0:
+../src/xf_threshold_tb.cpp: In function ‘int main(int, char**)’:
+../src/xf_threshold_tb.cpp:80:100: warning: ISO C++ says that these are ambiguous, even though the worst conversion for the first is better than the worst conversion for the second: [enabled by default]
+     OCL_CHECK(err, cl::Buffer imageToDevice(context, CL_MEM_READ_ONLY, (height * width), NULL, &err));
+                                                                                                    ^
+/home/centos/Documents/project/resize/libs/xf_opencv/ext/xcl2/xcl2.hpp:40:5: note: in definition of macro ‘OCL_CHECK’
+     call;                                                                                                 \
+     ^
+In file included from /home/centos/Documents/project/resize/libs/xf_opencv/ext/xcl2/xcl2.hpp:45:0,
+                 from ../src/xf_threshold_tb.cpp:20:
+/usr/include/CL/cl2.hpp:3662:5: note: candidate 1: cl::Buffer::Buffer(const cl::Context&, cl_mem_flags, cl::size_type, void*, cl_int*)
+     Buffer(
+     ^
+/usr/include/CL/cl2.hpp:8392:1: note: candidate 2: cl::Buffer::Buffer(const cl::Context&, IteratorType, IteratorType, bool, bool, cl_int*) [with IteratorType = int; cl_int = int]
+ Buffer::Buffer(
+ ^
+In file included from ../src/xf_threshold_tb.cpp:20:0:
+../src/xf_threshold_tb.cpp:81:103: warning: ISO C++ says that these are ambiguous, even though the worst conversion for the first is better than the worst conversion for the second: [enabled by default]
+     OCL_CHECK(err, cl::Buffer imageFromDevice(context, CL_MEM_WRITE_ONLY, (height * width), NULL, &err));
+                                                                                                       ^
+/home/centos/Documents/project/resize/libs/xf_opencv/ext/xcl2/xcl2.hpp:40:5: note: in definition of macro ‘OCL_CHECK’
+     call;                                                                                                 \
+     ^
+In file included from /home/centos/Documents/project/resize/libs/xf_opencv/ext/xcl2/xcl2.hpp:45:0,
+                 from ../src/xf_threshold_tb.cpp:20:
+/usr/include/CL/cl2.hpp:3662:5: note: candidate 1: cl::Buffer::Buffer(const cl::Context&, cl_mem_flags, cl::size_type, void*, cl_int*)
+     Buffer(
+     ^
+/usr/include/CL/cl2.hpp:8392:1: note: candidate 2: cl::Buffer::Buffer(const cl::Context&, IteratorType, IteratorType, bool, bool, cl_int*) [with IteratorType = int; cl_int = int]
+ Buffer::Buffer(
+ ^
+../src/xf_threshold_tb.cpp:31:20: warning: variable ‘in_width’ set but not used [-Wunused-but-set-variable]
+     unsigned short in_width, in_height;
+                    ^
+../src/xf_threshold_tb.cpp:31:30: warning: variable ‘in_height’ set but not used [-Wunused-but-set-variable]
+     unsigned short in_width, in_height;
+                              ^
+../src/xf_resize_tb.cpp: In function ‘int main(int, char**)’:
+../src/xf_resize_tb.cpp:59:43: error: ‘in_img’ was not declared in this scope
+     ocv_ref.create(out_height, out_width, in_img.depth());
+                                           ^
+In file included from /home/centos/Documents/project/resize/libs/xf_opencv/L1/include/imgproc/xf_resize_down_area.hpp:23:0,
+                 from /home/centos/Documents/project/resize/libs/xf_opencv/L1/include/imgproc/xf_resize_headers.h:28,
+                 from /home/centos/Documents/project/resize/libs/xf_opencv/L1/include/imgproc/xf_resize.hpp:20,
+                 from ../src/xf_resize_config.h:24,
+                 from ../src/xf_resize_tb.cpp:18:
+/home/centos/Documents/project/resize/libs/xf_opencv/L1/include/core/xf_math.h: At global scope:
+/home/centos/Documents/project/resize/libs/xf_opencv/L1/include/core/xf_math.h:2679:23: warning: ‘xf::cv::sin_fix_lut’ defined but not used [-Wunused-variable]
+ static unsigned short sin_fix_lut[1572] = {
+                       ^
+/home/centos/Documents/project/resize/libs/xf_opencv/L1/include/core/xf_math.h:2780:23: warning: ‘xf::cv::cos_fix_lut’ defined but not used [-Wunused-variable]
+ static unsigned short cos_fix_lut[1572] = {
+                       ^
+/home/centos/Documents/project/resize/libs/xf_opencv/L1/include/core/xf_math.h:2924:21: warning: ‘unsigned int xf::cv::Inverse32(short unsigned int, int, char*)’ defined but not used [-Wunused-function]
+ static unsigned int Inverse32(unsigned short x, int M, char* N) {
+                     ^
+/home/centos/Documents/project/resize/libs/xf_opencv/L1/include/core/xf_math.h:3228:14: warning: ‘short int xf::cv::Atan2LookupFP(short int, short int, int, int, int, int)’ defined but not used [-Wunused-function]
+ static short Atan2LookupFP(short xs, short ys, int M1, int N1, int M2, int N2) {
+              ^
+/home/centos/Documents/project/resize/libs/xf_opencv/L1/include/core/xf_math.h:3437:12: warning: ‘int xf::cv::Sqrt(unsigned int)’ defined but not used [-Wunused-function]
+ static int Sqrt(unsigned int D) {
+            ^
+/home/centos/Documents/project/resize/libs/xf_opencv/L1/include/core/xf_math.h:3292:14: warning: ‘short int xf::cv::Atan2LUT8(short int, short int, int, int, int, int)’ defined but not used [-Wunused-function]
+ static short Atan2LUT8(short xs, short ys, int M1, int N1, int M2, int N2) {
+              ^
+/home/centos/Documents/project/resize/libs/xf_opencv/L1/include/core/xf_math.h:3357:14: warning: ‘short int xf::cv::Atan2LookupFP24(ap_int24_t, ap_int24_t, int, int, int, int)’ defined but not used [-Wunused-function]
+ static short Atan2LookupFP24(ap_int24_t xs, ap_int24_t ys, int M1, int N1, int M2, int N2) {
+              ^
+make: *** [src/xf_resize_tb.o] Error 1
+make: *** Waiting for unfinished jobs....
+
+10:56:28 Build Finished (took 3s.903ms)
+

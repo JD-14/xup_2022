@@ -1,0 +1,2 @@
+performing high-level synthesis for kernel: cvtcolor_bgr2gray
+Log file: /home/centos/Documents/project/color_kernels/Emulation-SW/build/cvtcolor_bgr2gray/cvtcolor_bgr2gray/vitis_hls.log

@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="ASCII"?>
+<hwlink:HwLinkProject xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:hwlink="http://www.xilinx.com/acceleration/hwlink" name="py_up_system_hw_link" platform="/home/centos/aws-fpga/Vitis/aws_platform/xilinx_aws-vu9p-f1_shell-v04261818_201920_2/xilinx_aws-vu9p-f1_shell-v04261818_201920_2.xpfm" systemProject="py_up_system" cpu="pl">
+  <configuration name="Emulation-SW" id="com.xilinx.ide.accel.config.hwlink.sw_emu.1889393220">
+    <configBuildOptions xsi:type="hwlink:LinkOptions">
+      <binaryContainers name="krnl_pyr_up">
+        <kernels name="pyr_up_accel" projectName="py_up_kernels">
+          <computeUnits name="pyr_up_accel_1" slr="">
+            <args name="img_inp" master="true" memory=""/>
+            <args name="img_out" master="true" memory=""/>
+            <args name="in_rows"/>
+            <args name="in_cols"/>
+            <args name="out_rows"/>
+            <args name="out_cols"/>
+          </computeUnits>
+        </kernels>
+      </binaryContainers>
+    </configBuildOptions>
+    <lastBuildOptions xsi:type="hwlink:LinkOptions">
+      <binaryContainers name="krnl_pyr_up">
+        <kernels name="pyr_up_accel" projectName="py_up_kernels">
+          <computeUnits name="pyr_up_accel_1" slr="">
+            <args name="img_inp" master="true" memory=""/>
+            <args name="img_out" master="true" memory=""/>
+            <args name="in_rows"/>
+            <args name="in_cols"/>
+            <args name="out_rows"/>
+            <args name="out_cols"/>
+          </computeUnits>
+        </kernels>
+      </binaryContainers>
+    </lastBuildOptions>
+  </configuration>
+  <configuration name="Emulation-HW" id="com.xilinx.ide.accel.config.hwlink.hw_emu.164428314">
+    <configBuildOptions xsi:type="hwlink:LinkOptions" target="hw_emu">
+      <binaryContainers name="krnl_pyr_up">
+        <kernels name="pyr_up_accel" projectName="py_up_kernels">
+          <computeUnits name="pyr_up_accel_1" slr="">
+            <args name="img_inp" master="true" memory=""/>
+            <args name="img_out" master="true" memory=""/>
+            <args name="in_rows"/>
+            <args name="in_cols"/>
+            <args name="out_rows"/>
+            <args name="out_cols"/>
+          </computeUnits>
+        </kernels>
+      </binaryContainers>
+    </configBuildOptions>
+  </configuration>
+  <configuration name="Hardware" id="com.xilinx.ide.accel.config.hwlink.hw.860652621">
+    <configBuildOptions xsi:type="hwlink:LinkOptions" target="hw">
+      <binaryContainers name="krnl_pyr_up">
+        <kernels name="pyr_up_accel" projectName="py_up_kernels">
+          <computeUnits name="pyr_up_accel_1" slr="">
+            <args name="img_inp" master="true" memory=""/>
+            <args name="img_out" master="true" memory=""/>
+            <args name="in_rows"/>
+            <args name="in_cols"/>
+            <args name="out_rows"/>
+            <args name="out_cols"/>
+          </computeUnits>
+        </kernels>
+      </binaryContainers>
+    </configBuildOptions>
+  </configuration>
+</hwlink:HwLinkProject>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project name="link" dir="">
+  <FileSets>
+    <FileSet Name="kernel_threshold_accel" Type="DesignSrcs">
+      <File Path="/home/centos/Documents/vision_project/threshold_system_hw_link/Emulation-SW/krnl_threshold.build/link/int/xo/threshold_accel/threshold_accel/cpu_sources/xf_threshold_accel.cpp"/>
+      <Config/>
+    </FileSet>
+  </FileSets>
+  <Runs/>
+</project>

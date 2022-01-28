@@ -1,0 +1,7 @@
+Begin Function 'Array2xfMat<128, 0, 2160, 3840, 1>'
+
+RTL state condition: (1'b1 == ap_CS_fsm_state2)
+# ST_2
+
+End Function 'Array2xfMat<128, 0, 2160, 3840, 1>'
+

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project name="link" dir="">
+  <FileSets>
+    <FileSet Name="kernel_resize_accel" Type="DesignSrcs">
+      <File Path="/home/centos/Documents/project/resize_system_hw_link/Emulation-SW/krnl_resize.build/link/int/xo/resize_accel/resize_accel/cpu_sources/xf_resize_accel.cpp"/>
+      <Config/>
+    </FileSet>
+  </FileSets>
+  <Runs/>
+</project>

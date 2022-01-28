@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project name="link" dir="">
+  <FileSets>
+    <FileSet Name="kernel_cvtcolor_bgr2gray" Type="DesignSrcs">
+      <File Path="/home/centos/Documents/project/color_system_hw_link/Emulation-SW/krnl_cvt_color.build/link/int/xo/cvtcolor_bgr2gray/cvtcolor_bgr2gray/cpu_sources/xf_cvt_color_accel.cpp"/>
+      <Config/>
+    </FileSet>
+  </FileSets>
+  <Runs/>
+</project>

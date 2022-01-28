@@ -1,0 +1,10 @@
+<AutoPilot:ProjectResources xmlns:AutoPilot="com.autoesl.autopilot.ui.directiveView">
+    <sourceFile name="">
+        <directive functionName="cvtcolor_bgr2gray" label="" functionLabel="">
+            <pragma name="TOP">
+                <option name="name" value="cvtcolor_bgr2gray"/>
+            </pragma>
+        </directive>
+    </sourceFile>
+</AutoPilot:ProjectResources>
+

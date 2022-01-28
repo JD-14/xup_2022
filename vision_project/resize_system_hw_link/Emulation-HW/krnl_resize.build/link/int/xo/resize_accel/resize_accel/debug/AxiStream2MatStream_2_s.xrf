@@ -1,0 +1,42 @@
+Begin Function 'AxiStream2MatStream<2>'
+
+RTL state condition: (1'b1 == ap_CS_fsm_state1)
+# ST_1
+local cols_bound_per_npc_read <> <integer> <FifoRead> 'read' <>
+reg: cols_bound_per_npc_read_reg_115[31:0] lv
+
+local rows_read <> <integer> <FifoRead> 'read' <>
+reg: rows_read_reg_122[31:0] lv
+
+
+RTL state condition: (1'b1 == ap_CS_fsm_state2)
+# ST_2
+local last_blk_width_read <> <integer> <> 'read' <>
+reg: last_blk_width_read_reg_127[3:0] lv
+
+
+RTL state condition: (1'b1 == ap_CS_fsm_state3)
+# ST_3
+local bound <mul_999> <integer> <Arithmetic><MultiCycle> 'mul' </home/centos/Documents/vision_project/resize_kernels/libs/xf_opencv/L1/include/common/xf_structs.hpp:999>
+bound /home/centos/Documents/vision_project/resize_kernels/libs/xf_opencv/L1/include/common/xf_structs.hpp:999
+reg: bound_reg_134[31:0] lv
+
+local sub <> <integer> <Arithmetic> 'add' <>
+reg: sub_reg_139[31:0] lv
+
+local sub4 <> <integer> <Arithmetic> 'sub' <>
+reg: sub4_reg_144[7:0] lv
+
+local sub31 <> <integer> <Arithmetic> 'add' <>
+reg: sub31_reg_149[4:0] lv
+
+local add_ln1021 <add_1021> <integer> <Arithmetic> 'add' </home/centos/Documents/vision_project/resize_kernels/libs/xf_opencv/L1/include/common/xf_structs.hpp:1021>
+add_ln1021 /home/centos/Documents/vision_project/resize_kernels/libs/xf_opencv/L1/include/common/xf_structs.hpp:1021
+reg: add_ln1021_reg_154[7:0] lv
+
+
+RTL state condition: (1'b1 == ap_CS_fsm_state4)
+# ST_4
+
+End Function 'AxiStream2MatStream<2>'
+

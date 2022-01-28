@@ -1,0 +1,826 @@
+<ENTRY>
+{
+ "thisFile": "/home/centos/Documents/vision_project/resize_system_hw_link/Emulation-HW/krnl_resize.xclbin.link_summary",
+ "connectId": "",
+ "serverToken": "",
+ "timestamp": "0"
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_CmdStep",
+ "dateTimestamp": "Tue Jan 25 17:07:13 2022",
+ "timestampMillis": "1643130433296",
+ "buildStep": {
+  "cmdId": "401323b0-13ad-449b-8c0a-3505e3413d0e",
+  "name": "v++",
+  "logFile": "/home/centos/Documents/vision_project/resize_system_hw_link/Emulation-HW/krnl_resize.build/link/link.steps.log",
+  "commandLine": "/opt/Xilinx/Vitis/2021.1/bin/unwrapped/lnx64.o/v++ --xp param:compiler.lockFlowCritSlackThreshold=0 --xp vivado_param:hd.routingContainmentAreaExpansion=true --xp vivado_param:hd.supportClockNetCrossDiffReconfigurablePartitions=1 --xp vivado_param:bitstream.enablePR=4123 --xp vivado_param:physynth.ultraRAMOptOutput=false --xp vivado_prop:run.__KERNEL__.{STEPS.SYNTH_DESIGN.ARGS.MAX_URAM_CASCADE_HEIGHT}={1} --xp vivado_param:synth.elaboration.rodinMoreOptions={rt::set_parameter disableOregPackingUram true}  --vivado.prop \"run.__KERNEL__.{STEPS.SYNTH_DESIGN.ARGS.MORE OPTIONS}={-directive sdx_optimization_effort_high}\" --advanced.misc \"report=type report_timing_summary name impl_report_timing_summary_route_design_summary steps {route_design} runs {impl_1} options {-max_paths 10}\" --advanced.misc \"report=type report_timing_summary name impl_report_timing_summary_post_route_phys_opt_design_summary steps {post_route_phys_opt_design} runs {impl_1} options {-max_paths 10}\" --target hw_emu --link --config krnl_resize-link.cfg -okrnl_resize.xclbin ../../resize_kernels/Emulation-HW/build/resize_accel.xo ",
+  "args": [
+   "--xp",
+   "param:compiler.lockFlowCritSlackThreshold=0",
+   "--xp",
+   "vivado_param:hd.routingContainmentAreaExpansion=true",
+   "--xp",
+   "vivado_param:hd.supportClockNetCrossDiffReconfigurablePartitions=1",
+   "--xp",
+   "vivado_param:bitstream.enablePR=4123",
+   "--xp",
+   "vivado_param:physynth.ultraRAMOptOutput=false",
+   "--xp",
+   "vivado_prop:run.__KERNEL__.{STEPS.SYNTH_DESIGN.ARGS.MAX_URAM_CASCADE_HEIGHT}={1}",
+   "--xp",
+   "vivado_param:synth.elaboration.rodinMoreOptions={rt::set_parameter disableOregPackingUram true}",
+   "--target",
+   "hw_emu",
+   "--link",
+   "--config",
+   "krnl_resize-link.cfg",
+   "-okrnl_resize.xclbin",
+   "../../resize_kernels/Emulation-HW/build/resize_accel.xo"
+  ],
+  "iniFiles": [
+   {
+    "path": "/home/centos/Documents/vision_project/resize_system_hw_link/Emulation-HW/krnl_resize-link.cfg",
+    "content": "platform=/home/centos/aws-fpga/Vitis/aws_platform/xilinx_aws-vu9p-f1_shell-v04261818_201920_2/xilinx_aws-vu9p-f1_shell-v04261818_201920_2.xpfm\nsave-temps=1\ndebug=1\nmessageDb=krnl_resize.mdb\ntemp_dir=krnl_resize.build\nreport_dir=krnl_resize.build/reports\nlog_dir=krnl_resize.build/logs\nremote_ip_cache=/home/centos/Documents/vision_project/ip_cache\n\n[advanced]\nmisc=solution_name=link\n\n[connectivity]\nnk=resize_accel:1:resize_accel_1\n\n[profile]\ndata=resize_accel:resize_accel_1:img_inp:all\ndata=resize_accel:resize_accel_1:img_out:all"
+   }
+  ],
+  "cwd": "/home/centos/Documents/vision_project/resize_system_hw_link/Emulation-HW"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Tue Jan 25 17:07:13 2022",
+ "timestampMillis": "1643130433296",
+ "status": {
+  "cmdId": "401323b0-13ad-449b-8c0a-3505e3413d0e",
+  "state": "CS_RUNNING"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_FlowMetaData",
+ "dateTimestamp": "Tue Jan 25 17:07:19 2022",
+ "timestampMillis": "1643130439480",
+ "buildSummary": {
+  "hardwarePlatform": "xilinx_aws-vu9p-f1_shell-v04261818_201920_2.xpfm",
+  "hardwareDsa": "xilinx_aws-vu9p-f1_shell-v04261818_201920_2.xsa",
+  "platformDirectory": "/home/centos/aws-fpga/Vitis/aws_platform/xilinx_aws-vu9p-f1_shell-v04261818_201920_2",
+  "runtime": "OpenCL",
+  "systemConfig": "Linux",
+  "flow": "BF_LINK",
+  "target": "TT_HW_EMU",
+  "binaryContainer": {
+   "base": {
+    "type": "BT_UKNOWN",
+    "name": "krnl_resize",
+    "file": "/home/centos/Documents/vision_project/resize_system_hw_link/Emulation-HW/krnl_resize.xclbin",
+    "reports": [],
+    "uuid": ""
+   },
+   "kernels": []
+  },
+  "kernels": [
+   {
+    "base": {
+     "type": "KERNEL",
+     "name": "resize_accel",
+     "file": "/home/centos/Documents/vision_project/resize_kernels/Emulation-HW/build/resize_accel.xo",
+     "reports": [],
+     "uuid": ""
+    },
+    "sources": [
+     "/home/centos/Documents/vision_project/resize_system_hw_link/Emulation-HW/krnl_resize.build/link/int/xo/resize_accel/resize_accel/cpu_sources/xf_resize_accel.cpp"
+    ],
+    "psSources": [],
+    "cuNames": [
+     "resize_accel_1"
+    ],
+    "type": "HLS",
+    "frequency": 0,
+    "freqUnits": ""
+   }
+  ],
+  "toolVersion": "Vitis V++ Compiler Release 2021.1. SW Build 3246112 on 2021-06-09-14:19:56"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_SubCmdStep",
+ "dateTimestamp": "Tue Jan 25 17:07:19 2022",
+ "timestampMillis": "1643130439723",
+ "buildStep": {
+  "cmdId": "cc5c4abd-32b7-4f93-9665-d48238af0f8f",
+  "name": "system_link",
+  "logFile": "",
+  "commandLine": "system_link --xo /home/centos/Documents/vision_project/resize_kernels/Emulation-HW/build/resize_accel.xo -keep --config /home/centos/Documents/vision_project/resize_system_hw_link/Emulation-HW/krnl_resize.build/link/int/syslinkConfig.ini --xpfm /home/centos/aws-fpga/Vitis/aws_platform/xilinx_aws-vu9p-f1_shell-v04261818_201920_2/xilinx_aws-vu9p-f1_shell-v04261818_201920_2.xpfm --target emu --output_dir /home/centos/Documents/vision_project/resize_system_hw_link/Emulation-HW/krnl_resize.build/link/int --temp_dir /home/centos/Documents/vision_project/resize_system_hw_link/Emulation-HW/krnl_resize.build/link/sys_link",
+  "args": [
+   "--xo",
+   "/home/centos/Documents/vision_project/resize_kernels/Emulation-HW/build/resize_accel.xo",
+   "-keep",
+   "--config",
+   "/home/centos/Documents/vision_project/resize_system_hw_link/Emulation-HW/krnl_resize.build/link/int/syslinkConfig.ini",
+   "--xpfm",
+   "/home/centos/aws-fpga/Vitis/aws_platform/xilinx_aws-vu9p-f1_shell-v04261818_201920_2/xilinx_aws-vu9p-f1_shell-v04261818_201920_2.xpfm",
+   "--target",
+   "emu",
+   "--output_dir",
+   "/home/centos/Documents/vision_project/resize_system_hw_link/Emulation-HW/krnl_resize.build/link/int",
+   "--temp_dir",
+   "/home/centos/Documents/vision_project/resize_system_hw_link/Emulation-HW/krnl_resize.build/link/sys_link"
+  ],
+  "iniFiles": [
+   {
+    "path": "/home/centos/Documents/vision_project/resize_system_hw_link/Emulation-HW/krnl_resize.build/link/int/syslinkConfig.ini",
+    "content": "nk=resize_accel:1:resize_accel_1\n\n"
+   }
+  ],
+  "cwd": "/home/centos/Documents/vision_project/resize_system_hw_link/Emulation-HW"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Tue Jan 25 17:07:19 2022",
+ "timestampMillis": "1643130439724",
+ "status": {
+  "cmdId": "cc5c4abd-32b7-4f93-9665-d48238af0f8f",
+  "state": "CS_RUNNING"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Tue Jan 25 17:07:41 2022",
+ "timestampMillis": "1643130461181",
+ "status": {
+  "cmdId": "cc5c4abd-32b7-4f93-9665-d48238af0f8f",
+  "state": "CS_PASSED"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_SubCmdStep",
+ "dateTimestamp": "Tue Jan 25 17:07:41 2022",
+ "timestampMillis": "1643130461184",
+ "buildStep": {
+  "cmdId": "d712e1cd-6c45-4790-8ed2-19c2fc2b5be6",
+  "name": "cf2sw",
+  "logFile": "",
+  "commandLine": "cf2sw -sdsl /home/centos/Documents/vision_project/resize_system_hw_link/Emulation-HW/krnl_resize.build/link/int/sdsl.dat -rtd /home/centos/Documents/vision_project/resize_system_hw_link/Emulation-HW/krnl_resize.build/link/int/cf2sw.rtd -nofilter /home/centos/Documents/vision_project/resize_system_hw_link/Emulation-HW/krnl_resize.build/link/int/cf2sw_full.rtd -xclbin /home/centos/Documents/vision_project/resize_system_hw_link/Emulation-HW/krnl_resize.build/link/int/xclbin_orig.xml -o /home/centos/Documents/vision_project/resize_system_hw_link/Emulation-HW/krnl_resize.build/link/int/xclbin_orig.1.xml",
+  "args": [
+   "-sdsl",
+   "/home/centos/Documents/vision_project/resize_system_hw_link/Emulation-HW/krnl_resize.build/link/int/sdsl.dat",
+   "-rtd",
+   "/home/centos/Documents/vision_project/resize_system_hw_link/Emulation-HW/krnl_resize.build/link/int/cf2sw.rtd",
+   "-nofilter",
+   "/home/centos/Documents/vision_project/resize_system_hw_link/Emulation-HW/krnl_resize.build/link/int/cf2sw_full.rtd",
+   "-xclbin",
+   "/home/centos/Documents/vision_project/resize_system_hw_link/Emulation-HW/krnl_resize.build/link/int/xclbin_orig.xml",
+   "-o",
+   "/home/centos/Documents/vision_project/resize_system_hw_link/Emulation-HW/krnl_resize.build/link/int/xclbin_orig.1.xml"
+  ],
+  "iniFiles": [],
+  "cwd": "/home/centos/Documents/vision_project/resize_system_hw_link/Emulation-HW"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Tue Jan 25 17:07:41 2022",
+ "timestampMillis": "1643130461185",
+ "status": {
+  "cmdId": "d712e1cd-6c45-4790-8ed2-19c2fc2b5be6",
+  "state": "CS_RUNNING"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Tue Jan 25 17:07:44 2022",
+ "timestampMillis": "1643130464952",
+ "status": {
+  "cmdId": "d712e1cd-6c45-4790-8ed2-19c2fc2b5be6",
+  "state": "CS_PASSED"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_SubCmdStep",
+ "dateTimestamp": "Tue Jan 25 17:07:44 2022",
+ "timestampMillis": "1643130464954",
+ "buildStep": {
+  "cmdId": "436ccf70-121b-4022-9119-4dbec02d96ee",
+  "name": "rtd2_system_diagram",
+  "logFile": "",
+  "commandLine": "rtd2SystemDiagram",
+  "args": [],
+  "iniFiles": [],
+  "cwd": "/home/centos/Documents/vision_project/resize_system_hw_link/Emulation-HW"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Tue Jan 25 17:07:44 2022",
+ "timestampMillis": "1643130464955",
+ "status": {
+  "cmdId": "436ccf70-121b-4022-9119-4dbec02d96ee",
+  "state": "CS_RUNNING"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Tue Jan 25 17:07:45 2022",
+ "timestampMillis": "1643130465396",
+ "report": {
+  "path": "/home/centos/Documents/vision_project/resize_system_hw_link/Emulation-HW/krnl_resize.build/link/int/systemDiagramModel.json",
+  "name": "",
+  "fileType": "JSON",
+  "reportType": "SYSTEM_DIAGRAM",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Tue Jan 25 17:07:45 2022",
+ "timestampMillis": "1643130465397",
+ "status": {
+  "cmdId": "436ccf70-121b-4022-9119-4dbec02d96ee",
+  "state": "CS_PASSED"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_SubCmdStep",
+ "dateTimestamp": "Tue Jan 25 17:07:45 2022",
+ "timestampMillis": "1643130465399",
+ "buildStep": {
+  "cmdId": "73b3b261-d85e-4e22-9b24-ffe3a4b06de5",
+  "name": "vpl",
+  "logFile": "",
+  "commandLine": "vpl -t hw_emu -f /home/centos/aws-fpga/Vitis/aws_platform/xilinx_aws-vu9p-f1_shell-v04261818_201920_2/xilinx_aws-vu9p-f1_shell-v04261818_201920_2.xpfm -g --remote_ip_cache /home/centos/Documents/vision_project/ip_cache -s --output_dir /home/centos/Documents/vision_project/resize_system_hw_link/Emulation-HW/krnl_resize.build/link/int --log_dir /home/centos/Documents/vision_project/resize_system_hw_link/Emulation-HW/krnl_resize.build/logs/link --report_dir /home/centos/Documents/vision_project/resize_system_hw_link/Emulation-HW/krnl_resize.build/reports/link --config /home/centos/Documents/vision_project/resize_system_hw_link/Emulation-HW/krnl_resize.build/link/int/vplConfig.ini -k /home/centos/Documents/vision_project/resize_system_hw_link/Emulation-HW/krnl_resize.build/link/int/kernel_info.dat --webtalk_flag Vitis --temp_dir /home/centos/Documents/vision_project/resize_system_hw_link/Emulation-HW/krnl_resize.build/link --emulation_mode debug_waveform --no-info --iprepo /home/centos/Documents/vision_project/resize_system_hw_link/Emulation-HW/krnl_resize.build/link/int/xo/ip_repo/xilinx_com_hls_resize_accel_1_0 --messageDb /home/centos/Documents/vision_project/resize_system_hw_link/Emulation-HW/krnl_resize.build/link/run_link/vpl.pb /home/centos/Documents/vision_project/resize_system_hw_link/Emulation-HW/krnl_resize.build/link/int/dr.bd.tcl",
+  "args": [
+   "-t",
+   "hw_emu",
+   "-f",
+   "/home/centos/aws-fpga/Vitis/aws_platform/xilinx_aws-vu9p-f1_shell-v04261818_201920_2/xilinx_aws-vu9p-f1_shell-v04261818_201920_2.xpfm",
+   "-g",
+   "--remote_ip_cache",
+   "/home/centos/Documents/vision_project/ip_cache",
+   "-s",
+   "--output_dir",
+   "/home/centos/Documents/vision_project/resize_system_hw_link/Emulation-HW/krnl_resize.build/link/int",
+   "--log_dir",
+   "/home/centos/Documents/vision_project/resize_system_hw_link/Emulation-HW/krnl_resize.build/logs/link",
+   "--report_dir",
+   "/home/centos/Documents/vision_project/resize_system_hw_link/Emulation-HW/krnl_resize.build/reports/link",
+   "--config",
+   "/home/centos/Documents/vision_project/resize_system_hw_link/Emulation-HW/krnl_resize.build/link/int/vplConfig.ini",
+   "-k",
+   "/home/centos/Documents/vision_project/resize_system_hw_link/Emulation-HW/krnl_resize.build/link/int/kernel_info.dat",
+   "--webtalk_flag",
+   "Vitis",
+   "--temp_dir",
+   "/home/centos/Documents/vision_project/resize_system_hw_link/Emulation-HW/krnl_resize.build/link",
+   "--emulation_mode",
+   "debug_waveform",
+   "--no-info",
+   "--iprepo",
+   "/home/centos/Documents/vision_project/resize_system_hw_link/Emulation-HW/krnl_resize.build/link/int/xo/ip_repo/xilinx_com_hls_resize_accel_1_0",
+   "--messageDb",
+   "/home/centos/Documents/vision_project/resize_system_hw_link/Emulation-HW/krnl_resize.build/link/run_link/vpl.pb",
+   "/home/centos/Documents/vision_project/resize_system_hw_link/Emulation-HW/krnl_resize.build/link/int/dr.bd.tcl"
+  ],
+  "iniFiles": [
+   {
+    "path": "/home/centos/Documents/vision_project/resize_system_hw_link/Emulation-HW/krnl_resize.build/link/int/vplConfig.ini",
+    "content": "[advanced]\nparam=compiler.lockFlowCritSlackThreshold=0\nmisc=report=type report_timing_summary name impl_report_timing_summary_route_design_summary steps {route_design} runs {impl_1} options {-max_paths 10}\nmisc=report=type report_timing_summary name impl_report_timing_summary_post_route_phys_opt_design_summary steps {post_route_phys_opt_design} runs {impl_1} options {-max_paths 10}\nparam=compiler.enablePerformanceTrace=1\nmisc=solution_name=link\nparam=hw_emu.enableDebugWaveform=1\nparam=hw_emu.enableProfiling=1\nparam=compiler.vppCurrentWorkingDir=/home/centos/Documents/vision_project/resize_system_hw_link/Emulation-HW\nmisc=BinaryName=krnl_resize\n\n[connectivity]\nnk=resize_accel:1:resize_accel_1\n\n[vivado]\nparam=hd.routingContainmentAreaExpansion=true\nparam=hd.supportClockNetCrossDiffReconfigurablePartitions=1\nparam=bitstream.enablePR=4123\nparam=physynth.ultraRAMOptOutput=false\nprop=run.__KERNEL__.{STEPS.SYNTH_DESIGN.ARGS.MAX_URAM_CASCADE_HEIGHT}={1}\nparam=synth.elaboration.rodinMoreOptions={rt::set_parameter disableOregPackingUram true}\nprop=run.__KERNEL__.{STEPS.SYNTH_DESIGN.ARGS.MORE OPTIONS}={-directive sdx_optimization_effort_high}\n\n"
+   }
+  ],
+  "cwd": "/home/centos/Documents/vision_project/resize_system_hw_link/Emulation-HW"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Tue Jan 25 17:07:45 2022",
+ "timestampMillis": "1643130465400",
+ "status": {
+  "cmdId": "73b3b261-d85e-4e22-9b24-ffe3a4b06de5",
+  "state": "CS_RUNNING"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_CmdStep",
+ "dateTimestamp": "Tue Jan 25 17:07:47 2022",
+ "timestampMillis": "1643130467775",
+ "buildStep": {
+  "cmdId": "682f9af1-8cfd-4824-8e50-e18fc76bc09e",
+  "name": "vpl",
+  "logFile": "/home/centos/Documents/vision_project/resize_system_hw_link/Emulation-HW/krnl_resize.build/link/link.steps.log",
+  "commandLine": "/opt/Xilinx/Vitis/2021.1/bin/unwrapped/lnx64.o/vpl -t hw_emu -f /home/centos/aws-fpga/Vitis/aws_platform/xilinx_aws-vu9p-f1_shell-v04261818_201920_2/xilinx_aws-vu9p-f1_shell-v04261818_201920_2.xpfm -g --remote_ip_cache /home/centos/Documents/vision_project/ip_cache -s --output_dir /home/centos/Documents/vision_project/resize_system_hw_link/Emulation-HW/krnl_resize.build/link/int --log_dir /home/centos/Documents/vision_project/resize_system_hw_link/Emulation-HW/krnl_resize.build/logs/link --report_dir /home/centos/Documents/vision_project/resize_system_hw_link/Emulation-HW/krnl_resize.build/reports/link --config /home/centos/Documents/vision_project/resize_system_hw_link/Emulation-HW/krnl_resize.build/link/int/vplConfig.ini -k /home/centos/Documents/vision_project/resize_system_hw_link/Emulation-HW/krnl_resize.build/link/int/kernel_info.dat --webtalk_flag Vitis --temp_dir /home/centos/Documents/vision_project/resize_system_hw_link/Emulation-HW/krnl_resize.build/link --emulation_mode debug_waveform --no-info --iprepo /home/centos/Documents/vision_project/resize_system_hw_link/Emulation-HW/krnl_resize.build/link/int/xo/ip_repo/xilinx_com_hls_resize_accel_1_0 --messageDb /home/centos/Documents/vision_project/resize_system_hw_link/Emulation-HW/krnl_resize.build/link/run_link/vpl.pb /home/centos/Documents/vision_project/resize_system_hw_link/Emulation-HW/krnl_resize.build/link/int/dr.bd.tcl ",
+  "args": [],
+  "iniFiles": [],
+  "cwd": "/home/centos/Documents/vision_project/resize_system_hw_link/Emulation-HW/krnl_resize.build/link/run_link"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Tue Jan 25 17:07:47 2022",
+ "timestampMillis": "1643130467775",
+ "status": {
+  "cmdId": "682f9af1-8cfd-4824-8e50-e18fc76bc09e",
+  "state": "CS_RUNNING"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_VivadoProject",
+ "dateTimestamp": "Tue Jan 25 17:07:54 2022",
+ "timestampMillis": "1643130474760",
+ "vivadoProject": {
+  "openDir": "/home/centos/Documents/vision_project/resize_system_hw_link/Emulation-HW/krnl_resize.build/link/vivado/vpl",
+  "openScript": "openprj.tcl",
+  "relativeProject": "prj/prj.xpr"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_SubCmdStep",
+ "dateTimestamp": "Tue Jan 25 17:07:54 2022",
+ "timestampMillis": "1643130474762",
+ "buildStep": {
+  "cmdId": "2e154e23-4f02-4eed-89d6-73df1b01f63e",
+  "name": "vivado",
+  "logFile": "/home/centos/Documents/vision_project/resize_system_hw_link/Emulation-HW/krnl_resize.build/link/vivado/vpl/vivado.log",
+  "commandLine": "vivado -log vivado.log -applog -m64 -messageDb vivado.pb -mode batch -source vpl.tcl -notrace",
+  "args": [
+   "-log",
+   "vivado.log",
+   "-applog",
+   " -m64",
+   "-messageDb",
+   "vivado.pb",
+   "-mode",
+   "batch",
+   "-source",
+   "vpl.tcl",
+   "-notrace"
+  ],
+  "iniFiles": [],
+  "cwd": "/home/centos/Documents/vision_project/resize_system_hw_link/Emulation-HW/krnl_resize.build/link/run_link"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Tue Jan 25 17:07:54 2022",
+ "timestampMillis": "1643130474762",
+ "status": {
+  "cmdId": "2e154e23-4f02-4eed-89d6-73df1b01f63e",
+  "state": "CS_RUNNING"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Tue Jan 25 17:08:36 2022",
+ "timestampMillis": "1643130516795",
+ "report": {
+  "path": "/home/centos/Documents/vision_project/resize_system_hw_link/Emulation-HW/krnl_resize.build/link/int/debug_ip_layout.rtd",
+  "name": "",
+  "fileType": "JSON",
+  "reportType": "DEBUG_IP_LAYOUT",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Tue Jan 25 17:12:51 2022",
+ "timestampMillis": "1643130771131",
+ "status": {
+  "cmdId": "2e154e23-4f02-4eed-89d6-73df1b01f63e",
+  "state": "CS_PASSED"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Tue Jan 25 17:12:51 2022",
+ "timestampMillis": "1643130771315",
+ "status": {
+  "cmdId": "682f9af1-8cfd-4824-8e50-e18fc76bc09e",
+  "state": "CS_PASSED"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Tue Jan 25 17:12:51 2022",
+ "timestampMillis": "1643130771328",
+ "status": {
+  "cmdId": "73b3b261-d85e-4e22-9b24-ffe3a4b06de5",
+  "state": "CS_PASSED"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_SubCmdStep",
+ "dateTimestamp": "Tue Jan 25 17:12:51 2022",
+ "timestampMillis": "1643130771331",
+ "buildStep": {
+  "cmdId": "6f85ef5e-a489-4d5b-b097-7a1b07baf937",
+  "name": "rtdgen",
+  "logFile": "",
+  "commandLine": "rtdgen",
+  "args": [],
+  "iniFiles": [],
+  "cwd": "/home/centos/Documents/vision_project/resize_system_hw_link/Emulation-HW"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Tue Jan 25 17:12:51 2022",
+ "timestampMillis": "1643130771332",
+ "status": {
+  "cmdId": "6f85ef5e-a489-4d5b-b097-7a1b07baf937",
+  "state": "CS_RUNNING"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Tue Jan 25 17:12:51 2022",
+ "timestampMillis": "1643130771338",
+ "report": {
+  "path": "/home/centos/Documents/vision_project/resize_system_hw_link/Emulation-HW/krnl_resize.build/link/int/krnl_resize_xml.rtd",
+  "name": "",
+  "fileType": "JSON",
+  "reportType": "XCLBIN_INFO",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_SubCmdStep",
+ "dateTimestamp": "Tue Jan 25 17:12:51 2022",
+ "timestampMillis": "1643130771340",
+ "buildStep": {
+  "cmdId": "def80f73-c159-4c09-83e8-4d441fd87fa8",
+  "name": "cf2sw",
+  "logFile": "",
+  "commandLine": "cf2sw -a /home/centos/Documents/vision_project/resize_system_hw_link/Emulation-HW/krnl_resize.build/link/int/address_map.xml -sdsl /home/centos/Documents/vision_project/resize_system_hw_link/Emulation-HW/krnl_resize.build/link/int/sdsl.dat -xclbin /home/centos/Documents/vision_project/resize_system_hw_link/Emulation-HW/krnl_resize.build/link/int/xclbin_orig.xml -rtd /home/centos/Documents/vision_project/resize_system_hw_link/Emulation-HW/krnl_resize.build/link/int/krnl_resize.rtd -o /home/centos/Documents/vision_project/resize_system_hw_link/Emulation-HW/krnl_resize.build/link/int/krnl_resize.xml",
+  "args": [
+   "-a",
+   "/home/centos/Documents/vision_project/resize_system_hw_link/Emulation-HW/krnl_resize.build/link/int/address_map.xml",
+   "-sdsl",
+   "/home/centos/Documents/vision_project/resize_system_hw_link/Emulation-HW/krnl_resize.build/link/int/sdsl.dat",
+   "-xclbin",
+   "/home/centos/Documents/vision_project/resize_system_hw_link/Emulation-HW/krnl_resize.build/link/int/xclbin_orig.xml",
+   "-rtd",
+   "/home/centos/Documents/vision_project/resize_system_hw_link/Emulation-HW/krnl_resize.build/link/int/krnl_resize.rtd",
+   "-o",
+   "/home/centos/Documents/vision_project/resize_system_hw_link/Emulation-HW/krnl_resize.build/link/int/krnl_resize.xml"
+  ],
+  "iniFiles": [],
+  "cwd": "/home/centos/Documents/vision_project/resize_system_hw_link/Emulation-HW"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Tue Jan 25 17:12:51 2022",
+ "timestampMillis": "1643130771341",
+ "status": {
+  "cmdId": "def80f73-c159-4c09-83e8-4d441fd87fa8",
+  "state": "CS_RUNNING"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Tue Jan 25 17:12:54 2022",
+ "timestampMillis": "1643130774951",
+ "status": {
+  "cmdId": "def80f73-c159-4c09-83e8-4d441fd87fa8",
+  "state": "CS_PASSED"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_SubCmdStep",
+ "dateTimestamp": "Tue Jan 25 17:12:57 2022",
+ "timestampMillis": "1643130777987",
+ "buildStep": {
+  "cmdId": "3314e5a2-20ac-4cb0-811e-81627ad8e8e2",
+  "name": "rtdgen",
+  "logFile": "",
+  "commandLine": "writeSystemDiagram",
+  "args": [
+   "/home/centos/Documents/vision_project/resize_system_hw_link/Emulation-HW/krnl_resize.build/link/int/krnl_resize.rtd",
+   "/home/centos/Documents/vision_project/resize_system_hw_link/Emulation-HW/krnl_resize.build/link/int/systemDiagramModelSlrBaseAddress.json"
+  ],
+  "iniFiles": [],
+  "cwd": "/home/centos/Documents/vision_project/resize_system_hw_link/Emulation-HW"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Tue Jan 25 17:12:57 2022",
+ "timestampMillis": "1643130777987",
+ "status": {
+  "cmdId": "3314e5a2-20ac-4cb0-811e-81627ad8e8e2",
+  "state": "CS_RUNNING"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Tue Jan 25 17:12:57 2022",
+ "timestampMillis": "1643130777989",
+ "report": {
+  "path": "/home/centos/Documents/vision_project/resize_system_hw_link/Emulation-HW/krnl_resize.build/link/int/systemDiagramModelSlrBaseAddress.json",
+  "name": "",
+  "fileType": "JSON",
+  "reportType": "SYSTEM_DIAGRAM_PLUS",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Tue Jan 25 17:12:57 2022",
+ "timestampMillis": "1643130777990",
+ "status": {
+  "cmdId": "3314e5a2-20ac-4cb0-811e-81627ad8e8e2",
+  "state": "CS_PASSED"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Tue Jan 25 17:12:57 2022",
+ "timestampMillis": "1643130777991",
+ "status": {
+  "cmdId": "6f85ef5e-a489-4d5b-b097-7a1b07baf937",
+  "state": "CS_PASSED"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_SubCmdStep",
+ "dateTimestamp": "Tue Jan 25 17:12:57 2022",
+ "timestampMillis": "1643130777993",
+ "buildStep": {
+  "cmdId": "218e632c-e9f8-42d5-9997-d5801ece7da9",
+  "name": "xclbinutil",
+  "logFile": "",
+  "commandLine": "xclbinutil --add-section DEBUG_IP_LAYOUT:JSON:/home/centos/Documents/vision_project/resize_system_hw_link/Emulation-HW/krnl_resize.build/link/int/debug_ip_layout.rtd --add-section BITSTREAM:RAW:/home/centos/Documents/vision_project/resize_system_hw_link/Emulation-HW/krnl_resize.build/link/int/behav.xse --force --target hw_emu --key-value SYS:dfx_enable:false --add-section :JSON:/home/centos/Documents/vision_project/resize_system_hw_link/Emulation-HW/krnl_resize.build/link/int/krnl_resize.rtd --append-section :JSON:/home/centos/Documents/vision_project/resize_system_hw_link/Emulation-HW/krnl_resize.build/link/int/appendSection.rtd --add-section CLOCK_FREQ_TOPOLOGY:JSON:/home/centos/Documents/vision_project/resize_system_hw_link/Emulation-HW/krnl_resize.build/link/int/krnl_resize_xml.rtd --add-section BUILD_METADATA:JSON:/home/centos/Documents/vision_project/resize_system_hw_link/Emulation-HW/krnl_resize.build/link/int/krnl_resize_build.rtd --add-section EMBEDDED_METADATA:RAW:/home/centos/Documents/vision_project/resize_system_hw_link/Emulation-HW/krnl_resize.build/link/int/krnl_resize.xml --add-section SYSTEM_METADATA:RAW:/home/centos/Documents/vision_project/resize_system_hw_link/Emulation-HW/krnl_resize.build/link/int/systemDiagramModelSlrBaseAddress.json --key-value SYS:PlatformVBNV:xilinx_aws-vu9p-f1_shell-v04261818_201920_2 --output /home/centos/Documents/vision_project/resize_system_hw_link/Emulation-HW/krnl_resize.xclbin",
+  "args": [
+   "--add-section",
+   "DEBUG_IP_LAYOUT:JSON:/home/centos/Documents/vision_project/resize_system_hw_link/Emulation-HW/krnl_resize.build/link/int/debug_ip_layout.rtd",
+   "--add-section",
+   "BITSTREAM:RAW:/home/centos/Documents/vision_project/resize_system_hw_link/Emulation-HW/krnl_resize.build/link/int/behav.xse",
+   "--force",
+   "--target",
+   "hw_emu",
+   "--key-value",
+   "SYS:dfx_enable:false",
+   "--add-section",
+   ":JSON:/home/centos/Documents/vision_project/resize_system_hw_link/Emulation-HW/krnl_resize.build/link/int/krnl_resize.rtd",
+   "--append-section",
+   ":JSON:/home/centos/Documents/vision_project/resize_system_hw_link/Emulation-HW/krnl_resize.build/link/int/appendSection.rtd",
+   "--add-section",
+   "CLOCK_FREQ_TOPOLOGY:JSON:/home/centos/Documents/vision_project/resize_system_hw_link/Emulation-HW/krnl_resize.build/link/int/krnl_resize_xml.rtd",
+   "--add-section",
+   "BUILD_METADATA:JSON:/home/centos/Documents/vision_project/resize_system_hw_link/Emulation-HW/krnl_resize.build/link/int/krnl_resize_build.rtd",
+   "--add-section",
+   "EMBEDDED_METADATA:RAW:/home/centos/Documents/vision_project/resize_system_hw_link/Emulation-HW/krnl_resize.build/link/int/krnl_resize.xml",
+   "--add-section",
+   "SYSTEM_METADATA:RAW:/home/centos/Documents/vision_project/resize_system_hw_link/Emulation-HW/krnl_resize.build/link/int/systemDiagramModelSlrBaseAddress.json",
+   "--key-value",
+   "SYS:PlatformVBNV:xilinx_aws-vu9p-f1_shell-v04261818_201920_2",
+   "--output",
+   "/home/centos/Documents/vision_project/resize_system_hw_link/Emulation-HW/krnl_resize.xclbin"
+  ],
+  "iniFiles": [],
+  "cwd": "/home/centos/Documents/vision_project/resize_system_hw_link/Emulation-HW"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Tue Jan 25 17:12:57 2022",
+ "timestampMillis": "1643130777994",
+ "status": {
+  "cmdId": "218e632c-e9f8-42d5-9997-d5801ece7da9",
+  "state": "CS_RUNNING"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Tue Jan 25 17:12:58 2022",
+ "timestampMillis": "1643130778130",
+ "status": {
+  "cmdId": "218e632c-e9f8-42d5-9997-d5801ece7da9",
+  "state": "CS_PASSED"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_SubCmdStep",
+ "dateTimestamp": "Tue Jan 25 17:12:58 2022",
+ "timestampMillis": "1643130778132",
+ "buildStep": {
+  "cmdId": "a8a813e9-cebc-48cf-b04e-2cd95c18f61d",
+  "name": "xclbinutilinfo",
+  "logFile": "",
+  "commandLine": "xclbinutil --quiet --force --info /home/centos/Documents/vision_project/resize_system_hw_link/Emulation-HW/krnl_resize.xclbin.info --input /home/centos/Documents/vision_project/resize_system_hw_link/Emulation-HW/krnl_resize.xclbin",
+  "args": [
+   "--quiet",
+   "--force",
+   "--info",
+   "/home/centos/Documents/vision_project/resize_system_hw_link/Emulation-HW/krnl_resize.xclbin.info",
+   "--input",
+   "/home/centos/Documents/vision_project/resize_system_hw_link/Emulation-HW/krnl_resize.xclbin"
+  ],
+  "iniFiles": [],
+  "cwd": "/home/centos/Documents/vision_project/resize_system_hw_link/Emulation-HW"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Tue Jan 25 17:12:58 2022",
+ "timestampMillis": "1643130778133",
+ "status": {
+  "cmdId": "a8a813e9-cebc-48cf-b04e-2cd95c18f61d",
+  "state": "CS_RUNNING"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Tue Jan 25 17:12:58 2022",
+ "timestampMillis": "1643130778553",
+ "status": {
+  "cmdId": "a8a813e9-cebc-48cf-b04e-2cd95c18f61d",
+  "state": "CS_PASSED"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_SubCmdStep",
+ "dateTimestamp": "Tue Jan 25 17:12:58 2022",
+ "timestampMillis": "1643130778555",
+ "buildStep": {
+  "cmdId": "275eeaa3-b3f1-4983-a1f6-eafdecc3cda5",
+  "name": "generate_sc_driver",
+  "logFile": "",
+  "commandLine": "",
+  "args": [],
+  "iniFiles": [],
+  "cwd": "/home/centos/Documents/vision_project/resize_system_hw_link/Emulation-HW"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Tue Jan 25 17:12:58 2022",
+ "timestampMillis": "1643130778555",
+ "status": {
+  "cmdId": "275eeaa3-b3f1-4983-a1f6-eafdecc3cda5",
+  "state": "CS_RUNNING"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Tue Jan 25 17:12:58 2022",
+ "timestampMillis": "1643130778556",
+ "status": {
+  "cmdId": "275eeaa3-b3f1-4983-a1f6-eafdecc3cda5",
+  "state": "CS_PASSED"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Tue Jan 25 17:12:58 2022",
+ "timestampMillis": "1643130778577",
+ "report": {
+  "path": "/home/centos/Documents/vision_project/resize_system_hw_link/Emulation-HW/krnl_resize.build/reports/link/system_estimate_krnl_resize.xtxt",
+  "name": "",
+  "fileType": "TEXT",
+  "reportType": "GLOBAL_SYSTEM_ESTIMATE",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Tue Jan 25 17:12:58 2022",
+ "timestampMillis": "1643130778581",
+ "report": {
+  "path": "/home/centos/Documents/vision_project/resize_system_hw_link/Emulation-HW/guidance.html",
+  "name": "",
+  "fileType": "HTML",
+  "reportType": "GLOBAL_RULECHECK_GUIDANCE",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Tue Jan 25 17:12:58 2022",
+ "timestampMillis": "1643130778582",
+ "report": {
+  "path": "/home/centos/Documents/vision_project/resize_system_hw_link/Emulation-HW/guidance.pb",
+  "name": "",
+  "fileType": "BINARY_PROTOBUF",
+  "reportType": "GLOBAL_RULECHECK_GUIDANCE",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Tue Jan 25 17:12:58 2022",
+ "timestampMillis": "1643130778583",
+ "report": {
+  "path": "/home/centos/Documents/vision_project/resize_system_hw_link/Emulation-HW/krnl_resize.build/logs/optraceViewer.html",
+  "name": "",
+  "fileType": "HTML",
+  "reportType": "OPERATION_TRACE",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Tue Jan 25 17:12:58 2022",
+ "timestampMillis": "1643130778584",
+ "status": {
+  "cmdId": "401323b0-13ad-449b-8c0a-3505e3413d0e",
+  "state": "CS_PASSED"
+ }
+}
+</ENTRY>

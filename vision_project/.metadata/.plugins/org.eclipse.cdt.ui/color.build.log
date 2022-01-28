@@ -1,0 +1,1118 @@
+09:56:51 **** Build of configuration Emulation-SW for project color ****
+make -j8 all 
+g++ -std=c++1y -DVITIS_PLATFORM=xilinx_aws-vu9p-f1_shell-v04261818_201920_2 -D__USE_XOPEN2K8 -I/home/centos/Documents/vision_project/color/libs/xf_opencv/ext/xcl2 -I/home/centos/Documents/vision_project/color/libs/xf_opencv/L1/include -I/usr/include/opencv -I/opt/xilinx/xrt/include/ -I/opt/Xilinx/Vivado/2021.1/include/ -O0 -g -Wall -O3 -c -fmessage-length=0 -o "libs/xf_opencv/ext/xcl2/xcl2.o" "../libs/xf_opencv/ext/xcl2/xcl2.cpp"
+/opt/Xilinx/Vitis/2021.1/bin/emconfigutil --od . --nd 1  --platform /home/centos/aws-fpga/Vitis/aws_platform/xilinx_aws-vu9p-f1_shell-v04261818_201920_2/xilinx_aws-vu9p-f1_shell-v04261818_201920_2.xpfm
+g++ -std=c++1y -DVITIS_PLATFORM=xilinx_aws-vu9p-f1_shell-v04261818_201920_2 -D__USE_XOPEN2K8 -I/home/centos/Documents/vision_project/color/libs/xf_opencv/ext/xcl2 -I/home/centos/Documents/vision_project/color/libs/xf_opencv/L1/include -I/usr/include/opencv -I/opt/xilinx/xrt/include/ -I/opt/Xilinx/Vivado/2021.1/include/ -O0 -g -Wall -O3 -c -fmessage-length=0 -o "src/xf_tonemapping_tb.o" "../src/xf_tonemapping_tb.cpp"
+In file included from /home/centos/Documents/vision_project/color/libs/xf_opencv/L1/include/common/xf_common.hpp:20:0,
+                 from /home/centos/Documents/vision_project/color/libs/xf_opencv/L1/include/common/xf_sw_utils.hpp:20,
+                 from /home/centos/Documents/vision_project/color/libs/xf_opencv/L1/include/common/xf_headers.hpp:28,
+                 from ../src/xf_tonemapping_tb.cpp:17:
+/home/centos/Documents/vision_project/color/libs/xf_opencv/L1/include/common/xf_structs.hpp:234:0: warning: ignoring #pragma HLS INLINE [-Wunknown-pragmas]
+ #pragma HLS INLINE
+ ^
+/home/centos/Documents/vision_project/color/libs/xf_opencv/L1/include/common/xf_structs.hpp:235:0: warning: ignoring #pragma HLS ARRAY_PARTITION [-Wunknown-pragmas]
+ #pragma HLS ARRAY_PARTITION variable=val dim=1 complete
+ ^
+/home/centos/Documents/vision_project/color/libs/xf_opencv/L1/include/common/xf_structs.hpp:241:0: warning: ignoring #pragma HLS INLINE [-Wunknown-pragmas]
+ #pragma HLS INLINE
+ ^
+/home/centos/Documents/vision_project/color/libs/xf_opencv/L1/include/common/xf_structs.hpp:242:0: warning: ignoring #pragma HLS ARRAY_PARTITION [-Wunknown-pragmas]
+ #pragma HLS ARRAY_PARTITION variable=val dim=1 complete
+ ^
+/home/centos/Documents/vision_project/color/libs/xf_opencv/L1/include/common/xf_structs.hpp:249:0: warning: ignoring #pragma HLS ARRAY_PARTITION [-Wunknown-pragmas]
+ #pragma HLS ARRAY_PARTITION variable=val dim=1 complete
+ ^
+/home/centos/Documents/vision_project/color/libs/xf_opencv/L1/include/common/xf_structs.hpp:250:0: warning: ignoring #pragma HLS INLINE [-Wunknown-pragmas]
+ #pragma HLS INLINE
+ ^
+/home/centos/Documents/vision_project/color/libs/xf_opencv/L1/include/common/xf_structs.hpp:258:0: warning: ignoring #pragma HLS ARRAY_PARTITION [-Wunknown-pragmas]
+ #pragma HLS ARRAY_PARTITION variable=val dim=1 complete
+ ^
+/home/centos/Documents/vision_project/color/libs/xf_opencv/L1/include/common/xf_structs.hpp:259:0: warning: ignoring #pragma HLS INLINE [-Wunknown-pragmas]
+ #pragma HLS INLINE
+ ^
+/home/centos/Documents/vision_project/color/libs/xf_opencv/L1/include/common/xf_structs.hpp:268:0: warning: ignoring #pragma HLS ARRAY_PARTITION [-Wunknown-pragmas]
+ #pragma HLS ARRAY_PARTITION variable=val dim=1 complete
+ ^
+/home/centos/Documents/vision_project/color/libs/xf_opencv/L1/include/common/xf_structs.hpp:269:0: warning: ignoring #pragma HLS INLINE [-Wunknown-pragmas]
+ #pragma HLS INLINE
+ ^
+/home/centos/Documents/vision_project/color/libs/xf_opencv/L1/include/common/xf_structs.hpp:294:0: warning: ignoring #pragma HLS inline [-Wunknown-pragmas]
+ #pragma HLS inline
+ ^
+/home/centos/Documents/vision_project/color/libs/xf_opencv/L1/include/common/xf_structs.hpp:298:0: warning: ignoring #pragma HLS unroll [-Wunknown-pragmas]
+ #pragma HLS unroll
+ ^
+/home/centos/Documents/vision_project/color/libs/xf_opencv/L1/include/common/xf_structs.hpp:307:0: warning: ignoring #pragma HLS inline [-Wunknown-pragmas]
+ #pragma HLS inline
+ ^
+/home/centos/Documents/vision_project/color/libs/xf_opencv/L1/include/common/xf_structs.hpp:312:0: warning: ignoring #pragma HLS unroll [-Wunknown-pragmas]
+ #pragma HLS unroll
+ ^
+/home/centos/Documents/vision_project/color/libs/xf_opencv/L1/include/common/xf_structs.hpp:322:0: warning: ignoring #pragma HLS inline [-Wunknown-pragmas]
+ #pragma HLS inline
+ ^
+/home/centos/Documents/vision_project/color/libs/xf_opencv/L1/include/common/xf_structs.hpp:327:0: warning: ignoring #pragma HLS unroll [-Wunknown-pragmas]
+ #pragma HLS unroll
+ ^
+/home/centos/Documents/vision_project/color/libs/xf_opencv/L1/include/common/xf_structs.hpp:337:0: warning: ignoring #pragma HLS inline [-Wunknown-pragmas]
+ #pragma HLS inline
+ ^
+/home/centos/Documents/vision_project/color/libs/xf_opencv/L1/include/common/xf_structs.hpp:342:0: warning: ignoring #pragma HLS unroll [-Wunknown-pragmas]
+ #pragma HLS unroll
+ ^
+/home/centos/Documents/vision_project/color/libs/xf_opencv/L1/include/common/xf_structs.hpp:352:0: warning: ignoring #pragma HLS inline [-Wunknown-pragmas]
+ #pragma HLS inline
+ ^
+/home/centos/Documents/vision_project/color/libs/xf_opencv/L1/include/common/xf_structs.hpp:357:0: warning: ignoring #pragma HLS unroll [-Wunknown-pragmas]
+ #pragma HLS unroll
+ ^
+/home/centos/Documents/vision_project/color/libs/xf_opencv/L1/include/common/xf_structs.hpp:367:0: warning: ignoring #pragma HLS inline [-Wunknown-pragmas]
+ #pragma HLS inline
+ ^
+/home/centos/Documents/vision_project/color/libs/xf_opencv/L1/include/common/xf_structs.hpp:372:0: warning: ignoring #pragma HLS unroll [-Wunknown-pragmas]
+ #pragma HLS unroll
+ ^
+/home/centos/Documents/vision_project/color/libs/xf_opencv/L1/include/common/xf_structs.hpp:382:0: warning: ignoring #pragma HLS inline [-Wunknown-pragmas]
+ #pragma HLS inline
+ ^
+/home/centos/Documents/vision_project/color/libs/xf_opencv/L1/include/common/xf_structs.hpp:387:0: warning: ignoring #pragma HLS unroll [-Wunknown-pragmas]
+ #pragma HLS unroll
+ ^
+/home/centos/Documents/vision_project/color/libs/xf_opencv/L1/include/common/xf_structs.hpp:397:0: warning: ignoring #pragma HLS inline [-Wunknown-pragmas]
+ #pragma HLS inline
+ ^
+/home/centos/Documents/vision_project/color/libs/xf_opencv/L1/include/common/xf_structs.hpp:402:0: warning: ignoring #pragma HLS unroll [-Wunknown-pragmas]
+ #pragma HLS unroll
+ ^
+/home/centos/Documents/vision_project/color/libs/xf_opencv/L1/include/common/xf_structs.hpp:412:0: warning: ignoring #pragma HLS inline [-Wunknown-pragmas]
+ #pragma HLS inline
+ ^
+/home/centos/Documents/vision_project/color/libs/xf_opencv/L1/include/common/xf_structs.hpp:417:0: warning: ignoring #pragma HLS unroll [-Wunknown-pragmas]
+ #pragma HLS unroll
+ ^
+/home/centos/Documents/vision_project/color/libs/xf_opencv/L1/include/common/xf_structs.hpp:573:0: warning: ignoring #pragma HLS inline [-Wunknown-pragmas]
+ #pragma HLS inline
+ ^
+/home/centos/Documents/vision_project/color/libs/xf_opencv/L1/include/common/xf_structs.hpp:581:0: warning: ignoring #pragma HLS inline [-Wunknown-pragmas]
+ #pragma HLS inline
+ ^
+/home/centos/Documents/vision_project/color/libs/xf_opencv/L1/include/common/xf_structs.hpp:588:0: warning: ignoring #pragma HLS inline [-Wunknown-pragmas]
+ #pragma HLS inline
+ ^
+/home/centos/Documents/vision_project/color/libs/xf_opencv/L1/include/common/xf_structs.hpp:596:0: warning: ignoring #pragma HLS inline [-Wunknown-pragmas]
+ #pragma HLS inline
+ ^
+/home/centos/Documents/vision_project/color/libs/xf_opencv/L1/include/common/xf_structs.hpp:642:0: warning: ignoring #pragma HLS inline [-Wunknown-pragmas]
+ #pragma HLS inline
+ ^
+/home/centos/Documents/vision_project/color/libs/xf_opencv/L1/include/common/xf_structs.hpp:651:0: warning: ignoring #pragma HLS inline [-Wunknown-pragmas]
+ #pragma HLS inline
+ ^
+/home/centos/Documents/vision_project/color/libs/xf_opencv/L1/include/common/xf_structs.hpp:660:0: warning: ignoring #pragma HLS inline [-Wunknown-pragmas]
+ #pragma HLS inline
+ ^
+/home/centos/Documents/vision_project/color/libs/xf_opencv/L1/include/common/xf_structs.hpp:669:0: warning: ignoring #pragma HLS inline [-Wunknown-pragmas]
+ #pragma HLS inline
+ ^
+/home/centos/Documents/vision_project/color/libs/xf_opencv/L1/include/common/xf_structs.hpp:696:0: warning: ignoring #pragma HLS inline [-Wunknown-pragmas]
+ #pragma HLS inline
+ ^
+/home/centos/Documents/vision_project/color/libs/xf_opencv/L1/include/common/xf_structs.hpp:730:0: warning: ignoring #pragma HLS inline [-Wunknown-pragmas]
+ #pragma HLS inline
+ ^
+/home/centos/Documents/vision_project/color/libs/xf_opencv/L1/include/common/xf_structs.hpp:954:0: warning: ignoring #pragma HLS LOOP_TRIPCOUNT [-Wunknown-pragmas]
+ #pragma HLS LOOP_TRIPCOUNT min=1 max=ADDRBOUND
+ ^
+/home/centos/Documents/vision_project/color/libs/xf_opencv/L1/include/common/xf_structs.hpp:955:0: warning: ignoring #pragma HLS PIPELINE [-Wunknown-pragmas]
+ #pragma HLS PIPELINE
+ ^
+/home/centos/Documents/vision_project/color/libs/xf_opencv/L1/include/common/xf_structs.hpp:968:0: warning: ignoring #pragma HLS LOOP_TRIPCOUNT [-Wunknown-pragmas]
+ #pragma HLS LOOP_TRIPCOUNT min=1 max=ADDRBOUND
+ ^
+/home/centos/Documents/vision_project/color/libs/xf_opencv/L1/include/common/xf_structs.hpp:969:0: warning: ignoring #pragma HLS PIPELINE [-Wunknown-pragmas]
+ #pragma HLS PIPELINE
+ ^
+/home/centos/Documents/vision_project/color/libs/xf_opencv/L1/include/common/xf_structs.hpp:1003:0: warning: ignoring #pragma HLS LOOP_TRIPCOUNT [-Wunknown-pragmas]
+ #pragma HLS LOOP_TRIPCOUNT min=1 max=LOOPBOUND
+ ^
+/home/centos/Documents/vision_project/color/libs/xf_opencv/L1/include/common/xf_structs.hpp:1004:0: warning: ignoring #pragma HLS PIPELINE [-Wunknown-pragmas]
+ #pragma HLS PIPELINE
+ ^
+/home/centos/Documents/vision_project/color/libs/xf_opencv/L1/include/common/xf_structs.hpp:1047:0: warning: ignoring #pragma HLS LOOP_TRIPCOUNT [-Wunknown-pragmas]
+ #pragma HLS LOOP_TRIPCOUNT min=1 max=LOOPBOUND
+ ^
+/home/centos/Documents/vision_project/color/libs/xf_opencv/L1/include/common/xf_structs.hpp:1048:0: warning: ignoring #pragma HLS PIPELINE [-Wunknown-pragmas]
+ #pragma HLS PIPELINE
+ ^
+/home/centos/Documents/vision_project/color/libs/xf_opencv/L1/include/common/xf_structs.hpp:1060:0: warning: ignoring #pragma HLS DATAFLOW [-Wunknown-pragmas]
+ #pragma HLS DATAFLOW
+ ^
+/home/centos/Documents/vision_project/color/libs/xf_opencv/L1/include/common/xf_structs.hpp:1073:0: warning: ignoring #pragma HLS DATAFLOW [-Wunknown-pragmas]
+ #pragma HLS DATAFLOW
+ ^
+/home/centos/Documents/vision_project/color/libs/xf_opencv/L1/include/common/xf_structs.hpp:1088:0: warning: ignoring #pragma HLS DATAFLOW [-Wunknown-pragmas]
+ #pragma HLS DATAFLOW
+ ^
+/home/centos/Documents/vision_project/color/libs/xf_opencv/L1/include/common/xf_structs.hpp:1108:0: warning: ignoring #pragma HLS DATAFLOW [-Wunknown-pragmas]
+ #pragma HLS DATAFLOW
+ ^
+/home/centos/Documents/vision_project/color/libs/xf_opencv/L1/include/common/xf_structs.hpp:1120:0: warning: ignoring #pragma HLS DATAFLOW [-Wunknown-pragmas]
+ #pragma HLS DATAFLOW
+ ^
+/home/centos/Documents/vision_project/color/libs/xf_opencv/L1/include/common/xf_structs.hpp:1140:0: warning: ignoring #pragma HLS DATAFLOW [-Wunknown-pragmas]
+ #pragma HLS DATAFLOW
+ ^
+/home/centos/Documents/vision_project/color/libs/xf_opencv/L1/include/common/xf_structs.hpp:1214:0: warning: ignoring #pragma HLS LOOP_TRIPCOUNT [-Wunknown-pragmas]
+ #pragma HLS LOOP_TRIPCOUNT min=1 max=LOOPBOUND
+ ^
+/home/centos/Documents/vision_project/color/libs/xf_opencv/L1/include/common/xf_structs.hpp:1215:0: warning: ignoring #pragma HLS PIPELINE [-Wunknown-pragmas]
+ #pragma HLS PIPELINE
+ ^
+/home/centos/Documents/vision_project/color/libs/xf_opencv/L1/include/common/xf_structs.hpp:1244:0: warning: ignoring #pragma HLS LOOP_TRIPCOUNT [-Wunknown-pragmas]
+ #pragma HLS LOOP_TRIPCOUNT min=1 max=ROWS
+ ^
+/home/centos/Documents/vision_project/color/libs/xf_opencv/L1/include/common/xf_structs.hpp:1249:0: warning: ignoring #pragma HLS LOOP_TRIPCOUNT [-Wunknown-pragmas]
+ #pragma HLS LOOP_TRIPCOUNT min=1 max=COLS_BOUND_PER_NPC
+ ^
+/home/centos/Documents/vision_project/color/libs/xf_opencv/L1/include/common/xf_structs.hpp:1250:0: warning: ignoring #pragma HLS PIPELINE [-Wunknown-pragmas]
+ #pragma HLS PIPELINE
+ ^
+/home/centos/Documents/vision_project/color/libs/xf_opencv/L1/include/common/xf_structs.hpp:1292:0: warning: ignoring #pragma HLS DATAFLOW [-Wunknown-pragmas]
+ #pragma HLS DATAFLOW
+ ^
+/home/centos/Documents/vision_project/color/libs/xf_opencv/L1/include/common/xf_structs.hpp:1305:0: warning: ignoring #pragma HLS DATAFLOW [-Wunknown-pragmas]
+ #pragma HLS DATAFLOW
+ ^
+/home/centos/Documents/vision_project/color/libs/xf_opencv/L1/include/common/xf_structs.hpp:1322:0: warning: ignoring #pragma HLS LOOP_TRIPCOUNT [-Wunknown-pragmas]
+ #pragma HLS LOOP_TRIPCOUNT min=1 max=ADDRBOUND
+ ^
+/home/centos/Documents/vision_project/color/libs/xf_opencv/L1/include/common/xf_structs.hpp:1323:0: warning: ignoring #pragma HLS PIPELINE [-Wunknown-pragmas]
+ #pragma HLS PIPELINE
+ ^
+/home/centos/Documents/vision_project/color/libs/xf_opencv/L1/include/common/xf_structs.hpp:1337:0: warning: ignoring #pragma HLS LOOP_TRIPCOUNT [-Wunknown-pragmas]
+ #pragma HLS LOOP_TRIPCOUNT min=1 max=ADDRBOUND
+ ^
+/home/centos/Documents/vision_project/color/libs/xf_opencv/L1/include/common/xf_structs.hpp:1338:0: warning: ignoring #pragma HLS PIPELINE [-Wunknown-pragmas]
+ #pragma HLS PIPELINE
+ ^
+/home/centos/Documents/vision_project/color/libs/xf_opencv/L1/include/common/xf_structs.hpp:1352:0: warning: ignoring #pragma HLS DATAFLOW [-Wunknown-pragmas]
+ #pragma HLS DATAFLOW
+ ^
+/home/centos/Documents/vision_project/color/libs/xf_opencv/L1/include/common/xf_structs.hpp:1379:0: warning: ignoring #pragma HLS DATAFLOW [-Wunknown-pragmas]
+ #pragma HLS DATAFLOW
+ ^
+/home/centos/Documents/vision_project/color/libs/xf_opencv/L1/include/common/xf_structs.hpp:1410:0: warning: ignoring #pragma HLS DATAFLOW [-Wunknown-pragmas]
+ #pragma HLS DATAFLOW
+ ^
+/home/centos/Documents/vision_project/color/libs/xf_opencv/L1/include/common/xf_structs.hpp:1440:0: warning: ignoring #pragma HLS DATAFLOW [-Wunknown-pragmas]
+ #pragma HLS DATAFLOW
+ ^
+In file included from /home/centos/Documents/vision_project/color/libs/xf_opencv/L1/include/imgproc/xf_ltm.hpp:23:0,
+                 from ../src/xf_tonemapping_config.h:19,
+                 from ../src/xf_tonemapping_tb.cpp:18:
+/home/centos/Documents/vision_project/color/libs/xf_opencv/L1/include/common/xf_utility.hpp:37:0: warning: ignoring #pragma HLS INLINE [-Wunknown-pragmas]
+     #pragma HLS INLINE
+ ^
+/home/centos/Documents/vision_project/color/libs/xf_opencv/L1/include/common/xf_utility.hpp:43:0: warning: ignoring #pragma HLS unroll [-Wunknown-pragmas]
+         #pragma HLS unroll
+ ^
+/home/centos/Documents/vision_project/color/libs/xf_opencv/L1/include/common/xf_utility.hpp:55:0: warning: ignoring #pragma HLS inline [-Wunknown-pragmas]
+     #pragma HLS inline off
+ ^
+/home/centos/Documents/vision_project/color/libs/xf_opencv/L1/include/common/xf_utility.hpp:64:0: warning: ignoring #pragma HLS UNROLL [-Wunknown-pragmas]
+         #pragma HLS UNROLL
+ ^
+/home/centos/Documents/vision_project/color/libs/xf_opencv/L1/include/common/xf_utility.hpp:87:0: warning: ignoring #pragma HLS INLINE [-Wunknown-pragmas]
+     #pragma HLS INLINE
+ ^
+/home/centos/Documents/vision_project/color/libs/xf_opencv/L1/include/common/xf_utility.hpp:107:0: warning: ignoring #pragma HLS INLINE [-Wunknown-pragmas]
+     #pragma HLS INLINE
+ ^
+/home/centos/Documents/vision_project/color/libs/xf_opencv/L1/include/common/xf_utility.hpp:115:0: warning: ignoring #pragma HLS LOOP_TRIPCOUNT [-Wunknown-pragmas]
+         #pragma HLS LOOP_TRIPCOUNT min=6 max=6
+ ^
+/home/centos/Documents/vision_project/color/libs/xf_opencv/L1/include/common/xf_utility.hpp:116:0: warning: ignoring #pragma HLS unroll [-Wunknown-pragmas]
+         #pragma HLS unroll
+ ^
+/home/centos/Documents/vision_project/color/libs/xf_opencv/L1/include/common/xf_utility.hpp:186:0: warning: ignoring #pragma HLS LOOP_TRIPCOUNT [-Wunknown-pragmas]
+         #pragma HLS LOOP_TRIPCOUNT min=IN_BH max=IN_BH
+ ^
+/home/centos/Documents/vision_project/color/libs/xf_opencv/L1/include/common/xf_utility.hpp:187:0: warning: ignoring #pragma HLS LOOP_FLATTEN [-Wunknown-pragmas]
+         #pragma HLS LOOP_FLATTEN off
+ ^
+/home/centos/Documents/vision_project/color/libs/xf_opencv/L1/include/common/xf_utility.hpp:191:0: warning: ignoring #pragma HLS pipeline [-Wunknown-pragmas]
+             #pragma HLS pipeline
+ ^
+/home/centos/Documents/vision_project/color/libs/xf_opencv/L1/include/common/xf_utility.hpp:192:0: warning: ignoring #pragma HLS LOOP_TRIPCOUNT [-Wunknown-pragmas]
+             #pragma HLS LOOP_TRIPCOUNT min=IN_BW max=IN_BW
+ ^
+/home/centos/Documents/vision_project/color/libs/xf_opencv/L1/include/common/xf_utility.hpp:217:0: warning: ignoring #pragma HLS LOOP_TRIPCOUNT [-Wunknown-pragmas]
+             #pragma HLS LOOP_TRIPCOUNT min=1 max=TRIPCOUNT
+ ^
+/home/centos/Documents/vision_project/color/libs/xf_opencv/L1/include/common/xf_utility.hpp:218:0: warning: ignoring #pragma HLS PIPELINE [-Wunknown-pragmas]
+             #pragma HLS PIPELINE
+ ^
+/home/centos/Documents/vision_project/color/libs/xf_opencv/L1/include/common/xf_utility.hpp:253:0: warning: ignoring #pragma HLS LOOP_TRIPCOUNT [-Wunknown-pragmas]
+             #pragma HLS LOOP_TRIPCOUNT min=1 max=TRIPCOUNT
+ ^
+/home/centos/Documents/vision_project/color/libs/xf_opencv/L1/include/common/xf_utility.hpp:254:0: warning: ignoring #pragma HLS PIPELINE [-Wunknown-pragmas]
+             #pragma HLS PIPELINE
+ ^
+/home/centos/Documents/vision_project/color/libs/xf_opencv/L1/include/common/xf_utility.hpp:332:0: warning: ignoring #pragma HLS LOOP_TRIPCOUNT [-Wunknown-pragmas]
+             #pragma HLS LOOP_TRIPCOUNT min=1 max=TRIPCOUNT
+ ^
+/home/centos/Documents/vision_project/color/libs/xf_opencv/L1/include/common/xf_utility.hpp:333:0: warning: ignoring #pragma HLS PIPELINE [-Wunknown-pragmas]
+             #pragma HLS PIPELINE
+ ^
+/home/centos/Documents/vision_project/color/libs/xf_opencv/L1/include/common/xf_utility.hpp:343:0: warning: ignoring #pragma HLS DATAFLOW [-Wunknown-pragmas]
+         #pragma HLS DATAFLOW
+ ^
+/home/centos/Documents/vision_project/color/libs/xf_opencv/L1/include/common/xf_utility.hpp:392:0: warning: ignoring #pragma HLS LOOP_TRIPCOUNT [-Wunknown-pragmas]
+             #pragma HLS LOOP_TRIPCOUNT min=1 max=TRIPCOUNT
+ ^
+/home/centos/Documents/vision_project/color/libs/xf_opencv/L1/include/common/xf_utility.hpp:393:0: warning: ignoring #pragma HLS PIPELINE [-Wunknown-pragmas]
+             #pragma HLS PIPELINE
+ ^
+/home/centos/Documents/vision_project/color/libs/xf_opencv/L1/include/common/xf_utility.hpp:438:0: warning: ignoring #pragma HLS LOOP_TRIPCOUNT [-Wunknown-pragmas]
+             #pragma HLS LOOP_TRIPCOUNT min=1 max=TRIPCOUNT
+ ^
+/home/centos/Documents/vision_project/color/libs/xf_opencv/L1/include/common/xf_utility.hpp:439:0: warning: ignoring #pragma HLS PIPELINE [-Wunknown-pragmas]
+             #pragma HLS PIPELINE
+ ^
+/home/centos/Documents/vision_project/color/libs/xf_opencv/L1/include/common/xf_utility.hpp:481:0: warning: ignoring #pragma HLS LOOP_TRIPCOUNT [-Wunknown-pragmas]
+             #pragma HLS LOOP_TRIPCOUNT min=1 max=TRIPCOUNT
+ ^
+/home/centos/Documents/vision_project/color/libs/xf_opencv/L1/include/common/xf_utility.hpp:482:0: warning: ignoring #pragma HLS PIPELINE [-Wunknown-pragmas]
+             #pragma HLS PIPELINE
+ ^
+/home/centos/Documents/vision_project/color/libs/xf_opencv/L1/include/common/xf_utility.hpp:493:0: warning: ignoring #pragma HLS DATAFLOW [-Wunknown-pragmas]
+         #pragma HLS DATAFLOW
+ ^
+In file included from /home/centos/Documents/vision_project/color/libs/xf_opencv/L1/include/imgproc/xf_ltm.hpp:24:0,
+                 from ../src/xf_tonemapping_config.h:19,
+                 from ../src/xf_tonemapping_tb.cpp:18:
+/home/centos/Documents/vision_project/color/libs/xf_opencv/L1/include/imgproc/xf_duplicateimage.hpp:44:0: warning: ignoring #pragma HLS LOOP_TRIPCOUNT [-Wunknown-pragmas]
+ #pragma HLS LOOP_TRIPCOUNT min=ROWS max=ROWS
+ ^
+/home/centos/Documents/vision_project/color/libs/xf_opencv/L1/include/imgproc/xf_duplicateimage.hpp:45:0: warning: ignoring #pragma HLS LOOP_FLATTEN [-Wunknown-pragmas]
+ #pragma HLS LOOP_FLATTEN off
+ ^
+/home/centos/Documents/vision_project/color/libs/xf_opencv/L1/include/imgproc/xf_duplicateimage.hpp:50:0: warning: ignoring #pragma HLS LOOP_TRIPCOUNT [-Wunknown-pragmas]
+ #pragma HLS LOOP_TRIPCOUNT min = TRIP_COLS max = TRIP_COLS
+ ^
+/home/centos/Documents/vision_project/color/libs/xf_opencv/L1/include/imgproc/xf_duplicateimage.hpp:51:0: warning: ignoring #pragma HLS pipeline [-Wunknown-pragmas]
+ #pragma HLS pipeline
+ ^
+/home/centos/Documents/vision_project/color/libs/xf_opencv/L1/include/imgproc/xf_duplicateimage.hpp:66:0: warning: ignoring #pragma HLS inline [-Wunknown-pragmas]
+ #pragma HLS inline off
+ ^
+/home/centos/Documents/vision_project/color/libs/xf_opencv/L1/include/imgproc/xf_duplicateimage.hpp:87:0: warning: ignoring #pragma HLS LOOP_TRIPCOUNT [-Wunknown-pragmas]
+ #pragma HLS LOOP_TRIPCOUNT min=ROWS max=ROWS
+ ^
+/home/centos/Documents/vision_project/color/libs/xf_opencv/L1/include/imgproc/xf_duplicateimage.hpp:88:0: warning: ignoring #pragma HLS LOOP_FLATTEN [-Wunknown-pragmas]
+ #pragma HLS LOOP_FLATTEN off
+ ^
+/home/centos/Documents/vision_project/color/libs/xf_opencv/L1/include/imgproc/xf_duplicateimage.hpp:93:0: warning: ignoring #pragma HLS LOOP_TRIPCOUNT [-Wunknown-pragmas]
+ #pragma HLS LOOP_TRIPCOUNT min = TRIP_COLS max = TRIP_COLS
+ ^
+/home/centos/Documents/vision_project/color/libs/xf_opencv/L1/include/imgproc/xf_duplicateimage.hpp:94:0: warning: ignoring #pragma HLS pipeline [-Wunknown-pragmas]
+ #pragma HLS pipeline
+ ^
+/home/centos/Documents/vision_project/color/libs/xf_opencv/L1/include/imgproc/xf_duplicateimage.hpp:119:0: warning: ignoring #pragma HLS LOOP_TRIPCOUNT [-Wunknown-pragmas]
+ #pragma HLS LOOP_TRIPCOUNT min=ROWS max=ROWS
+ ^
+/home/centos/Documents/vision_project/color/libs/xf_opencv/L1/include/imgproc/xf_duplicateimage.hpp:120:0: warning: ignoring #pragma HLS LOOP_FLATTEN [-Wunknown-pragmas]
+ #pragma HLS LOOP_FLATTEN off
+ ^
+/home/centos/Documents/vision_project/color/libs/xf_opencv/L1/include/imgproc/xf_duplicateimage.hpp:125:0: warning: ignoring #pragma HLS LOOP_TRIPCOUNT [-Wunknown-pragmas]
+ #pragma HLS LOOP_TRIPCOUNT min = TRIP_COLS max = TRIP_COLS
+ ^
+/home/centos/Documents/vision_project/color/libs/xf_opencv/L1/include/imgproc/xf_duplicateimage.hpp:126:0: warning: ignoring #pragma HLS pipeline [-Wunknown-pragmas]
+ #pragma HLS pipeline
+ ^
+/home/centos/Documents/vision_project/color/libs/xf_opencv/L1/include/imgproc/xf_duplicateimage.hpp:142:0: warning: ignoring #pragma HLS inline [-Wunknown-pragmas]
+ #pragma HLS inline off
+ ^
+/home/centos/Documents/vision_project/color/libs/xf_opencv/L1/include/imgproc/xf_duplicateimage.hpp:155:0: warning: ignoring #pragma HLS inline [-Wunknown-pragmas]
+ #pragma HLS inline off
+ ^
+In file included from /opt/Xilinx/Vivado/2021.1/include/hls_hotbm_apfixed.h:45:0,
+                 from /opt/Xilinx/Vivado/2021.1/include/hls_math.h:1057,
+                 from /home/centos/Documents/vision_project/color/libs/xf_opencv/L1/include/imgproc/xf_ltm.hpp:25,
+                 from ../src/xf_tonemapping_config.h:19,
+                 from ../src/xf_tonemapping_tb.cpp:18:
+/opt/Xilinx/Vivado/2021.1/include/utils/x_hls_utils.h:245:0: warning: ignoring #pragma HLS inline [-Wunknown-pragmas]
+ #pragma HLS inline off
+ ^
+/opt/Xilinx/Vivado/2021.1/include/utils/x_hls_utils.h:246:0: warning: ignoring #pragma HLS INTERFACE [-Wunknown-pragmas]
+ #pragma HLS INTERFACE ap_none port=return register
+ ^
+In file included from /opt/Xilinx/Vivado/2021.1/include/hls_math.h:1057:0,
+                 from /home/centos/Documents/vision_project/color/libs/xf_opencv/L1/include/imgproc/xf_ltm.hpp:25,
+                 from ../src/xf_tonemapping_config.h:19,
+                 from ../src/xf_tonemapping_tb.cpp:18:
+/opt/Xilinx/Vivado/2021.1/include/hls_hotbm_apfixed.h:116:0: warning: ignoring #pragma HLS array_partition [-Wunknown-pragmas]
+ #pragma HLS array_partition variable=swap_table complete
+ ^
+/opt/Xilinx/Vivado/2021.1/include/hls_hotbm_apfixed.h:117:0: warning: ignoring #pragma HLS RESOURCE [-Wunknown-pragmas]
+ #pragma HLS RESOURCE variable=fourth_order_double::sin_cos_K0 core=ROM_1P_LUTRAM
+ ^
+/opt/Xilinx/Vivado/2021.1/include/hls_hotbm_apfixed.h:118:0: warning: ignoring #pragma HLS RESOURCE [-Wunknown-pragmas]
+ #pragma HLS RESOURCE variable=fourth_order_double::sin_cos_K1 core=ROM_1P_LUTRAM
+ ^
+/opt/Xilinx/Vivado/2021.1/include/hls_hotbm_apfixed.h:119:0: warning: ignoring #pragma HLS RESOURCE [-Wunknown-pragmas]
+ #pragma HLS RESOURCE variable=fourth_order_double::sin_cos_K2 core=ROM_1P_LUTRAM
+ ^
+/opt/Xilinx/Vivado/2021.1/include/hls_hotbm_apfixed.h:120:0: warning: ignoring #pragma HLS RESOURCE [-Wunknown-pragmas]
+ #pragma HLS RESOURCE variable=fourth_order_double::sin_cos_K3 core=ROM_1P_LUTRAM
+ ^
+/opt/Xilinx/Vivado/2021.1/include/hls_hotbm_apfixed.h:121:0: warning: ignoring #pragma HLS RESOURCE [-Wunknown-pragmas]
+ #pragma HLS RESOURCE variable=fourth_order_double::sin_cos_K4 core=ROM_1P_LUTRAM
+ ^
+/opt/Xilinx/Vivado/2021.1/include/hls_hotbm_apfixed.h:150:0: warning: ignoring #pragma HLS RESOURCE [-Wunknown-pragmas]
+ #pragma HLS RESOURCE variable=fourth_order_double::cos_K0 core=ROM_1P_LUTRAM
+ ^
+/opt/Xilinx/Vivado/2021.1/include/hls_hotbm_apfixed.h:151:0: warning: ignoring #pragma HLS RESOURCE [-Wunknown-pragmas]
+ #pragma HLS RESOURCE variable=fourth_order_double::cos_K1 core=ROM_1P_LUTRAM
+ ^
+/opt/Xilinx/Vivado/2021.1/include/hls_hotbm_apfixed.h:152:0: warning: ignoring #pragma HLS RESOURCE [-Wunknown-pragmas]
+ #pragma HLS RESOURCE variable=fourth_order_double::cos_K2 core=ROM_1P_LUTRAM
+ ^
+/opt/Xilinx/Vivado/2021.1/include/hls_hotbm_apfixed.h:153:0: warning: ignoring #pragma HLS RESOURCE [-Wunknown-pragmas]
+ #pragma HLS RESOURCE variable=fourth_order_double::cos_K3 core=ROM_1P_LUTRAM
+ ^
+/opt/Xilinx/Vivado/2021.1/include/hls_hotbm_apfixed.h:154:0: warning: ignoring #pragma HLS RESOURCE [-Wunknown-pragmas]
+ #pragma HLS RESOURCE variable=fourth_order_double::cos_K4 core=ROM_1P_LUTRAM
+ ^
+/opt/Xilinx/Vivado/2021.1/include/hls_hotbm_apfixed.h:155:0: warning: ignoring #pragma HLS RESOURCE [-Wunknown-pragmas]
+ #pragma HLS RESOURCE variable=fourth_order_double::sin_K0 core=ROM_1P_LUTRAM
+ ^
+/opt/Xilinx/Vivado/2021.1/include/hls_hotbm_apfixed.h:156:0: warning: ignoring #pragma HLS RESOURCE [-Wunknown-pragmas]
+ #pragma HLS RESOURCE variable=fourth_order_double::sin_K1 core=ROM_1P_LUTRAM
+ ^
+/opt/Xilinx/Vivado/2021.1/include/hls_hotbm_apfixed.h:157:0: warning: ignoring #pragma HLS RESOURCE [-Wunknown-pragmas]
+ #pragma HLS RESOURCE variable=fourth_order_double::sin_K2 core=ROM_1P_LUTRAM
+ ^
+/opt/Xilinx/Vivado/2021.1/include/hls_hotbm_apfixed.h:158:0: warning: ignoring #pragma HLS RESOURCE [-Wunknown-pragmas]
+ #pragma HLS RESOURCE variable=fourth_order_double::sin_K3 core=ROM_1P_LUTRAM
+ ^
+/opt/Xilinx/Vivado/2021.1/include/hls_hotbm_apfixed.h:159:0: warning: ignoring #pragma HLS RESOURCE [-Wunknown-pragmas]
+ #pragma HLS RESOURCE variable=fourth_order_double::sin_K4 core=ROM_1P_LUTRAM
+ ^
+/opt/Xilinx/Vivado/2021.1/include/hls_hotbm_apfixed.h:206:0: warning: ignoring #pragma HLS array_partition [-Wunknown-pragmas]
+ #pragma HLS array_partition variable=swap_table complete
+ ^
+/opt/Xilinx/Vivado/2021.1/include/hls_hotbm_apfixed.h:207:0: warning: ignoring #pragma HLS RESOURCE [-Wunknown-pragmas]
+ #pragma HLS RESOURCE variable=second_order_float::sin_cos_K0 core=ROM_1P_LUTRAM
+ ^
+/opt/Xilinx/Vivado/2021.1/include/hls_hotbm_apfixed.h:208:0: warning: ignoring #pragma HLS RESOURCE [-Wunknown-pragmas]
+ #pragma HLS RESOURCE variable=second_order_float::sin_cos_K1 core=ROM_1P_LUTRAM
+ ^
+/opt/Xilinx/Vivado/2021.1/include/hls_hotbm_apfixed.h:209:0: warning: ignoring #pragma HLS RESOURCE [-Wunknown-pragmas]
+ #pragma HLS RESOURCE variable=second_order_float::sin_cos_K2 core=ROM_1P_LUTRAM
+ ^
+/opt/Xilinx/Vivado/2021.1/include/hls_hotbm_apfixed.h:235:0: warning: ignoring #pragma HLS RESOURCE [-Wunknown-pragmas]
+ #pragma HLS RESOURCE variable=second_order_float::cos_K0 core=ROM_1P_LUTRAM
+ ^
+/opt/Xilinx/Vivado/2021.1/include/hls_hotbm_apfixed.h:236:0: warning: ignoring #pragma HLS RESOURCE [-Wunknown-pragmas]
+ #pragma HLS RESOURCE variable=second_order_float::cos_K1 core=ROM_1P_LUTRAM
+ ^
+/opt/Xilinx/Vivado/2021.1/include/hls_hotbm_apfixed.h:237:0: warning: ignoring #pragma HLS RESOURCE [-Wunknown-pragmas]
+ #pragma HLS RESOURCE variable=second_order_float::cos_K2 core=ROM_1P_LUTRAM
+ ^
+/opt/Xilinx/Vivado/2021.1/include/hls_hotbm_apfixed.h:238:0: warning: ignoring #pragma HLS RESOURCE [-Wunknown-pragmas]
+ #pragma HLS RESOURCE variable=second_order_float::sin_K0 core=ROM_1P_LUTRAM
+ ^
+/opt/Xilinx/Vivado/2021.1/include/hls_hotbm_apfixed.h:239:0: warning: ignoring #pragma HLS RESOURCE [-Wunknown-pragmas]
+ #pragma HLS RESOURCE variable=second_order_float::sin_K1 core=ROM_1P_LUTRAM
+ ^
+/opt/Xilinx/Vivado/2021.1/include/hls_hotbm_apfixed.h:240:0: warning: ignoring #pragma HLS RESOURCE [-Wunknown-pragmas]
+ #pragma HLS RESOURCE variable=second_order_float::sin_K2 core=ROM_1P_LUTRAM
+ ^
+/opt/Xilinx/Vivado/2021.1/include/hls_hotbm_apfixed.h:274:0: warning: ignoring #pragma HLS RESOURCE [-Wunknown-pragmas]
+ #pragma HLS RESOURCE variable=first_order_fixed_16::sin_cos_K0 core=ROM_1P_LUTRAM
+ ^
+/opt/Xilinx/Vivado/2021.1/include/hls_hotbm_apfixed.h:275:0: warning: ignoring #pragma HLS RESOURCE [-Wunknown-pragmas]
+ #pragma HLS RESOURCE variable=first_order_fixed_16::sin_cos_K1 core=ROM_1P_LUTRAM
+ ^
+/opt/Xilinx/Vivado/2021.1/include/hls_hotbm_apfixed.h:302:0: warning: ignoring #pragma HLS array_partition [-Wunknown-pragmas]
+ #pragma HLS array_partition variable=swap_table complete
+ ^
+/opt/Xilinx/Vivado/2021.1/include/hls_hotbm_apfixed.h:303:0: warning: ignoring #pragma HLS array_partition [-Wunknown-pragmas]
+ #pragma HLS array_partition variable=neg_sin_table complete
+ ^
+/opt/Xilinx/Vivado/2021.1/include/hls_hotbm_apfixed.h:304:0: warning: ignoring #pragma HLS array_partition [-Wunknown-pragmas]
+ #pragma HLS array_partition variable=neg_cos_table complete
+ ^
+/opt/Xilinx/Vivado/2021.1/include/hls_hotbm_apfixed.h:373:0: warning: ignoring #pragma HLS array_partition [-Wunknown-pragmas]
+ #pragma HLS array_partition variable=swap_table complete
+ ^
+/opt/Xilinx/Vivado/2021.1/include/hls_hotbm_apfixed.h:374:0: warning: ignoring #pragma HLS array_partition [-Wunknown-pragmas]
+ #pragma HLS array_partition variable=neg_sin_table complete
+ ^
+/opt/Xilinx/Vivado/2021.1/include/hls_hotbm_apfixed.h:375:0: warning: ignoring #pragma HLS array_partition [-Wunknown-pragmas]
+ #pragma HLS array_partition variable=neg_cos_table complete
+ ^
+/opt/Xilinx/Vivado/2021.1/include/hls_hotbm_apfixed.h:443:0: warning: ignoring #pragma HLS array_partition [-Wunknown-pragmas]
+ #pragma HLS array_partition variable=neg_sin_table complete
+ ^
+/opt/Xilinx/Vivado/2021.1/include/hls_hotbm_apfixed.h:444:0: warning: ignoring #pragma HLS array_partition [-Wunknown-pragmas]
+ #pragma HLS array_partition variable=neg_cos_table complete
+ ^
+In file included from /opt/Xilinx/Vivado/2021.1/include/hls_math.h:1058:0,
+                 from /home/centos/Documents/vision_project/color/libs/xf_opencv/L1/include/imgproc/xf_ltm.hpp:25,
+                 from ../src/xf_tonemapping_config.h:19,
+                 from ../src/xf_tonemapping_tb.cpp:18:
+/opt/Xilinx/Vivado/2021.1/include/hls_cordic_apfixed.h:88:0: warning: ignoring #pragma HLS pipeline [-Wunknown-pragmas]
+ #pragma HLS pipeline      
+ ^
+/opt/Xilinx/Vivado/2021.1/include/hls_cordic_apfixed.h:146:0: warning: ignoring #pragma HLS pipeline [-Wunknown-pragmas]
+ #pragma HLS pipeline II=5
+ ^
+/opt/Xilinx/Vivado/2021.1/include/hls_cordic_apfixed.h:149:0: warning: ignoring #pragma HLS pipeline [-Wunknown-pragmas]
+ #pragma HLS pipeline II=3
+ ^
+/opt/Xilinx/Vivado/2021.1/include/hls_cordic_apfixed.h:152:0: warning: ignoring #pragma HLS pipeline [-Wunknown-pragmas]
+ #pragma HLS pipeline II=1
+ ^
+/opt/Xilinx/Vivado/2021.1/include/hls_cordic_apfixed.h:155:0: warning: ignoring #pragma HLS pipeline [-Wunknown-pragmas]
+ #pragma HLS pipeline II=4
+ ^
+/opt/Xilinx/Vivado/2021.1/include/hls_cordic_apfixed.h:316:0: warning: ignoring #pragma HLS UNROLL [-Wunknown-pragmas]
+ #pragma HLS UNROLL
+ ^
+/opt/Xilinx/Vivado/2021.1/include/hls_cordic_apfixed.h:476:0: warning: ignoring #pragma HLS UNROLL [-Wunknown-pragmas]
+ #pragma HLS UNROLL
+ ^
+/opt/Xilinx/Vivado/2021.1/include/hls_cordic_apfixed.h:654:0: warning: ignoring #pragma HLS UNROLL [-Wunknown-pragmas]
+ #pragma HLS UNROLL
+ ^
+/opt/Xilinx/Vivado/2021.1/include/hls_cordic_apfixed.h:658:0: warning: ignoring #pragma HLS UNROLL [-Wunknown-pragmas]
+ #pragma HLS UNROLL
+ ^
+/opt/Xilinx/Vivado/2021.1/include/hls_cordic_apfixed.h:865:0: warning: ignoring #pragma HLS UNROLL [-Wunknown-pragmas]
+ #pragma HLS UNROLL
+ ^
+/opt/Xilinx/Vivado/2021.1/include/hls_cordic_apfixed.h:884:0: warning: ignoring #pragma HLS UNROLL [-Wunknown-pragmas]
+ #pragma HLS UNROLL
+ ^
+In file included from /opt/Xilinx/Vivado/2021.1/include/hls_math.h:1059:0,
+                 from /home/centos/Documents/vision_project/color/libs/xf_opencv/L1/include/imgproc/xf_ltm.hpp:25,
+                 from ../src/xf_tonemapping_config.h:19,
+                 from ../src/xf_tonemapping_tb.cpp:18:
+/opt/Xilinx/Vivado/2021.1/include/hls_exp_apfixed.h:41:0: warning: ignoring #pragma HLS pipeline [-Wunknown-pragmas]
+ #pragma HLS pipeline
+ ^
+In file included from /opt/Xilinx/Vivado/2021.1/include/hls_math.h:1059:0,
+                 from /home/centos/Documents/vision_project/color/libs/xf_opencv/L1/include/imgproc/xf_ltm.hpp:25,
+                 from ../src/xf_tonemapping_config.h:19,
+                 from ../src/xf_tonemapping_tb.cpp:18:
+/opt/Xilinx/Vivado/2021.1/include/hls_exp_apfixed.h:94:0: warning: ignoring #pragma unroll  [-Wunknown-pragmas]
+             #pragma unroll
+ ^
+/opt/Xilinx/Vivado/2021.1/include/hls_exp_apfixed.h:100:0: warning: ignoring #pragma unroll  [-Wunknown-pragmas]
+                 #pragma unroll
+ ^
+/opt/Xilinx/Vivado/2021.1/include/hls_exp_apfixed.h:103:0: warning: ignoring #pragma unroll  [-Wunknown-pragmas]
+                 #pragma unroll
+ ^
+/opt/Xilinx/Vivado/2021.1/include/hls_exp_apfixed.h:169:0: warning: ignoring #pragma unroll  [-Wunknown-pragmas]
+             #pragma unroll
+ ^
+/opt/Xilinx/Vivado/2021.1/include/hls_exp_apfixed.h:175:0: warning: ignoring #pragma unroll  [-Wunknown-pragmas]
+                 #pragma unroll
+ ^
+/opt/Xilinx/Vivado/2021.1/include/hls_exp_apfixed.h:178:0: warning: ignoring #pragma unroll  [-Wunknown-pragmas]
+                 #pragma unroll
+ ^
+/opt/Xilinx/Vivado/2021.1/include/hls_exp_apfixed.h:192:0: warning: ignoring #pragma unroll  [-Wunknown-pragmas]
+         #pragma unroll
+ ^
+/opt/Xilinx/Vivado/2021.1/include/hls_exp_apfixed.h:199:0: warning: ignoring #pragma unroll  [-Wunknown-pragmas]
+                 #pragma unroll
+ ^
+/opt/Xilinx/Vivado/2021.1/include/hls_exp_apfixed.h:262:0: warning: ignoring #pragma unroll  [-Wunknown-pragmas]
+             #pragma unroll
+ ^
+/opt/Xilinx/Vivado/2021.1/include/hls_exp_apfixed.h:268:0: warning: ignoring #pragma unroll  [-Wunknown-pragmas]
+                 #pragma unroll
+ ^
+/opt/Xilinx/Vivado/2021.1/include/hls_exp_apfixed.h:271:0: warning: ignoring #pragma unroll  [-Wunknown-pragmas]
+                 #pragma unroll
+ ^
+/opt/Xilinx/Vivado/2021.1/include/hls_exp_apfixed.h:285:0: warning: ignoring #pragma unroll  [-Wunknown-pragmas]
+         #pragma unroll
+ ^
+/opt/Xilinx/Vivado/2021.1/include/hls_exp_apfixed.h:292:0: warning: ignoring #pragma unroll  [-Wunknown-pragmas]
+                 #pragma unroll
+ ^
+/opt/Xilinx/Vivado/2021.1/include/hls_exp_apfixed.h:519:0: warning: ignoring #pragma unroll  [-Wunknown-pragmas]
+             #pragma unroll
+ ^
+/opt/Xilinx/Vivado/2021.1/include/hls_exp_apfixed.h:525:0: warning: ignoring #pragma unroll  [-Wunknown-pragmas]
+                 #pragma unroll
+ ^
+/opt/Xilinx/Vivado/2021.1/include/hls_exp_apfixed.h:528:0: warning: ignoring #pragma unroll  [-Wunknown-pragmas]
+                 #pragma unroll
+ ^
+/opt/Xilinx/Vivado/2021.1/include/hls_exp_apfixed.h:537:0: warning: ignoring #pragma unroll  [-Wunknown-pragmas]
+         #pragma unroll
+ ^
+/opt/Xilinx/Vivado/2021.1/include/hls_exp_apfixed.h:540:0: warning: ignoring #pragma unroll  [-Wunknown-pragmas]
+         #pragma unroll
+ ^
+/opt/Xilinx/Vivado/2021.1/include/hls_exp_apfixed.h:549:0: warning: ignoring #pragma unroll  [-Wunknown-pragmas]
+         #pragma unroll
+ ^
+/opt/Xilinx/Vivado/2021.1/include/hls_exp_apfixed.h:556:0: warning: ignoring #pragma unroll  [-Wunknown-pragmas]
+                 #pragma unroll
+ ^
+/opt/Xilinx/Vivado/2021.1/include/hls_exp_apfixed.h:915:0: warning: ignoring #pragma unroll  [-Wunknown-pragmas]
+             #pragma unroll
+ ^
+/opt/Xilinx/Vivado/2021.1/include/hls_exp_apfixed.h:921:0: warning: ignoring #pragma unroll  [-Wunknown-pragmas]
+                 #pragma unroll
+ ^
+/opt/Xilinx/Vivado/2021.1/include/hls_exp_apfixed.h:924:0: warning: ignoring #pragma unroll  [-Wunknown-pragmas]
+                 #pragma unroll
+ ^
+/opt/Xilinx/Vivado/2021.1/include/hls_exp_apfixed.h:938:0: warning: ignoring #pragma HLS pipeline [-Wunknown-pragmas]
+ #pragma HLS pipeline
+ ^
+/opt/Xilinx/Vivado/2021.1/include/hls_exp_apfixed.h:1039:0: warning: ignoring #pragma unroll  [-Wunknown-pragmas]
+             #pragma unroll
+ ^
+/opt/Xilinx/Vivado/2021.1/include/hls_exp_apfixed.h:1045:0: warning: ignoring #pragma unroll  [-Wunknown-pragmas]
+                 #pragma unroll
+ ^
+/opt/Xilinx/Vivado/2021.1/include/hls_exp_apfixed.h:1048:0: warning: ignoring #pragma unroll  [-Wunknown-pragmas]
+                 #pragma unroll
+ ^
+/opt/Xilinx/Vivado/2021.1/include/hls_exp_apfixed.h:1134:0: warning: ignoring #pragma unroll  [-Wunknown-pragmas]
+             #pragma unroll
+ ^
+/opt/Xilinx/Vivado/2021.1/include/hls_exp_apfixed.h:1140:0: warning: ignoring #pragma unroll  [-Wunknown-pragmas]
+                 #pragma unroll
+ ^
+/opt/Xilinx/Vivado/2021.1/include/hls_exp_apfixed.h:1143:0: warning: ignoring #pragma unroll  [-Wunknown-pragmas]
+                 #pragma unroll
+ ^
+/opt/Xilinx/Vivado/2021.1/include/hls_exp_apfixed.h:1161:0: warning: ignoring #pragma unroll  [-Wunknown-pragmas]
+         #pragma unroll
+ ^
+/opt/Xilinx/Vivado/2021.1/include/hls_exp_apfixed.h:1167:0: warning: ignoring #pragma unroll  [-Wunknown-pragmas]
+                 #pragma unroll
+ ^
+/opt/Xilinx/Vivado/2021.1/include/hls_exp_apfixed.h:1281:0: warning: ignoring #pragma unroll  [-Wunknown-pragmas]
+             #pragma unroll
+ ^
+/opt/Xilinx/Vivado/2021.1/include/hls_exp_apfixed.h:1287:0: warning: ignoring #pragma unroll  [-Wunknown-pragmas]
+                 #pragma unroll
+ ^
+/opt/Xilinx/Vivado/2021.1/include/hls_exp_apfixed.h:1290:0: warning: ignoring #pragma unroll  [-Wunknown-pragmas]
+                 #pragma unroll
+ ^
+/opt/Xilinx/Vivado/2021.1/include/hls_exp_apfixed.h:1309:0: warning: ignoring #pragma unroll  [-Wunknown-pragmas]
+         #pragma unroll
+ ^
+/opt/Xilinx/Vivado/2021.1/include/hls_exp_apfixed.h:1316:0: warning: ignoring #pragma unroll  [-Wunknown-pragmas]
+                 #pragma unroll
+ ^
+/opt/Xilinx/Vivado/2021.1/include/hls_exp_apfixed.h:1576:0: warning: ignoring #pragma unroll  [-Wunknown-pragmas]
+             #pragma unroll
+ ^
+/opt/Xilinx/Vivado/2021.1/include/hls_exp_apfixed.h:1582:0: warning: ignoring #pragma unroll  [-Wunknown-pragmas]
+                 #pragma unroll
+ ^
+/opt/Xilinx/Vivado/2021.1/include/hls_exp_apfixed.h:1585:0: warning: ignoring #pragma unroll  [-Wunknown-pragmas]
+                 #pragma unroll
+ ^
+/opt/Xilinx/Vivado/2021.1/include/hls_exp_apfixed.h:1608:0: warning: ignoring #pragma unroll  [-Wunknown-pragmas]
+         #pragma unroll
+ ^
+/opt/Xilinx/Vivado/2021.1/include/hls_exp_apfixed.h:1614:0: warning: ignoring #pragma unroll  [-Wunknown-pragmas]
+                 #pragma unroll
+ ^
+/opt/Xilinx/Vivado/2021.1/include/hls_exp_apfixed.h:2042:0: warning: ignoring #pragma unroll  [-Wunknown-pragmas]
+             #pragma unroll
+ ^
+/opt/Xilinx/Vivado/2021.1/include/hls_exp_apfixed.h:2048:0: warning: ignoring #pragma unroll  [-Wunknown-pragmas]
+                 #pragma unroll
+ ^
+/opt/Xilinx/Vivado/2021.1/include/hls_exp_apfixed.h:2051:0: warning: ignoring #pragma unroll  [-Wunknown-pragmas]
+                 #pragma unroll
+ ^
+/opt/Xilinx/Vivado/2021.1/include/hls_exp_apfixed.h:2180:0: warning: ignoring #pragma unroll  [-Wunknown-pragmas]
+             #pragma unroll
+ ^
+/opt/Xilinx/Vivado/2021.1/include/hls_exp_apfixed.h:2187:0: warning: ignoring #pragma unroll  [-Wunknown-pragmas]
+                 #pragma unroll
+ ^
+/opt/Xilinx/Vivado/2021.1/include/hls_exp_apfixed.h:2191:0: warning: ignoring #pragma unroll  [-Wunknown-pragmas]
+                 #pragma unroll
+ ^
+/opt/Xilinx/Vivado/2021.1/include/hls_exp_apfixed.h:2238:0: warning: ignoring #pragma unroll  [-Wunknown-pragmas]
+             #pragma unroll
+ ^
+/opt/Xilinx/Vivado/2021.1/include/hls_exp_apfixed.h:2245:0: warning: ignoring #pragma unroll  [-Wunknown-pragmas]
+                 #pragma unroll
+ ^
+/opt/Xilinx/Vivado/2021.1/include/hls_exp_apfixed.h:2249:0: warning: ignoring #pragma unroll  [-Wunknown-pragmas]
+                 #pragma unroll
+ ^
+/opt/Xilinx/Vivado/2021.1/include/hls_exp_apfixed.h:2267:0: warning: ignoring #pragma unroll  [-Wunknown-pragmas]
+         #pragma unroll
+ ^
+/opt/Xilinx/Vivado/2021.1/include/hls_exp_apfixed.h:2322:0: warning: ignoring #pragma unroll  [-Wunknown-pragmas]
+             #pragma unroll
+ ^
+/opt/Xilinx/Vivado/2021.1/include/hls_exp_apfixed.h:2329:0: warning: ignoring #pragma unroll  [-Wunknown-pragmas]
+                 #pragma unroll
+ ^
+/opt/Xilinx/Vivado/2021.1/include/hls_exp_apfixed.h:2333:0: warning: ignoring #pragma unroll  [-Wunknown-pragmas]
+                 #pragma unroll
+ ^
+/opt/Xilinx/Vivado/2021.1/include/hls_exp_apfixed.h:2351:0: warning: ignoring #pragma unroll  [-Wunknown-pragmas]
+         #pragma unroll
+ ^
+/opt/Xilinx/Vivado/2021.1/include/hls_exp_apfixed.h:2440:0: warning: ignoring #pragma unroll  [-Wunknown-pragmas]
+             #pragma unroll
+ ^
+/opt/Xilinx/Vivado/2021.1/include/hls_exp_apfixed.h:2447:0: warning: ignoring #pragma unroll  [-Wunknown-pragmas]
+                 #pragma unroll
+ ^
+/opt/Xilinx/Vivado/2021.1/include/hls_exp_apfixed.h:2451:0: warning: ignoring #pragma unroll  [-Wunknown-pragmas]
+                 #pragma unroll
+ ^
+/opt/Xilinx/Vivado/2021.1/include/hls_exp_apfixed.h:2461:0: warning: ignoring #pragma unroll  [-Wunknown-pragmas]
+         #pragma unroll
+ ^
+/opt/Xilinx/Vivado/2021.1/include/hls_exp_apfixed.h:2465:0: warning: ignoring #pragma unroll  [-Wunknown-pragmas]
+         #pragma unroll
+ ^
+/opt/Xilinx/Vivado/2021.1/include/hls_exp_apfixed.h:2476:0: warning: ignoring #pragma unroll  [-Wunknown-pragmas]
+         #pragma unroll
+ ^
+/opt/Xilinx/Vivado/2021.1/include/hls_exp_apfixed.h:2484:0: warning: ignoring #pragma unroll  [-Wunknown-pragmas]
+                 #pragma unroll
+ ^
+/opt/Xilinx/Vivado/2021.1/include/hls_exp_apfixed.h:2809:0: warning: ignoring #pragma unroll  [-Wunknown-pragmas]
+             #pragma unroll
+ ^
+/opt/Xilinx/Vivado/2021.1/include/hls_exp_apfixed.h:2816:0: warning: ignoring #pragma unroll  [-Wunknown-pragmas]
+                 #pragma unroll
+ ^
+/opt/Xilinx/Vivado/2021.1/include/hls_exp_apfixed.h:2820:0: warning: ignoring #pragma unroll  [-Wunknown-pragmas]
+                 #pragma unroll
+ ^
+/opt/Xilinx/Vivado/2021.1/include/hls_exp_apfixed.h:2908:0: warning: ignoring #pragma unroll  [-Wunknown-pragmas]
+    #pragma unroll
+ ^
+/opt/Xilinx/Vivado/2021.1/include/hls_exp_apfixed.h:2915:0: warning: ignoring #pragma unroll  [-Wunknown-pragmas]
+     #pragma unroll
+ ^
+/opt/Xilinx/Vivado/2021.1/include/hls_exp_apfixed.h:2933:0: warning: ignoring #pragma unroll  [-Wunknown-pragmas]
+   #pragma unroll
+ ^
+/opt/Xilinx/Vivado/2021.1/include/hls_exp_apfixed.h:2965:0: warning: ignoring #pragma unroll  [-Wunknown-pragmas]
+    #pragma unroll
+ ^
+/opt/Xilinx/Vivado/2021.1/include/hls_exp_apfixed.h:2972:0: warning: ignoring #pragma unroll  [-Wunknown-pragmas]
+     #pragma unroll
+ ^
+/opt/Xilinx/Vivado/2021.1/include/hls_exp_apfixed.h:2976:0: warning: ignoring #pragma unroll  [-Wunknown-pragmas]
+     #pragma unroll
+ ^
+/opt/Xilinx/Vivado/2021.1/include/hls_exp_apfixed.h:2991:0: warning: ignoring #pragma unroll  [-Wunknown-pragmas]
+   #pragma unroll
+ ^
+/opt/Xilinx/Vivado/2021.1/include/hls_exp_apfixed.h:3041:0: warning: ignoring #pragma unroll  [-Wunknown-pragmas]
+    #pragma unroll
+ ^
+/opt/Xilinx/Vivado/2021.1/include/hls_exp_apfixed.h:3048:0: warning: ignoring #pragma unroll  [-Wunknown-pragmas]
+     #pragma unroll
+ ^
+/opt/Xilinx/Vivado/2021.1/include/hls_exp_apfixed.h:3052:0: warning: ignoring #pragma unroll  [-Wunknown-pragmas]
+     #pragma unroll
+ ^
+/opt/Xilinx/Vivado/2021.1/include/hls_exp_apfixed.h:3067:0: warning: ignoring #pragma unroll  [-Wunknown-pragmas]
+   #pragma unroll
+ ^
+/opt/Xilinx/Vivado/2021.1/include/hls_exp_apfixed.h:3204:0: warning: ignoring #pragma unroll  [-Wunknown-pragmas]
+    #pragma unroll
+ ^
+/opt/Xilinx/Vivado/2021.1/include/hls_exp_apfixed.h:3211:0: warning: ignoring #pragma unroll  [-Wunknown-pragmas]
+     #pragma unroll
+ ^
+/opt/Xilinx/Vivado/2021.1/include/hls_exp_apfixed.h:3215:0: warning: ignoring #pragma unroll  [-Wunknown-pragmas]
+     #pragma unroll
+ ^
+/opt/Xilinx/Vivado/2021.1/include/hls_exp_apfixed.h:3230:0: warning: ignoring #pragma unroll  [-Wunknown-pragmas]
+   #pragma unroll
+ ^
+/opt/Xilinx/Vivado/2021.1/include/hls_exp_apfixed.h:3390:0: warning: ignoring #pragma unroll  [-Wunknown-pragmas]
+    #pragma unroll
+ ^
+/opt/Xilinx/Vivado/2021.1/include/hls_exp_apfixed.h:3397:0: warning: ignoring #pragma unroll  [-Wunknown-pragmas]
+     #pragma unroll
+ ^
+/opt/Xilinx/Vivado/2021.1/include/hls_exp_apfixed.h:3401:0: warning: ignoring #pragma unroll  [-Wunknown-pragmas]
+     #pragma unroll
+ ^
+In file included from /opt/Xilinx/Vivado/2021.1/include/hls_math.h:1060:0,
+                 from /home/centos/Documents/vision_project/color/libs/xf_opencv/L1/include/imgproc/xf_ltm.hpp:25,
+                 from ../src/xf_tonemapping_config.h:19,
+                 from ../src/xf_tonemapping_tb.cpp:18:
+/opt/Xilinx/Vivado/2021.1/include/hls_log_apfixed.h:500:0: warning: ignoring #pragma HLS pipeline [-Wunknown-pragmas]
+ #pragma HLS pipeline
+ ^
+/opt/Xilinx/Vivado/2021.1/include/hls_log_apfixed.h:728:0: warning: ignoring #pragma unroll  [-Wunknown-pragmas]
+             #pragma unroll
+ ^
+/opt/Xilinx/Vivado/2021.1/include/hls_log_apfixed.h:817:0: warning: ignoring #pragma HLS pipeline [-Wunknown-pragmas]
+ #pragma HLS pipeline
+ ^
+/opt/Xilinx/Vivado/2021.1/include/hls_log_apfixed.h:946:0: warning: ignoring #pragma unroll  [-Wunknown-pragmas]
+             #pragma unroll
+ ^
+/opt/Xilinx/Vivado/2021.1/include/hls_log_apfixed.h:1093:0: warning: ignoring #pragma HLS pipeline [-Wunknown-pragmas]
+ #pragma HLS pipeline
+ ^
+/opt/Xilinx/Vivado/2021.1/include/hls_log_apfixed.h:1370:0: warning: ignoring #pragma unroll  [-Wunknown-pragmas]
+             #pragma unroll
+ ^
+In file included from /opt/Xilinx/Vivado/2021.1/include/hls_math.h:1061:0,
+                 from /home/centos/Documents/vision_project/color/libs/xf_opencv/L1/include/imgproc/xf_ltm.hpp:25,
+                 from ../src/xf_tonemapping_config.h:19,
+                 from ../src/xf_tonemapping_tb.cpp:18:
+/opt/Xilinx/Vivado/2021.1/include/hls_sqrt_apfixed.h:44:0: warning: ignoring #pragma HLS pipeline [-Wunknown-pragmas]
+ #pragma HLS pipeline
+ ^
+In file included from /opt/Xilinx/Vivado/2021.1/include/hls_math.h:1061:0,
+                 from /home/centos/Documents/vision_project/color/libs/xf_opencv/L1/include/imgproc/xf_ltm.hpp:25,
+                 from ../src/xf_tonemapping_config.h:19,
+                 from ../src/xf_tonemapping_tb.cpp:18:
+/opt/Xilinx/Vivado/2021.1/include/hls_sqrt_apfixed.h:266:0: warning: ignoring #pragma unroll  [-Wunknown-pragmas]
+         #pragma unroll
+ ^
+/opt/Xilinx/Vivado/2021.1/include/hls_sqrt_apfixed.h:294:0: warning: ignoring #pragma unroll  [-Wunknown-pragmas]
+         #pragma unroll
+ ^
+/opt/Xilinx/Vivado/2021.1/include/hls_sqrt_apfixed.h:393:0: warning: ignoring #pragma HLS pipeline [-Wunknown-pragmas]
+ #pragma HLS pipeline
+ ^
+/opt/Xilinx/Vivado/2021.1/include/hls_sqrt_apfixed.h:440:0: warning: ignoring #pragma HLS pipeline [-Wunknown-pragmas]
+ #pragma HLS pipeline
+ ^
+In file included from /opt/Xilinx/Vivado/2021.1/include/hls_math.h:1062:0,
+                 from /home/centos/Documents/vision_project/color/libs/xf_opencv/L1/include/imgproc/xf_ltm.hpp:25,
+                 from ../src/xf_tonemapping_config.h:19,
+                 from ../src/xf_tonemapping_tb.cpp:18:
+/opt/Xilinx/Vivado/2021.1/include/hls_round_copysign_apfixed.h:40:0: warning: ignoring #pragma HLS pipeline [-Wunknown-pragmas]
+ #pragma HLS pipeline
+ ^
+/opt/Xilinx/Vivado/2021.1/include/hls_round_copysign_apfixed.h:57:0: warning: ignoring #pragma HLS pipeline [-Wunknown-pragmas]
+ #pragma HLS pipeline
+ ^
+/opt/Xilinx/Vivado/2021.1/include/hls_round_copysign_apfixed.h:117:0: warning: ignoring #pragma HLS pipeline [-Wunknown-pragmas]
+ #pragma HLS pipeline
+ ^
+/opt/Xilinx/Vivado/2021.1/include/hls_round_copysign_apfixed.h:201:0: warning: ignoring #pragma HLS pipeline [-Wunknown-pragmas]
+ #pragma HLS pipeline
+ ^
+/opt/Xilinx/Vivado/2021.1/include/hls_round_copysign_apfixed.h:237:0: warning: ignoring #pragma HLS pipeline [-Wunknown-pragmas]
+ #pragma HLS pipeline
+ ^
+In file included from /opt/Xilinx/Vivado/2021.1/include/hls_math.h:1063:0,
+                 from /home/centos/Documents/vision_project/color/libs/xf_opencv/L1/include/imgproc/xf_ltm.hpp:25,
+                 from ../src/xf_tonemapping_config.h:19,
+                 from ../src/xf_tonemapping_tb.cpp:18:
+/opt/Xilinx/Vivado/2021.1/include/hls_pow_apfixed.h:74:0: warning: ignoring #pragma unroll  [-Wunknown-pragmas]
+             #pragma unroll
+ ^
+/opt/Xilinx/Vivado/2021.1/include/hls_pow_apfixed.h:133:0: warning: ignoring #pragma unroll  [-Wunknown-pragmas]
+     #pragma unroll
+ ^
+/opt/Xilinx/Vivado/2021.1/include/hls_pow_apfixed.h:146:0: warning: ignoring #pragma unroll  [-Wunknown-pragmas]
+             #pragma unroll
+ ^
+/opt/Xilinx/Vivado/2021.1/include/hls_pow_apfixed.h:176:0: warning: ignoring #pragma unroll  [-Wunknown-pragmas]
+             #pragma unroll
+ ^
+/opt/Xilinx/Vivado/2021.1/include/hls_pow_apfixed.h:304:0: warning: ignoring #pragma HLS unroll [-Wunknown-pragmas]
+            #pragma HLS unroll
+ ^
+/opt/Xilinx/Vivado/2021.1/include/hls_pow_apfixed.h:324:0: warning: ignoring #pragma hls unroll [-Wunknown-pragmas]
+                #pragma hls unroll
+ ^
+/opt/Xilinx/Vivado/2021.1/include/hls_pow_apfixed.h:338:0: warning: ignoring #pragma HLS unroll [-Wunknown-pragmas]
+                    #pragma HLS unroll
+ ^
+/opt/Xilinx/Vivado/2021.1/include/hls_pow_apfixed.h:456:0: warning: ignoring #pragma hls unroll [-Wunknown-pragmas]
+            #pragma hls unroll
+ ^
+/opt/Xilinx/Vivado/2021.1/include/hls_pow_apfixed.h:470:0: warning: ignoring #pragma HLS unroll [-Wunknown-pragmas]
+               #pragma HLS unroll
+ ^
+In file included from /opt/Xilinx/Vivado/2021.1/include/hls_math.h:1064:0,
+                 from /home/centos/Documents/vision_project/color/libs/xf_opencv/L1/include/imgproc/xf_ltm.hpp:25,
+                 from ../src/xf_tonemapping_config.h:19,
+                 from ../src/xf_tonemapping_tb.cpp:18:
+/opt/Xilinx/Vivado/2021.1/include/hls_diff_apfixed.h:49:0: warning: ignoring #pragma HLS PIPELINE [-Wunknown-pragmas]
+     #pragma HLS PIPELINE II=1
+ ^
+/opt/Xilinx/Vivado/2021.1/include/hls_diff_apfixed.h:59:0: warning: ignoring #pragma UNROLL  [-Wunknown-pragmas]
+             #pragma UNROLL        
+ ^
+/opt/Xilinx/Vivado/2021.1/include/hls_diff_apfixed.h:189:0: warning: ignoring #pragma HLS PIPELINE [-Wunknown-pragmas]
+     #pragma HLS PIPELINE II=1
+ ^
+/opt/Xilinx/Vivado/2021.1/include/hls_diff_apfixed.h:209:0: warning: ignoring #pragma UNROLL  [-Wunknown-pragmas]
+             #pragma UNROLL        
+ ^
+/opt/Xilinx/Vivado/2021.1/include/hls_diff_apfixed.h:255:0: warning: ignoring #pragma HLS PIPELINE [-Wunknown-pragmas]
+     #pragma HLS PIPELINE II=1
+ ^
+/opt/Xilinx/Vivado/2021.1/include/hls_diff_apfixed.h:274:0: warning: ignoring #pragma UNROLL  [-Wunknown-pragmas]
+             #pragma UNROLL        
+ ^
+In file included from /opt/Xilinx/Vivado/2021.1/include/hls_math.h:1066:0,
+                 from /home/centos/Documents/vision_project/color/libs/xf_opencv/L1/include/imgproc/xf_ltm.hpp:25,
+                 from ../src/xf_tonemapping_config.h:19,
+                 from ../src/xf_tonemapping_tb.cpp:18:
+/opt/Xilinx/Vivado/2021.1/include/hls_frexp_apfixed.h:72:0: warning: ignoring #pragma HLS pipeline [-Wunknown-pragmas]
+     #pragma HLS pipeline II=1
+ ^
+In file included from /opt/Xilinx/Vivado/2021.1/include/hls_math.h:1068:0,
+                 from /home/centos/Documents/vision_project/color/libs/xf_opencv/L1/include/imgproc/xf_ltm.hpp:25,
+                 from ../src/xf_tonemapping_config.h:19,
+                 from ../src/xf_tonemapping_tb.cpp:18:
+/opt/Xilinx/Vivado/2021.1/include/hls_isequal_isnotequal_apfixed.h:43:0: warning: ignoring #pragma HLS pipeline [-Wunknown-pragmas]
+ #pragma HLS pipeline
+ ^
+/opt/Xilinx/Vivado/2021.1/include/hls_isequal_isnotequal_apfixed.h:51:0: warning: ignoring #pragma HLS pipeline [-Wunknown-pragmas]
+ #pragma HLS pipeline
+ ^
+/opt/Xilinx/Vivado/2021.1/include/hls_isequal_isnotequal_apfixed.h:59:0: warning: ignoring #pragma HLS pipeline [-Wunknown-pragmas]
+ #pragma HLS pipeline
+ ^
+/opt/Xilinx/Vivado/2021.1/include/hls_isequal_isnotequal_apfixed.h:67:0: warning: ignoring #pragma HLS pipeline [-Wunknown-pragmas]
+ #pragma HLS pipeline
+ ^
+/opt/Xilinx/Vivado/2021.1/include/hls_isequal_isnotequal_apfixed.h:75:0: warning: ignoring #pragma HLS pipeline [-Wunknown-pragmas]
+ #pragma HLS pipeline
+ ^
+/opt/Xilinx/Vivado/2021.1/include/hls_isequal_isnotequal_apfixed.h:83:0: warning: ignoring #pragma HLS pipeline [-Wunknown-pragmas]
+ #pragma HLS pipeline
+ ^
+/opt/Xilinx/Vivado/2021.1/include/hls_isequal_isnotequal_apfixed.h:91:0: warning: ignoring #pragma HLS pipeline [-Wunknown-pragmas]
+ #pragma HLS pipeline
+ ^
+/opt/Xilinx/Vivado/2021.1/include/hls_isequal_isnotequal_apfixed.h:99:0: warning: ignoring #pragma HLS pipeline [-Wunknown-pragmas]
+ #pragma HLS pipeline
+ ^
+/opt/Xilinx/Vivado/2021.1/include/hls_isequal_isnotequal_apfixed.h:108:0: warning: ignoring #pragma HLS pipeline [-Wunknown-pragmas]
+ #pragma HLS pipeline
+ ^
+/opt/Xilinx/Vivado/2021.1/include/hls_isequal_isnotequal_apfixed.h:116:0: warning: ignoring #pragma HLS pipeline [-Wunknown-pragmas]
+ #pragma HLS pipeline
+ ^
+/opt/Xilinx/Vivado/2021.1/include/hls_isequal_isnotequal_apfixed.h:124:0: warning: ignoring #pragma HLS pipeline [-Wunknown-pragmas]
+ #pragma HLS pipeline
+ ^
+/opt/Xilinx/Vivado/2021.1/include/hls_isequal_isnotequal_apfixed.h:132:0: warning: ignoring #pragma HLS pipeline [-Wunknown-pragmas]
+ #pragma HLS pipeline
+ ^
+/opt/Xilinx/Vivado/2021.1/include/hls_isequal_isnotequal_apfixed.h:140:0: warning: ignoring #pragma HLS pipeline [-Wunknown-pragmas]
+ #pragma HLS pipeline
+ ^
+/opt/Xilinx/Vivado/2021.1/include/hls_isequal_isnotequal_apfixed.h:148:0: warning: ignoring #pragma HLS pipeline [-Wunknown-pragmas]
+ #pragma HLS pipeline
+ ^
+/opt/Xilinx/Vivado/2021.1/include/hls_isequal_isnotequal_apfixed.h:156:0: warning: ignoring #pragma HLS pipeline [-Wunknown-pragmas]
+ #pragma HLS pipeline
+ ^
+/opt/Xilinx/Vivado/2021.1/include/hls_isequal_isnotequal_apfixed.h:164:0: warning: ignoring #pragma HLS pipeline [-Wunknown-pragmas]
+ #pragma HLS pipeline
+ ^
+In file included from /opt/Xilinx/Vivado/2021.1/include/hls_math.h:1069:0,
+                 from /home/centos/Documents/vision_project/color/libs/xf_opencv/L1/include/imgproc/xf_ltm.hpp:25,
+                 from ../src/xf_tonemapping_config.h:19,
+                 from ../src/xf_tonemapping_tb.cpp:18:
+/opt/Xilinx/Vivado/2021.1/include/hls_all_any_apfixed.h:41:0: warning: ignoring #pragma HLS pipeline [-Wunknown-pragmas]
+ #pragma HLS pipeline II=1
+ ^
+/opt/Xilinx/Vivado/2021.1/include/hls_all_any_apfixed.h:52:0: warning: ignoring #pragma HLS pipeline [-Wunknown-pragmas]
+ #pragma HLS pipeline II=1
+ ^
+/opt/Xilinx/Vivado/2021.1/include/hls_all_any_apfixed.h:63:0: warning: ignoring #pragma HLS pipeline [-Wunknown-pragmas]
+ #pragma HLS pipeline II=1
+ ^
+/opt/Xilinx/Vivado/2021.1/include/hls_all_any_apfixed.h:74:0: warning: ignoring #pragma HLS pipeline [-Wunknown-pragmas]
+ #pragma HLS pipeline II=1
+ ^
+/opt/Xilinx/Vivado/2021.1/include/hls_all_any_apfixed.h:85:0: warning: ignoring #pragma HLS pipeline [-Wunknown-pragmas]
+ #pragma HLS pipeline II=1
+ ^
+/opt/Xilinx/Vivado/2021.1/include/hls_all_any_apfixed.h:96:0: warning: ignoring #pragma HLS pipeline [-Wunknown-pragmas]
+ #pragma HLS pipeline II=1
+ ^
+/opt/Xilinx/Vivado/2021.1/include/hls_all_any_apfixed.h:107:0: warning: ignoring #pragma HLS pipeline [-Wunknown-pragmas]
+ #pragma HLS pipeline II=1
+ ^
+/opt/Xilinx/Vivado/2021.1/include/hls_all_any_apfixed.h:118:0: warning: ignoring #pragma HLS pipeline [-Wunknown-pragmas]
+ #pragma HLS pipeline II=1
+ ^
+In file included from /opt/Xilinx/Vivado/2021.1/include/hls_math.h:1070:0,
+                 from /home/centos/Documents/vision_project/color/libs/xf_opencv/L1/include/imgproc/xf_ltm.hpp:25,
+                 from ../src/xf_tonemapping_config.h:19,
+                 from ../src/xf_tonemapping_tb.cpp:18:
+/opt/Xilinx/Vivado/2021.1/include/hls_select_bitselect_apfixed.h:65:0: warning: ignoring #pragma HLS pipeline [-Wunknown-pragmas]
+ #pragma HLS pipeline
+ ^
+/opt/Xilinx/Vivado/2021.1/include/hls_select_bitselect_apfixed.h:73:0: warning: ignoring #pragma HLS pipeline [-Wunknown-pragmas]
+ #pragma HLS pipeline
+ ^
+/opt/Xilinx/Vivado/2021.1/include/hls_select_bitselect_apfixed.h:81:0: warning: ignoring #pragma HLS pipeline [-Wunknown-pragmas]
+ #pragma HLS pipeline
+ ^
+/opt/Xilinx/Vivado/2021.1/include/hls_select_bitselect_apfixed.h:88:0: warning: ignoring #pragma HLS pipeline [-Wunknown-pragmas]
+ #pragma HLS pipeline
+ ^
+In file included from /opt/Xilinx/Vivado/2021.1/include/hls_math.h:1071:0,
+                 from /home/centos/Documents/vision_project/color/libs/xf_opencv/L1/include/imgproc/xf_ltm.hpp:25,
+                 from ../src/xf_tonemapping_config.h:19,
+                 from ../src/xf_tonemapping_tb.cpp:18:
+/opt/Xilinx/Vivado/2021.1/include/hls_erf_apfixed.h:516:0: warning: ignoring #pragma HLS PIPELINE [-Wunknown-pragmas]
+     #pragma HLS PIPELINE II=1
+ ^
+In file included from /opt/Xilinx/Vivado/2021.1/include/hls_math.h:1073:0,
+                 from /home/centos/Documents/vision_project/color/libs/xf_opencv/L1/include/imgproc/xf_ltm.hpp:25,
+                 from ../src/xf_tonemapping_config.h:19,
+                 from ../src/xf_tonemapping_tb.cpp:18:
+/opt/Xilinx/Vivado/2021.1/include/hls_lgamma_apfixed.h:64:0: warning: ignoring #pragma HLS pipeline [-Wunknown-pragmas]
+     #pragma HLS pipeline
+ ^
+In file included from /opt/Xilinx/Vivado/2021.1/include/hls_math.h:1073:0,
+                 from /home/centos/Documents/vision_project/color/libs/xf_opencv/L1/include/imgproc/xf_ltm.hpp:25,
+                 from ../src/xf_tonemapping_config.h:19,
+                 from ../src/xf_tonemapping_tb.cpp:18:
+/opt/Xilinx/Vivado/2021.1/include/hls_lgamma_apfixed.h:256:0: warning: ignoring #pragma unroll  [-Wunknown-pragmas]
+     #pragma unroll
+ ^
+In file included from /opt/Xilinx/Vivado/2021.1/include/hls_math.h:1074:0,
+                 from /home/centos/Documents/vision_project/color/libs/xf_opencv/L1/include/imgproc/xf_ltm.hpp:25,
+                 from ../src/xf_tonemapping_config.h:19,
+                 from ../src/xf_tonemapping_tb.cpp:18:
+/opt/Xilinx/Vivado/2021.1/include/hls_tgamma_apfixed.h:65:0: warning: ignoring #pragma HLS pipeline [-Wunknown-pragmas]
+ #pragma HLS pipeline
+ ^
+/opt/Xilinx/Vivado/2021.1/include/hls_tgamma_apfixed.h:146:0: warning: ignoring #pragma unroll  [-Wunknown-pragmas]
+ #pragma unroll
+ ^
+In file included from /opt/Xilinx/Vivado/2021.1/include/hls_math.h:1074:0,
+                 from /home/centos/Documents/vision_project/color/libs/xf_opencv/L1/include/imgproc/xf_ltm.hpp:25,
+                 from ../src/xf_tonemapping_config.h:19,
+                 from ../src/xf_tonemapping_tb.cpp:18:
+/opt/Xilinx/Vivado/2021.1/include/hls_tgamma_apfixed.h:191:0: warning: ignoring #pragma HLS pipeline [-Wunknown-pragmas]
+ #pragma HLS pipeline
+ ^
+In file included from /opt/Xilinx/Vivado/2021.1/include/hls_math.h:1076:0,
+                 from /home/centos/Documents/vision_project/color/libs/xf_opencv/L1/include/imgproc/xf_ltm.hpp:25,
+                 from ../src/xf_tonemapping_config.h:19,
+                 from ../src/xf_tonemapping_tb.cpp:18:
+/opt/Xilinx/Vivado/2021.1/include/hls_mad_apfixed.h:24:0: warning: ignoring #pragma HLS unroll [-Wunknown-pragmas]
+            #pragma HLS unroll
+ ^
+In file included from /opt/Xilinx/Vivado/2021.1/include/hls_math.h:1078:0,
+                 from /home/centos/Documents/vision_project/color/libs/xf_opencv/L1/include/imgproc/xf_ltm.hpp:25,
+                 from ../src/xf_tonemapping_config.h:19,
+                 from ../src/xf_tonemapping_tb.cpp:18:
+/opt/Xilinx/Vivado/2021.1/include/hls_hypot_apfixed.h:196:0: warning: ignoring #pragma HLS unroll [-Wunknown-pragmas]
+        #pragma HLS unroll
+ ^
+In file included from ../src/xf_tonemapping_config.h:19:0,
+                 from ../src/xf_tonemapping_tb.cpp:18:
+/home/centos/Documents/vision_project/color/libs/xf_opencv/L1/include/imgproc/xf_ltm.hpp:113:0: warning: ignoring #pragma HLS PIPELINE [-Wunknown-pragmas]
+ #pragma HLS PIPELINE
+ ^
+/home/centos/Documents/vision_project/color/libs/xf_opencv/L1/include/imgproc/xf_ltm.hpp:132:0: warning: ignoring #pragma HLS PIPELINE [-Wunknown-pragmas]
+ #pragma HLS PIPELINE
+ ^
+/home/centos/Documents/vision_project/color/libs/xf_opencv/L1/include/imgproc/xf_ltm.hpp:278:0: warning: ignoring #pragma HLS LOOP_TRIPCOUNT [-Wunknown-pragmas]
+ #pragma HLS LOOP_TRIPCOUNT min=ROWS max=ROWS
+ ^
+/home/centos/Documents/vision_project/color/libs/xf_opencv/L1/include/imgproc/xf_ltm.hpp:283:0: warning: ignoring #pragma HLS LOOP_TRIPCOUNT [-Wunknown-pragmas]
+ #pragma HLS LOOP_TRIPCOUNT min=COLS_NPC_ALIGNED max=COLS_NPC_ALIGNED
+ ^
+/home/centos/Documents/vision_project/color/libs/xf_opencv/L1/include/imgproc/xf_ltm.hpp:284:0: warning: ignoring #pragma HLS PIPELINE [-Wunknown-pragmas]
+ #pragma HLS PIPELINE
+ ^
+/home/centos/Documents/vision_project/color/libs/xf_opencv/L1/include/imgproc/xf_ltm.hpp:312:0: warning: ignoring #pragma HLS ARRAY_PARTITION [-Wunknown-pragmas]
+ #pragma HLS ARRAY_PARTITION variable=omin_l dim=1 complete
+ ^
+/home/centos/Documents/vision_project/color/libs/xf_opencv/L1/include/imgproc/xf_ltm.hpp:313:0: warning: ignoring #pragma HLS ARRAY_PARTITION [-Wunknown-pragmas]
+ #pragma HLS ARRAY_PARTITION variable=omax_l dim=1 complete
+ ^
+/home/centos/Documents/vision_project/color/libs/xf_opencv/L1/include/imgproc/xf_ltm.hpp:318:0: warning: ignoring #pragma HLS LOOP_TRIPCOUNT [-Wunknown-pragmas]
+ #pragma HLS LOOP_TRIPCOUNT min=BLK_ROWS max=BLK_ROWS
+ ^
+/home/centos/Documents/vision_project/color/libs/xf_opencv/L1/include/imgproc/xf_ltm.hpp:323:0: warning: ignoring #pragma HLS LOOP_TRIPCOUNT [-Wunknown-pragmas]
+ #pragma HLS LOOP_TRIPCOUNT min=COLS_NPC_ALIGNED max=COLS_NPC_ALIGNED
+ ^
+/home/centos/Documents/vision_project/color/libs/xf_opencv/L1/include/imgproc/xf_ltm.hpp:324:0: warning: ignoring #pragma HLS PIPELINE [-Wunknown-pragmas]
+ #pragma HLS PIPELINE II=1
+ ^
+/home/centos/Documents/vision_project/color/libs/xf_opencv/L1/include/imgproc/xf_ltm.hpp:377:0: warning: ignoring #pragma HLS LOOP_TRIPCOUNT [-Wunknown-pragmas]
+ #pragma HLS LOOP_TRIPCOUNT min=MinMaxVArrSize max=MinMaxVArrSize
+ ^
+/home/centos/Documents/vision_project/color/libs/xf_opencv/L1/include/imgproc/xf_ltm.hpp:419:0: warning: ignoring #pragma HLS LOOP_TRIPCOUNT [-Wunknown-pragmas]
+ #pragma HLS LOOP_TRIPCOUNT min=BLK_ROWS max=BLK_ROWS
+ ^
+/home/centos/Documents/vision_project/color/libs/xf_opencv/L1/include/imgproc/xf_ltm.hpp:424:0: warning: ignoring #pragma HLS LOOP_TRIPCOUNT [-Wunknown-pragmas]
+ #pragma HLS LOOP_TRIPCOUNT min=COLS_NPC_ALIGNED max=COLS_NPC_ALIGNED
+ ^
+/home/centos/Documents/vision_project/color/libs/xf_opencv/L1/include/imgproc/xf_ltm.hpp:425:0: warning: ignoring #pragma HLS PIPELINE [-Wunknown-pragmas]
+ #pragma HLS PIPELINE II=1
+ ^
+/home/centos/Documents/vision_project/color/libs/xf_opencv/L1/include/imgproc/xf_ltm.hpp:462:0: warning: ignoring #pragma HLS LOOP_TRIPCOUNT [-Wunknown-pragmas]
+ #pragma HLS LOOP_TRIPCOUNT min=MinMaxVArrSize max=MinMaxVArrSize
+ ^
+/home/centos/Documents/vision_project/color/libs/xf_opencv/L1/include/imgproc/xf_ltm.hpp:486:0: warning: ignoring #pragma HLS LOOP_TRIPCOUNT [-Wunknown-pragmas]
+ #pragma HLS LOOP_TRIPCOUNT min=ROWS max=ROWS
+ ^
+/home/centos/Documents/vision_project/color/libs/xf_opencv/L1/include/imgproc/xf_ltm.hpp:491:0: warning: ignoring #pragma HLS LOOP_TRIPCOUNT [-Wunknown-pragmas]
+ #pragma HLS LOOP_TRIPCOUNT min=COLS_NPC_ALIGNED max=COLS_NPC_ALIGNED
+ ^
+/home/centos/Documents/vision_project/color/libs/xf_opencv/L1/include/imgproc/xf_ltm.hpp:492:0: warning: ignoring #pragma HLS PIPELINE [-Wunknown-pragmas]
+ #pragma HLS PIPELINE II=1
+ ^
+/home/centos/Documents/vision_project/color/libs/xf_opencv/L1/include/imgproc/xf_ltm.hpp:556:0: warning: ignoring #pragma HLS DATAFLOW [-Wunknown-pragmas]
+ #pragma HLS DATAFLOW
+ ^
+/home/centos/Documents/vision_project/color/libs/xf_opencv/L1/include/imgproc/xf_ltm.hpp:573:0: warning: ignoring #pragma HLS ARRAY_PARTITION [-Wunknown-pragmas]
+ #pragma HLS ARRAY_PARTITION variable=Tile.mVBlkSize dim=1 complete
+ ^
+/home/centos/Documents/vision_project/color/libs/xf_opencv/L1/include/imgproc/xf_ltm.hpp:574:0: warning: ignoring #pragma HLS ARRAY_PARTITION [-Wunknown-pragmas]
+ #pragma HLS ARRAY_PARTITION variable=Tile.mHBlkSize dim=1 complete
+ ^
+/home/centos/Documents/vision_project/color/libs/xf_opencv/L1/include/imgproc/xf_ltm.hpp:589:0: warning: ignoring #pragma HLS ARRAY_PARTITION [-Wunknown-pragmas]
+ #pragma HLS ARRAY_PARTITION variable=Tile.mVBlkSize dim=1 complete
+ ^
+/home/centos/Documents/vision_project/color/libs/xf_opencv/L1/include/imgproc/xf_ltm.hpp:590:0: warning: ignoring #pragma HLS ARRAY_PARTITION [-Wunknown-pragmas]
+ #pragma HLS ARRAY_PARTITION variable=Tile.mHBlkSize dim=1 complete
+ ^
+
+****** configutil v2021.1 (64-bit)
+  **** SW Build 3246112 on 2021-06-09-14:19:56
+    ** Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+
+INFO: [ConfigUtil 60-895]   Target platform: /home/centos/aws-fpga/Vitis/aws_platform/xilinx_aws-vu9p-f1_shell-v04261818_201920_2/xilinx_aws-vu9p-f1_shell-v04261818_201920_2.xpfm
+INFO: [ConfigUtil 60-1578]   This platform contains Xilinx Shell Archive '/home/centos/aws-fpga/Vitis/aws_platform/xilinx_aws-vu9p-f1_shell-v04261818_201920_2/hw/xilinx_aws-vu9p-f1_shell-v04261818_201920_2.xsa'
+INFO: [ConfigUtil 60-1032]  
+emulation configuration file `emconfig.json` is created in . directory 
+g++ -o "color" libs/xf_opencv/ext/xcl2/xcl2.o src/xf_tonemapping_tb.o -lxml2 -lopencv_core -lopencv_imgproc -lopencv_features2d -lopencv_flann -lopencv_video -lopencv_calib3d -lopencv_highgui -lxilinxopencl -lpthread -lrt -lstdc++ -L/opt/xilinx/xrt/lib/ -Wl,-rpath-link,/opt/xilinx/xrt/lib
+
+09:57:08 Build Finished (took 16s.272ms)
+

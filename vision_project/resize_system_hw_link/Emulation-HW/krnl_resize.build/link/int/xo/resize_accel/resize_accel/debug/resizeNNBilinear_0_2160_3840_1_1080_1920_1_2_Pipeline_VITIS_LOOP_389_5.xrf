@@ -1,0 +1,118 @@
+Begin Function 'resizeNNBilinear<0, 2160, 3840, 1, 1080, 1920, 1, 2>_Pipeline_VITIS_LOOP_389_5'
+
+RTL state condition: (1'b1 == 1'b1)
+# ST_6
+local indexx_pre_V <select_255> <integer> <> 'select' </home/centos/Documents/vision_project/resize_kernels/libs/xf_opencv/L1/include/imgproc/xf_resize_nn_bilinear.hpp:255>
+indexx_pre.V /home/centos/Documents/vision_project/resize_kernels/libs/xf_opencv/L1/include/imgproc/xf_resize_nn_bilinear.hpp:255
+reg: indexx_pre_V_reg_1258[41:0] lv
+
+local trunc_ln <> <integer> <> 'partselect' <>
+trunc_ln /opt/Xilinx/Vitis_HLS/2021.1/common/technology/autopilot/ap_fixed_base.h:882
+reg: trunc_ln_reg_1263[16:0] lv
+
+local trunc_ln902 <> <integer> <> 'trunc' <>
+trunc_ln902 /opt/Xilinx/Vitis_HLS/2021.1/common/technology/autopilot/ap_fixed_base.h:902
+reg: trunc_ln902_reg_1270[21:0] lv
+
+local trunc_ln712 <> <integer> <> 'trunc' <>
+trunc_ln712 /opt/Xilinx/Vitis_HLS/2021.1/common/technology/autopilot/ap_fixed_base.h:712
+reg: trunc_ln712_reg_1275[23:0] lv
+
+# ST_7
+local idx_nxt <add_428> <integer> <Arithmetic> 'add' </home/centos/Documents/vision_project/resize_kernels/libs/xf_opencv/L1/include/imgproc/xf_resize_nn_bilinear.hpp:428>
+idx_nxt /home/centos/Documents/vision_project/resize_kernels/libs/xf_opencv/L1/include/imgproc/xf_resize_nn_bilinear.hpp:428
+reg: idx_nxt_reg_1280[11:0] lv
+
+local Wx_V <> <integer> <> 'partselect' <>
+Wx_V /opt/Xilinx/Vitis_HLS/2021.1/common/technology/autopilot/ap_fixed_base.h:717
+reg: Wx_V_reg_1315[11:0] lv
+
+# ST_8
+local line_buffer_V_1_0_load_2 <load_451> <integer> <ArrayAccess><ArrayLoad><MultiCycle> 'load' </home/centos/Documents/vision_project/resize_kernels/libs/xf_opencv/L1/include/imgproc/xf_resize_nn_bilinear.hpp:451>
+line_buffer_V_1_0_load_2 /home/centos/Documents/vision_project/resize_kernels/libs/xf_opencv/L1/include/imgproc/xf_resize_nn_bilinear.hpp:451
+reg: reg_570[7:0] lv
+
+local line_buffer_V_2_0_load_2 <load_453> <integer> <ArrayAccess><ArrayLoad><MultiCycle> 'load' </home/centos/Documents/vision_project/resize_kernels/libs/xf_opencv/L1/include/imgproc/xf_resize_nn_bilinear.hpp:453>
+line_buffer_V_2_0_load_2 /home/centos/Documents/vision_project/resize_kernels/libs/xf_opencv/L1/include/imgproc/xf_resize_nn_bilinear.hpp:453
+reg: reg_576[7:0] lv
+
+local line_buffer_V_0_0_load_2 <load_430> <integer> <ArrayAccess><ArrayLoad><MultiCycle> 'load' </home/centos/Documents/vision_project/resize_kernels/libs/xf_opencv/L1/include/imgproc/xf_resize_nn_bilinear.hpp:430>
+line_buffer_V_0_0_load_2 /home/centos/Documents/vision_project/resize_kernels/libs/xf_opencv/L1/include/imgproc/xf_resize_nn_bilinear.hpp:430
+reg: reg_582[7:0] lv
+
+local line_buffer_V_1_0_load <load_432> <integer> <ArrayAccess><ArrayLoad><MultiCycle> 'load' </home/centos/Documents/vision_project/resize_kernels/libs/xf_opencv/L1/include/imgproc/xf_resize_nn_bilinear.hpp:432>
+line_buffer_V_1_0_load /home/centos/Documents/vision_project/resize_kernels/libs/xf_opencv/L1/include/imgproc/xf_resize_nn_bilinear.hpp:432
+reg: reg_570[7:0] lv
+
+local line_buffer_V_2_0_load <load_472> <integer> <ArrayAccess><ArrayLoad><MultiCycle> 'load' </home/centos/Documents/vision_project/resize_kernels/libs/xf_opencv/L1/include/imgproc/xf_resize_nn_bilinear.hpp:472>
+line_buffer_V_2_0_load /home/centos/Documents/vision_project/resize_kernels/libs/xf_opencv/L1/include/imgproc/xf_resize_nn_bilinear.hpp:472
+reg: reg_576[7:0] lv
+
+local line_buffer_V_0_0_load <load_474> <integer> <ArrayAccess><ArrayLoad><MultiCycle> 'load' </home/centos/Documents/vision_project/resize_kernels/libs/xf_opencv/L1/include/imgproc/xf_resize_nn_bilinear.hpp:474>
+line_buffer_V_0_0_load /home/centos/Documents/vision_project/resize_kernels/libs/xf_opencv/L1/include/imgproc/xf_resize_nn_bilinear.hpp:474
+reg: reg_582[7:0] lv
+
+# ST_9
+local Wy_V <> <integer> <> 'partselect' <>
+Wy_V /opt/Xilinx/Vitis_HLS/2021.1/common/technology/autopilot/ap_fixed_base.h:1246
+reg: Wy_V_reg_1351[11:0] lv
+
+# ST_10
+local p_Result_8 <select_490> <integer> <> 'select' </home/centos/Documents/vision_project/resize_kernels/libs/xf_opencv/L1/include/imgproc/xf_resize_nn_bilinear.hpp:490>
+p_Result_8 /home/centos/Documents/vision_project/resize_kernels/libs/xf_opencv/L1/include/imgproc/xf_resize_nn_bilinear.hpp:490
+reg: p_Result_8_reg_1366[7:0] lv
+
+local ret_9 <> <integer> <Arithmetic> 'sub' <>
+ret /opt/Xilinx/Vitis_HLS/2021.1/common/technology/autopilot/ap_int_base.h:1526
+reg: ret_9_reg_1371[9:0] lv
+
+local ret_10 <> <integer> <Arithmetic> 'sub' <>
+ret /opt/Xilinx/Vitis_HLS/2021.1/common/technology/autopilot/ap_int_base.h:1526
+reg: ret_10_reg_1376[8:0] lv
+
+# ST_15
+local ret_V_13 <> <integer> <> 'select' <>
+ret.V /opt/Xilinx/Vitis_HLS/2021.1/common/technology/autopilot/ap_fixed_base.h:901
+reg: ret_V_13_reg_1421[7:0] lv
+
+
+RTL state condition: (1'b1 == ap_CS_fsm_pp0_stage0)
+# ST_1
+local first_row_index_5_read <> <integer> <> 'read' <>
+reg: first_row_index_5_read_reg_1203[31:0] lv
+
+local j_1 <load_395> <integer> <> 'load' </home/centos/Documents/vision_project/resize_kernels/libs/xf_opencv/L1/include/imgproc/xf_resize_nn_bilinear.hpp:395>
+j /home/centos/Documents/vision_project/resize_kernels/libs/xf_opencv/L1/include/imgproc/xf_resize_nn_bilinear.hpp:395
+reg: j_1_reg_1216[30:0] lv
+
+local icmp_ln389 <icmp_389> <integer> <Comparator> 'icmp' </home/centos/Documents/vision_project/resize_kernels/libs/xf_opencv/L1/include/imgproc/xf_resize_nn_bilinear.hpp:389>
+icmp_ln389 /home/centos/Documents/vision_project/resize_kernels/libs/xf_opencv/L1/include/imgproc/xf_resize_nn_bilinear.hpp:389
+reg: icmp_ln389_reg_1222[0:0] lv
+
+local trunc_ln737 <> <integer> <> 'trunc' <>
+trunc_ln737 /opt/Xilinx/Vitis_HLS/2021.1/common/technology/autopilot/ap_fixed_base.h:737
+reg: trunc_ln737_reg_1226[1:0] lv
+
+local and_ln406 <and_406> <integer> <Logic> 'and' </home/centos/Documents/vision_project/resize_kernels/libs/xf_opencv/L1/include/imgproc/xf_resize_nn_bilinear.hpp:406>
+and_ln406 /home/centos/Documents/vision_project/resize_kernels/libs/xf_opencv/L1/include/imgproc/xf_resize_nn_bilinear.hpp:406
+reg: and_ln406_reg_1231[0:0] lv
+
+local icmp_ln1049 <> <integer> <Comparator> 'icmp' <>
+icmp_ln1049 /opt/Xilinx/Vitis_HLS/2021.1/common/technology/autopilot/ap_int_base.h:1049
+reg: icmp_ln1049_reg_1235[0:0] lv
+
+local and_ln487 <and_487> <integer> <Logic> 'and' </home/centos/Documents/vision_project/resize_kernels/libs/xf_opencv/L1/include/imgproc/xf_resize_nn_bilinear.hpp:487>
+and_ln487 /home/centos/Documents/vision_project/resize_kernels/libs/xf_opencv/L1/include/imgproc/xf_resize_nn_bilinear.hpp:487
+reg: and_ln487_reg_1241[0:0] lv
+
+local icmp_ln489 <icmp_489> <integer> <Comparator> 'icmp' </home/centos/Documents/vision_project/resize_kernels/libs/xf_opencv/L1/include/imgproc/xf_resize_nn_bilinear.hpp:489>
+icmp_ln489 /home/centos/Documents/vision_project/resize_kernels/libs/xf_opencv/L1/include/imgproc/xf_resize_nn_bilinear.hpp:489
+reg: icmp_ln489_reg_1245[0:0] lv
+
+local and_ln486 <and_486> <integer> <Logic> 'and' </home/centos/Documents/vision_project/resize_kernels/libs/xf_opencv/L1/include/imgproc/xf_resize_nn_bilinear.hpp:486>
+and_ln486 /home/centos/Documents/vision_project/resize_kernels/libs/xf_opencv/L1/include/imgproc/xf_resize_nn_bilinear.hpp:486
+reg: and_ln486_reg_1249[0:0] lv
+
+
+End Function 'resizeNNBilinear<0, 2160, 3840, 1, 1080, 1920, 1, 2>_Pipeline_VITIS_LOOP_389_5'
+

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project name="tonemapping_accel" dir="">
+  <FileSets>
+    <FileSet Name="kernel_tonemapping_accel" Type="DesignSrcs">
+      <File Path="/home/centos/Documents/vision_project/color_kernels/src/xf_tonemapping_accel.cpp"/>
+      <Config/>
+    </FileSet>
+  </FileSets>
+  <Runs/>
+</project>

@@ -1,0 +1,2 @@
+performing high-level synthesis for kernel: convertbitdepth
+Log file: /home/centos/Documents/project/correct_kernels/Emulation-SW/build/convertbitdepth/convertbitdepth/vitis_hls.log

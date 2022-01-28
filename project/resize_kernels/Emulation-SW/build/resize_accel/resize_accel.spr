@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project name="resize_accel" dir="">
+  <FileSets>
+    <FileSet Name="kernel_resize_accel" Type="DesignSrcs">
+      <File Path="/home/centos/Documents/project/resize_kernels/src/xf_resize_accel.cpp"/>
+      <Config/>
+    </FileSet>
+  </FileSets>
+  <Runs/>
+</project>

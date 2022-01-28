@@ -1,0 +1,11 @@
+Begin Function 'scaleCompute<17, 42, 20, 48, 16, 1>'
+
+RTL state condition: (1'b1 == 1'b1)
+# ST_3
+local r_V_1 <> <integer> <Arithmetic><MultiCycle> 'mul' <>
+r.V /opt/Xilinx/Vitis_HLS/2021.1/common/technology/autopilot/ap_fixed_base.h:1171
+reg: r_V_1_reg_91[73:0] lv
+
+
+End Function 'scaleCompute<17, 42, 20, 48, 16, 1>'
+

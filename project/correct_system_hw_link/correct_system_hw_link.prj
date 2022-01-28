@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="ASCII"?>
+<hwlink:HwLinkProject xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:hwlink="http://www.xilinx.com/acceleration/hwlink" name="correct_system_hw_link" platform="/home/centos/aws-fpga/Vitis/aws_platform/xilinx_aws-vu9p-f1_shell-v04261818_201920_2/xilinx_aws-vu9p-f1_shell-v04261818_201920_2.xpfm" systemProject="correct_system" cpu="pl">
+  <configuration name="Emulation-SW" id="com.xilinx.ide.accel.config.hwlink.sw_emu.1353843294">
+    <configBuildOptions xsi:type="hwlink:LinkOptions">
+      <binaryContainers name="krnl_convertbitdepth">
+        <kernels name="convertbitdepth" projectName="correct_kernels">
+          <computeUnits name="convertbitdepth_1" slr="">
+            <args name="img_in" master="true" memory=""/>
+            <args name="shift"/>
+            <args name="img_out" master="true" memory=""/>
+            <args name="height"/>
+            <args name="width"/>
+          </computeUnits>
+        </kernels>
+      </binaryContainers>
+    </configBuildOptions>
+    <lastBuildOptions xsi:type="hwlink:LinkOptions">
+      <binaryContainers name="krnl_convertbitdepth">
+        <kernels name="convertbitdepth" projectName="correct_kernels">
+          <computeUnits name="convertbitdepth_1" slr="">
+            <args name="img_in" master="true" memory=""/>
+            <args name="shift"/>
+            <args name="img_out" master="true" memory=""/>
+            <args name="height"/>
+            <args name="width"/>
+          </computeUnits>
+        </kernels>
+      </binaryContainers>
+    </lastBuildOptions>
+  </configuration>
+  <configuration name="Emulation-HW" id="com.xilinx.ide.accel.config.hwlink.hw_emu.1758592810">
+    <configBuildOptions xsi:type="hwlink:LinkOptions" target="hw_emu">
+      <binaryContainers name="krnl_convertbitdepth">
+        <kernels name="convertbitdepth" projectName="correct_kernels">
+          <computeUnits name="convertbitdepth_1" slr="">
+            <args name="img_in" master="true" memory=""/>
+            <args name="shift"/>
+            <args name="img_out" master="true" memory=""/>
+            <args name="height"/>
+            <args name="width"/>
+          </computeUnits>
+        </kernels>
+      </binaryContainers>
+    </configBuildOptions>
+  </configuration>
+  <configuration name="Hardware" id="com.xilinx.ide.accel.config.hwlink.hw.256777014">
+    <configBuildOptions xsi:type="hwlink:LinkOptions" target="hw">
+      <binaryContainers name="krnl_convertbitdepth">
+        <kernels name="convertbitdepth" projectName="correct_kernels">
+          <computeUnits name="convertbitdepth_1" slr="">
+            <args name="img_in" master="true" memory=""/>
+            <args name="shift"/>
+            <args name="img_out" master="true" memory=""/>
+            <args name="height"/>
+            <args name="width"/>
+          </computeUnits>
+        </kernels>
+      </binaryContainers>
+    </configBuildOptions>
+  </configuration>
+</hwlink:HwLinkProject>
