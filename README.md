@@ -1,4 +1,4 @@
-# xup_2022
+# Xilinx University Program 2022 (Vitis Hardware Acceleration)
 
 ## REFs:
 -[Xilinx University Program](https://xilinx.github.io/xup_compute_acceleration/setup_xup_aws_workshop.html#lab-setup)
